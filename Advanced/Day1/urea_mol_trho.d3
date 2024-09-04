@@ -1,0 +1,5 @@
+TOPO
+TRHO
+-1                          IAUTO=-1
+1,0,1,0,20,10,7.,0.         IEXT, ICRIT, IBPAT, IPRINT, NSTEP, NNB, RMAX, TH
+END

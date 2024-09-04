@@ -1,0 +1,10 @@
+TOPO
+TRHO
+3                           IAUTO=3
+0,1,1,0,10,7,5.             IMETH, IEXT, IBPAT, IPRINT, NSTEP, NNB, RMAX
+0.,0.5,0.025                XMI, XMA, XINC
+0.,0.5,0.025                YMI,YMA, YINC
+0.,1.,0.025                 ZMI, ZMA, ZINC
+ 1                          NCONS
+ 7,0.5                      ICO (ICO=7, see Table X.1), ACO
+END
