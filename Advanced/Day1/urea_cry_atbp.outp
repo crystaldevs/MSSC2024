@@ -1,0 +1,2641 @@
+date Mon 16 Apr 17:21:53 BST 2018
+master hostname nhpc16
+system Linux nhpc16 4.4.74-18.20-default #1 SMP Fri Jun 30 19:01:19 UTC 2017 (b5079b8) x86_64 x86_64 x86_64 GNU/Linux
+user giuseppe
+output data in /home/giuseppe/Urea/urea_cry_atbp.outp
+properties in /prog/x86_64/crystal/CRYSTAL17/bin/Linux-ifort/intel-suite___2016.3
+input data in /home/giuseppe/Urea/urea_cry_atbp.d3
+temporary directory /local/giuseppe//tmp_p1635_giuseppe
+wave function data from /home/giuseppe/Urea/urea_cry.f9
+wave function formatted data from /home/giuseppe/Urea/urea_cry.f98
+TOPO
+ATBP
+UNI
+1, 0.43                          integration over C1 atom,TOL (size of the beta and capture sphere)
+10,0,1,0                        NVI,IRSUR,IWSUR(the surface data are saved on fortran unit 98),IPRINT
+32,24,120,2,1,0,0.002  IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+1, 0.8                            integration over O3 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                        NVI,IRSUR,IWSUR,IPRINT
+32,24,120,2,1,0,0.002  IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+1, 0.74                          integration over N5 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+32,24,120,2,1,0,0.002   IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+1, 0.24                           integration over H9 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+24,16,96,2,1,0,0.002     IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+1, 0.24                           integration over H13 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+24,16,96,2,1,0,0.002     IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+0                                    NNA (no NNA is present)
+END
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                               CRYSTAL17                                     *
+ *                      public : 1.0.1 - Feb 1st, 2017                         *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(2,6), I.J. BUSH(7), Ph. D'ARCO(8),               *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8), L. MASCHIO(1,11), A. ERBA(1,11)  *
+ *  M. RE'RAT(14), S. CASASSA(1,11)                                            *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CODE HAVE ALSO BEEN GIVEN BY                    *
+ *                                                                             *
+ *  M. FERRABONE(1,11), M. DE LA PIERRE(1,11), M. FERRERO(1,11),               *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  B. KIRTMAN(15), V. LACIVITA(1,11), R. DEMICHELIS(1,16)                     *
+ *  G. BRANDEBURG(17), S. SALUSTRO(1,11), G. SANSONE(1,11)                     *
+ *  M.T. RUGGIERO(18)                                                          *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+
+ * (2) COMPUTATIONAL SCIENCE & ENGINEERING DEPARTMENT - STFC DARESBURY (UK)    *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET STUTTGART- STUTTGART (GERMANY)                             *
+ * (6) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (7) OXFORD E-RESEARCH CENTRE - OXFORD (UK)                                  *
+ * (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)                            *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF TROMSO - TROMSO (NORWAY)                                  *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *(17) UNIVERSITY COLLEGE LONDON - LONDON (UK)                                 *
+ *(18) CAMBRIDGE UNIVERSITY - CAMBRIDGE (UK)                                   *
+ *                                                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 16 04 2018 TIME 17:21:54.5
+
+ *******************************************************************************
+ TEST12 - UREA BULK BASE 6-21 + POLARIZATION                                     
+ CRYSTAL - PROPERTIES - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+ HARTREE-FOCK HAMILTONIAN
+
+ DIRECT LATTICE VECTOR COMPONENTS (ANGSTROM)
+         5.56500    0.00000    0.00000
+         0.00000    5.56500    0.00000
+         0.00000    0.00000    4.68400
+
+ LATTICE PARAMETERS  (ANGSTROM AND DEGREES) - PRIMITIVE CELL
+       A          B          C         ALPHA      BETA     GAMMA        VOLUME
+    5.56500    5.56500    4.68400     90.0000   90.0000   90.0000     145.05985
+ *******************************************************************************
+ N. OF ATOMS PER CELL        16 COULOMB OVERLAP TOL          (T1) 10**   -6
+ NUMBER OF SHELLS            56 COULOMB PENETRATION TOL      (T2) 10**   -6
+ NUMBER OF AO               152 EXCHANGE OVERLAP TOL         (T3) 10**   -6
+ N. OF ELECTRONS PER CELL    64 EXCHANGE PSEUDO OVP (F(G))   (T4) 10**   -6
+ CORE ELECTRONS PER CELL     16 EXCHANGE PSEUDO OVP (P(G))   (T5) 10**  -12
+ N. OF SYMMETRY OPERATORS     8 POLE ORDER IN MONO ZONE                   4
+ *******************************************************************************
+   ATOM N.AT.  SHELL    X(A)      Y(A)      Z(A)      EXAD       N.ELECT.
+ *******************************************************************************
+    1    6 C     4     0.000     2.783     1.527   8.000E-01       4.804
+    2    6 C     4     2.783     0.000    -1.527   8.000E-01       4.804
+    3    8 O     4     0.000     2.783    -1.896   8.000E-01       8.780
+    4    8 O     4     2.783     0.000     1.896   8.000E-01       8.780
+    5    7 N     4     0.812    -1.971     0.827   8.000E-01       7.749
+    6    7 N     4    -0.812     1.971     0.827   8.000E-01       7.749
+    7    7 N     4    -1.971    -0.812    -0.827   8.000E-01       7.749
+    8    7 N     4     1.971     0.812    -0.827   8.000E-01       7.749
+    9    1 H     3     1.433    -1.350     1.324   1.100E+00       0.730
+   10    1 H     3    -1.433     1.350     1.324   1.100E+00       0.730
+   11    1 H     3    -1.350    -1.433    -1.324   1.100E+00       0.730
+   12    1 H     3     1.350     1.433    -1.324   1.100E+00       0.730
+   13    1 H     3     0.802    -1.981    -0.178   1.100E+00       0.729
+   14    1 H     3    -0.802     1.981    -0.178   1.100E+00       0.729
+   15    1 H     3    -1.981    -0.802     0.178   1.100E+00       0.729
+   16    1 H     3     1.981     0.802     0.178   1.100E+00       0.729
+ *******************************************************************************
+ DE(K)                   0.000E+00  ENERGY LEVEL SHIFTING        0.00000
+ TOTAL ENERGY -4.4768124600179E+02  CONVERGENCE ON ENER       -1.766E-08
+ KIN. ENERGY   4.4702060519671E+02  VIR. COEFF.           9.99261608E-01
+ N. OF SCF CYCLES               10  FERMI ENERGY              -0.384E+00
+ WEIGHT OF F(I) IN F(I+1)      30
+ SHRINK. FACT.(MONKH.)     2  2  2  SHRINKING FACTOR(GILAT NET)        2
+ NUMBER OF K POINTS IN THE IBZ   6  CELL VOLUME (A.U.)        978.912403
+ *******************************************************************************
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    14    14    16
+ NO.OF VECTORS CREATED 6999 STARS  525 RMAX   117.81283 BOHR
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.05 TCPU        0.00
+
+ MATRIX SIZE: P(G)  108364, F(G)   18098, P(G) IRR   10907, F(G) IRR    4245
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  81
+
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   6; SYMMOPS:K SPACE  16;G SPACE   8
+
+ *******************************************************************************
+ *                                                                             *
+ *                              T O P O N D  2 0 1 3                           *
+ *                                                                             *
+ *           AN ELECTRON DENSITY TOPOLOGICAL ANALYSIS PROGRAM FOR              *
+ *                 SYSTEMS PERIODIC IN N (N=0-3) DIMENSIONS                    *
+ *                                                                             *
+ *               USER MANUAL BY CARLO GATTI AND SILVIA CASASSA                 *
+ *                                                                             *
+ *            CNR-ISTM, ISTITUTO DI SCIENZE E TECNOLOGIE MOLECOLARI            *
+ *                   VIA GOLGI 19  - I-20133 MILANO - ITALIA                   *
+ *                     E-MAIL: c.gatti@istm.cnr.it                             *
+ *                                                                             *
+ *******************************************************************************
+
+  TOPOND PARAMETER 
+
+  LIM016 [INF24]        =       1000
+  LIM015 [INF20]        =         56
+  LIM035 [LIM016*INF5]  =     525000
+  NTOMAX [LIM016*INF5]  =     525000
+  INF79  [INF79]        =       6999
+  MAXGSTAR [INF2*INF5]  =        384
+
+ *******************************************************************************
+
+CRYSTAL INFORMATION ON THE REFERENCE SYSTEM:
+
+ DIRECT LATTICE VECTOR COMPONENTS (BOHR)
+        10.51633    0.00000    0.00000
+         0.00000   10.51633    0.00000
+         0.00000    0.00000    8.85148
+
+ LATTICE PARAMETERS  (BOHR AND DEGREES) - PRIMITIVE CELL
+        A           B           C        ALPHA        BETA       GAMMA       VOLUME
+    10.51633    10.51633     8.85148    90.00000    90.00000    90.00000   978.91240
+ *******************************************************************************
+ N. OF ATOMS PER CELL       16  COULOMB OVERLAP TOL         (T1) 10** -6
+ NUMBER OF SHELLS           56  COULOMB PENETRATION TOL     (T2) 10** -6
+ NUMBER OF AO              152  EXCHANGE OVERLAP TOL        (T3) 10** -6
+ N. OF ELECTRONS PER CELL    64 EXCHANGE PSEUDO OVP (F(G))  (T4) 10** -6
+ CORE ELECTRONS PER CELL    16  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**-12
+ N. OF SYMMETRY OPERATORS    8  POLE ORDER IN MONO ZONE                4
+ *******************************************************************************
+  ATOM  SHEL    X(AU)     Y(AU)     Z(AU)
+ *******************************************************************************
+    6 C    4     0.000     5.258     2.886
+    6 C    4     5.258     0.000    -2.886
+    8 O    4     0.000     5.258    -3.582
+    8 O    4     5.258     0.000     3.582
+    7 N    4     1.534    -3.724     1.563
+    7 N    4    -1.534     3.724     1.563
+    7 N    4    -3.724    -1.534    -1.563
+    7 N    4     3.724     1.534    -1.563
+    1 H    3     2.708    -2.550     2.502
+    1 H    3    -2.708     2.550     2.502
+    1 H    3    -2.550    -2.708    -2.502
+    1 H    3     2.550     2.708    -2.502
+    1 H    3     1.515    -3.743    -0.336
+    1 H    3    -1.515     3.743    -0.336
+    1 H    3    -3.743    -1.515     0.336
+    1 H    3     3.743     1.515     0.336
+ *******************************************************************************
+ DE(K)                  0.000E+00  CONVERGENCE ON EIGENVALUES   10**-17
+ WEIGHT OF F(I) IN F(I+1)     30%  CONVERGENCE ON ENERGY        10**- 7
+ TOTAL ENERGY     -4.47681246E+02  FERMI ENERGY              -3.844E-01
+ KIN. ENERGY       4.47020605E+02  VIR. COEFF.           9.99261608E-01
+ SHRINK. FACT.(MONKH.)    2  2  2  STARS FOR FOURIER EXP. OF E(K)     1
+ SHRINKING FACTOR (GILAT NET)   2  NUMBER OF K POINTS IN THE IBZ      6
+ CELL VOLUME (A.U.)         978.912N. OF SCF CYCLES                  10
+ ENERGY LEVEL SHIFTING    0.00000
+ *******************************************************************************
+
+ NEIGHBORS OF THE NON-EQUIVALENT ATOMS
+
+ N = NUMBER OF NEIGHBORS AT DISTANCE R
+    ATOM  N     R/ANG      R/AU   NEIGHBORS (ATOM LABELS AND CELL INDICES)
+
+   1 C    1     1.2614     2.3837   3 O    0 0 1
+   1 C    2     1.3447     2.5411   5 N    0 1 0   6 N    0 0 0
+   1 C    2     2.0367     3.8488   9 H    0 1 0  10 H    0 0 0
+   1 C    2     2.0477     3.8696  13 H    0 1 0  14 H    0 0 0
+   1 C    2     2.6461     5.0004  11 H    0 1 1  12 H    0 0 1
+   1 C    2     3.1089     5.8750  15 H    0 1 0  16 H    0 0 0
+
+   3 O    1     1.2614     2.3837   1 C    0 0-1
+   3 O    2     1.9922     3.7647  11 H    0 1 0  12 H    0 0 0
+   3 O    2     2.0582     3.8895  13 H    0 1 0  14 H    0 0 0
+   3 O    2     2.2726     4.2946   5 N    0 1-1   6 N    0 0-1
+   3 O    2     2.5002     4.7246   9 H    0 1-1  10 H    0 0-1
+   3 O    2     2.9550     5.5842   5 N    0 1 0   6 N    0 0 0
+
+   5 N    1     1.0053     1.8997  13 H    0 0 0
+   5 N    1     1.0092     1.9070   9 H    0 0 0
+   5 N    1     1.3447     2.5411   1 C    0-1 0
+   5 N    1     2.2726     4.2946   3 O    0-1 1
+   5 N    1     2.2965     4.3397   6 N    0-1 0
+   5 N    1     2.4939     4.7127  14 H    0-1 0
+
+   9 H    1     1.0092     1.9070   5 N    0 0 0
+   9 H    1     1.7473     3.3019  13 H    0 0 0
+   9 H    1     1.9922     3.7647   4 O    0 0 0
+   9 H    1     2.0367     3.8488   1 C    0-1 0
+   9 H    2     2.4984     4.7214  15 H    1 0 0  16 H    0 0 0
+   9 H    1     2.5002     4.7246   3 O    0-1 1
+
+  13 H    1     1.0053     1.8997   5 N    0 0 0
+  13 H    1     1.7473     3.3019   9 H    0 0 0
+  13 H    1     2.0477     3.8696   1 C    0-1 0
+  13 H    1     2.0582     3.8895   3 O    0-1 0
+  13 H    1     2.2682     4.2862  14 H    0-1 0
+  13 H    1     2.4939     4.7127   6 N    0-1 0
+
+ *******************************************************************************
+             ATOMIC BASIN INTEGRATION : ATOMIC CLUSTERS CONSIDERED
+ *******************************************************************************
+ CLUSTERS AROUND EACH OF THE NON-EQUIVALENT ATOMS
+
+ NON-EQUIV. ATOM       1 C (N.      1 IN THE UNIT CELL), CLUSTER OF     18 ATOMS
+ NEW  OLD   CELL  AT. NU.         COORD.(AU)             DISTANCE (ANG)
+     1       3       0     0     1    8        0.000   5.258   5.269          1.261
+     2       5       0     1     0    7        1.534   6.792   1.563          1.345
+     3       6       0     0     0    7       -1.534   3.724   1.563          1.345
+     4       9       0     1     0    1        2.708   7.966   2.502          2.037
+     5      10       0     0     0    1       -2.708   2.550   2.502          2.037
+     6      13       0     1     0    1        1.515   6.774  -0.336          2.048
+     7      14       0     0     0    1       -1.515   3.743  -0.336          2.048
+     8      11       0     1     1    1       -2.550   7.808   6.349          2.646
+     9      12       0     0     1    1        2.550   2.708   6.349          2.646
+    10      15       0     1     0    1       -3.743   9.001   0.336          3.109
+    11      16       0     0     0    1        3.743   1.515   0.336          3.109
+    12      13       0     1     1    1        1.515   6.774   8.515          3.188
+    13      14       0     0     1    1       -1.515   3.743   8.515          3.188
+    14       3       0     0     0    8        0.000   5.258  -3.582          3.423
+    15      11       0     1     0    1       -2.550   7.808  -2.502          3.431
+    16      12       0     0     0    1        2.550   2.708  -2.502          3.431
+    17       7       0     1     1    7       -3.724   8.982   7.288          3.632
+    18       8       0     0     1    7        3.724   1.534   7.288          3.632
+
+ NON-EQUIV. ATOM       2 O (N.      3 IN THE UNIT CELL), CLUSTER OF     18 ATOMS
+ NEW  OLD   CELL  AT. NU.         COORD.(AU)             DISTANCE (ANG)
+     1       1       0     0    -1    6        0.000   5.258  -5.966          1.261
+     2      11       0     1     0    1       -2.550   7.808  -2.502          1.992
+     3      12       0     0     0    1        2.550   2.708  -2.502          1.992
+     4      13       0     1     0    1        1.515   6.774  -0.336          2.058
+     5      14       0     0     0    1       -1.515   3.743  -0.336          2.058
+     6       5       0     1    -1    7        1.534   6.792  -7.288          2.273
+     7       6       0     0    -1    7       -1.534   3.724  -7.288          2.273
+     8       9       0     1    -1    1        2.708   7.966  -6.349          2.500
+     9      10       0     0    -1    1       -2.708   2.550  -6.349          2.500
+    10       5       0     1     0    7        1.534   6.792   1.563          2.955
+    11       6       0     0     0    7       -1.534   3.724   1.563          2.955
+    12       7       0     1     0    7       -3.724   8.982  -1.563          2.985
+    13       8       0     0     0    7        3.724   1.534  -1.563          2.985
+    14      13       0     1    -1    1        1.515   6.774  -9.188          3.176
+    15      14       0     0    -1    1       -1.515   3.743  -9.188          3.176
+    16       1       0     0     0    6        0.000   5.258   2.886          3.423
+    17      15       0     1     0    1       -3.743   9.001   0.336          3.485
+    18      16       0     0     0    1        3.743   1.515   0.336          3.485
+
+ NON-EQUIV. ATOM       3 N (N.      5 IN THE UNIT CELL), CLUSTER OF     12 ATOMS
+ NEW  OLD   CELL  AT. NU.         COORD.(AU)             DISTANCE (ANG)
+     1      13       0     0     0    1        1.515  -3.743  -0.336          1.005
+     2       9       0     0     0    1        2.708  -2.550   2.502          1.009
+     3       1       0    -1     0    6        0.000  -5.258   2.886          1.345
+     4       3       0    -1     1    8        0.000  -5.258   5.269          2.273
+     5       6       0    -1     0    7       -1.534  -6.792   1.563          2.296
+     6      14       0    -1     0    1       -1.515  -6.774  -0.336          2.494
+     7       3       0    -1     0    8        0.000  -5.258  -3.582          2.955
+     8       4       0     0     0    8        5.258   0.000   3.582          2.985
+     9      15       1     0     0    1        6.774  -1.515   0.336          3.078
+    10      16       0     0     0    1        3.743   1.515   0.336          3.078
+    11      15       0     0     0    1       -3.743  -1.515   0.336          3.096
+    12      16       0    -1     0    1        3.743  -9.001   0.336          3.096
+
+ NON-EQUIV. ATOM       4 H (N.      9 IN THE UNIT CELL), CLUSTER OF     12 ATOMS
+ NEW  OLD   CELL  AT. NU.         COORD.(AU)             DISTANCE (ANG)
+     1       5       0     0     0    7        1.534  -3.724   1.563          1.009
+     2      13       0     0     0    1        1.515  -3.743  -0.336          1.747
+     3       4       0     0     0    8        5.258   0.000   3.582          1.992
+     4       1       0    -1     0    6        0.000  -5.258   2.886          2.037
+     5      15       1     0     0    1        6.774  -1.515   0.336          2.498
+     6      16       0     0     0    1        3.743   1.515   0.336          2.498
+     7       3       0    -1     1    8        0.000  -5.258   5.269          2.500
+     8       2       0     0     1    6        5.258   0.000   5.966          2.646
+     9       7       1     0     0    7        6.792  -1.534  -1.563          3.097
+    10       8       0     0     0    7        3.724   1.534  -1.563          3.097
+    11       6       0    -1     0    7       -1.534  -6.792   1.563          3.213
+    12      13       0     0     1    1        1.515  -3.743   8.515          3.305
+
+ NON-EQUIV. ATOM       5 H (N.     13 IN THE UNIT CELL), CLUSTER OF     16 ATOMS
+ NEW  OLD   CELL  AT. NU.         COORD.(AU)             DISTANCE (ANG)
+     1       5       0     0     0    7        1.534  -3.724   1.563          1.005
+     2       9       0     0     0    1        2.708  -2.550   2.502          1.747
+     3       1       0    -1     0    6        0.000  -5.258   2.886          2.048
+     4       3       0    -1     0    8        0.000  -5.258  -3.582          2.058
+     5      14       0    -1     0    1       -1.515  -6.774  -0.336          2.268
+     6       6       0    -1     0    7       -1.534  -6.792   1.563          2.494
+     7      11       0     0     0    1       -2.550  -2.708  -2.502          2.498
+     8      12       0    -1     0    1        2.550  -7.808  -2.502          2.498
+     9      15       0     0     0    1       -3.743  -1.515   0.336          3.043
+    10      15       1     0     0    1        6.774  -1.515   0.336          3.043
+    11      16       0     0     0    1        3.743   1.515   0.336          3.043
+    12      16       0    -1     0    1        3.743  -9.001   0.336          3.043
+    13       7       0     0     0    7       -3.724  -1.534  -1.563          3.078
+    14       8       0    -1     0    7        3.724  -8.982  -1.563          3.078
+    15       7       1     0     0    7        6.792  -1.534  -1.563          3.096
+    16       8       0     0     0    7        3.724   1.534  -1.563          3.096
+
+
+
+ *************** A T O M I C   B A S I N   I N T E G R A T I O N ***************
+
+
+ COMPUTATIONAL CONDITIONS:
+                           ATOM                                      : C    1
+                           METHOD                                    :     0
+                           NVI                                       :    10
+                           IRSUR                                     :     0
+                           IWSUR                                     :     1
+                           NUMBER OF RADIAL POINTS INSIDE BETA SPHERE:   120
+                           NUMBER OF PHI POINTS INSIDE BETA SPHERE   :    48
+                           NUMBER OF THETA POINTS INSIDE BETA SPHERE :    32
+                           NUMBER OF PHI POINTS OUTSIDE BETA SPHERE  :    32
+                           NUMBER OF THETA POINTS OUTSIDE BETA SPHERE:    24
+                           BETA SPHERE RADIUS (ANG)                  :    0.42
+                           SIZ (ANG)                                 :    4.76
+                           TIN (ANG)                                 :    5.29
+
+ PROMEGA SURFACE STEP    :
+                           STEP SIZE IN TRACING GRAD(RHO) TRAJEC.    :    0.025
+                           ORDER OF A.B.M PREDICTOR CORRECTOR METHOD :     6
+                           SMALL STEPS PER REGULAR STEP IN A.B.M.    :     5
+                           PRECISION IN ATOMIC SURFACE DETERM. (AU)  :    0.002
+                           SECONDARY INTERSECTION SEARCH             :     N
+
+
+ ORIG.(AU)  (X  Y  Z)     :  0.0000E+00  5.2582E+00  2.8856E+00
+
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ THE FEELER RAYS ARE DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE      107.88 TCPU      106.93
+ NUMBER OF ATTRACTORS REACHED   :    4
+ ATTRACT. ID IN THE ORIG.CLUSTER:    1  2  3 11
+ NUMBER OF PSEUDOATOMS REACHED   :    0
+ PSEUDOATOMS. ID 
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ SURFACE DETERMINATION(1st INTERSECTIONS) IS DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE      335.33 TCPU      334.38
+
+ ATOMIC POPULATIONS
+
+              N   3.68682897198781E+00
+              Q   2.31317102801219E+00
+
+ ATOMIC ENERGIES
+
+              L   1.11490500443304E-02
+              G   3.63030583227804E+01
+              K   3.63141973215387E+01
+             EG  -3.63567097236294E+01
+             EK  -3.63678651844412E+01
+           VNEO  -8.02808090318206E+01
+          VNEOC  -8.03401315526334E+01
+
+ ATOMIC FORCES
+
+           FAXA  -2.20069899874598E-03
+           FAYA   1.02748936161219E-03
+           FAZA  -3.27477633979680E-01
+
+ RADIAL ATOMIC EXPECTATION VALUES
+
+          R(-1)   1.33801348386368E+01
+          R(+1)   2.35694607516539E+00
+          R(+2)   2.54547457008825E+00
+          R(+3)   3.67053533043131E+00
+          R(+4)   6.42176837538538E+00
+         GR(-1)  -2.42506473455390E+01
+         GR( 0)  -7.98454157333945E+00
+         GR(+1)  -5.28891198106951E+00
+         GR(+2)  -6.45453981756148E+00
+
+ ATOMIC VOLUMES AND RELATED POPULATIONS
+
+           V001   2.19516716474470E+01
+           N001   3.68577914523318E+00
+           R001   9.99715249401965E-01
+           V002   2.00922653523019E+01
+           N002   3.68313345950232E+00
+           R002   9.98997644720283E-01
+           VTOT   2.32777428774774E+01
+
+ ATOMIC DIPOLE MOMENT VECTOR
+
+             DX   6.20329010653710E-03
+             DY  -6.31447224487426E-03
+             DZ   1.10115335732672E-01
+             DM   1.10470541464212E-01
+            DCX  -1.68255434512128E-03
+            DCY   1.71271092118757E-03
+            DCZ  -2.98672210100655E-02
+             CX  -1.68255434512128E-03
+             CY   5.25987567855707E+00
+             CZ   2.85571434986954E+00
+
+ ATOMIC QUADRUPOLE MOMENT TENSOR
+
+            QXX  -3.31116339663549E-01
+            QXY   9.66350162099765E-01
+            QXZ  -2.70908276357023E-02
+            QYY  -3.34200378792529E-01
+            QYZ   1.69441628667485E-02
+            QZZ   6.65316718456078E-01
+
+ ATOMIC SHANNON INFORMATION ENTROPY
+
+            IUN  -7.91790747313322E-01
+            INO   1.09000473584828E+00
+ 
+     EIGENVALUES OF QUADRUPOLE MOMENT TENSOR:
+      -1.29950302658163E+00    6.32153330612695E-01    6.67349695968939E-01
+ 
+     EIGENVECTORS OF QUADRUPOLE MOMENT TENSOR:
+      -7.06495464274631E-01    6.89636692046453E-01   -1.58950910480565E-01
+       7.07540221480710E-01    6.93301051333501E-01   -1.36822831453269E-01
+      -1.58427884667314E-02    2.09128872236926E-01    9.77759745975723E-01
+ 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE      352.66 TCPU      351.71
+
+
+ *************** A T O M I C   B A S I N   I N T E G R A T I O N ***************
+
+
+ COMPUTATIONAL CONDITIONS:
+                           ATOM                                      : O    2
+                           METHOD                                    :     0
+                           NVI                                       :    10
+                           IRSUR                                     :     0
+                           IWSUR                                     :     0
+                           NUMBER OF RADIAL POINTS INSIDE BETA SPHERE:   120
+                           NUMBER OF PHI POINTS INSIDE BETA SPHERE   :   120
+                           NUMBER OF THETA POINTS INSIDE BETA SPHERE :    96
+                           NUMBER OF PHI POINTS OUTSIDE BETA SPHERE  :    32
+                           NUMBER OF THETA POINTS OUTSIDE BETA SPHERE:    24
+                           BETA SPHERE RADIUS (ANG)                  :    0.79
+                           SIZ (ANG)                                 :    4.76
+                           TIN (ANG)                                 :    5.29
+
+ PROMEGA SURFACE STEP    :
+                           STEP SIZE IN TRACING GRAD(RHO) TRAJEC.    :    0.025
+                           ORDER OF A.B.M PREDICTOR CORRECTOR METHOD :     6
+                           SMALL STEPS PER REGULAR STEP IN A.B.M.    :     5
+                           PRECISION IN ATOMIC SURFACE DETERM. (AU)  :    0.002
+                           SECONDARY INTERSECTION SEARCH             :     N
+
+
+ ORIG.(AU)  (X  Y  Z)     :  0.0000E+00  5.2582E+00 -3.5822E+00
+
+ THE FEELER RAYS ARE DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE      942.70 TCPU      941.74
+ NUMBER OF ATTRACTORS REACHED   :   11
+ ATTRACT. ID IN THE ORIG.CLUSTER:    1  2  3  4  5  6  7  8 10 11 13
+ NUMBER OF PSEUDOATOMS REACHED   :    0
+ PSEUDOATOMS. ID 
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ SURFACE DETERMINATION(1st INTERSECTIONS) IS DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     1372.99 TCPU     1372.03
+
+ ATOMIC POPULATIONS
+
+              N   9.42528434163311E+00
+              Q  -1.42528434163311E+00
+
+ ATOMIC ENERGIES
+
+              L   3.57564598612095E-04
+              G   7.53899219804839E+01
+              K   7.53902653900037E+01
+             EG  -7.55013388999121E+01
+             EK  -7.55016828169484E+01
+           VNEO  -1.85469685119185E+02
+          VNEOC  -1.85606735671968E+02
+
+ ATOMIC FORCES
+
+           FAXA   3.05699107411815E-05
+           FAYA   7.04181748322001E-05
+           FAZA  -1.69412695317027E+00
+
+ RADIAL ATOMIC EXPECTATION VALUES
+
+          R(-1)   2.31837106398982E+01
+          R(+1)   9.84175404272171E+00
+          R(+2)   1.47628721496779E+01
+          R(+3)   2.64792643183056E+01
+          R(+4)   5.36530105079167E+01
+         GR(-1)  -4.47125056274301E+01
+         GR( 0)  -2.46137131115223E+01
+         GR(+1)  -3.08464267090228E+01
+         GR(+2)  -5.29505977844638E+01
+
+ ATOMIC VOLUMES AND RELATED POPULATIONS
+
+           V001   1.07743162390738E+02
+           N001   9.41858486984467E+00
+           R001   9.99289202156073E-01
+           V002   9.84012497914644E+01
+           N002   9.40492938593635E+00
+           R002   9.97840388156053E-01
+           VTOT   1.19870032980060E+02
+
+ ATOMIC DIPOLE MOMENT VECTOR
+
+             DX  -2.82224325705953E-04
+             DY  -4.14281364401715E-04
+             DZ   4.14674325133227E-01
+             DM   4.14674628117415E-01
+            DCX   2.99433221827929E-05
+            DCY   4.39542563794879E-05
+            DCZ  -4.39959485679959E-02
+             CX   2.99433221827929E-05
+             CY   5.25820692189226E+00
+             CZ  -3.62618877597590E+00
+
+ ATOMIC QUADRUPOLE MOMENT TENSOR
+
+            QXX  -3.36799528021248E-01
+            QXY   1.89893490038004E-01
+            QXZ  -7.07260095016077E-04
+            QYY  -3.35771890431289E-01
+            QYZ   1.17964770783514E-03
+            QZZ   6.72571418452538E-01
+
+ ATOMIC SHANNON INFORMATION ENTROPY
+
+            IUN   5.24885464758091E+00
+            INO   2.80028675589854E+00
+ 
+     EIGENVALUES OF QUADRUPOLE MOMENT TENSOR:
+      -5.26181378459283E-01   -1.46391661752160E-01    6.72573040211444E-01
+ 
+     EIGENVECTORS OF QUADRUPOLE MOMENT TENSOR:
+       7.08061652434369E-01   -7.06150442961143E-01   -4.98254646070505E-04
+      -7.06149742167854E-01   -7.08061708998421E-01    1.07605135075141E-03
+       1.11264917419513E-03    4.10068307660652E-04    9.99999296927652E-01
+ 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     1397.17 TCPU     1396.21
+
+
+ *************** A T O M I C   B A S I N   I N T E G R A T I O N ***************
+
+
+ COMPUTATIONAL CONDITIONS:
+                           ATOM                                      : N    3
+                           METHOD                                    :     0
+                           NVI                                       :    10
+                           IRSUR                                     :     0
+                           IWSUR                                     :     0
+                           NUMBER OF RADIAL POINTS INSIDE BETA SPHERE:   120
+                           NUMBER OF PHI POINTS INSIDE BETA SPHERE   :   120
+                           NUMBER OF THETA POINTS INSIDE BETA SPHERE :    96
+                           NUMBER OF PHI POINTS OUTSIDE BETA SPHERE  :    32
+                           NUMBER OF THETA POINTS OUTSIDE BETA SPHERE:    24
+                           BETA SPHERE RADIUS (ANG)                  :    0.73
+                           SIZ (ANG)                                 :    4.76
+                           TIN (ANG)                                 :    5.29
+
+ PROMEGA SURFACE STEP    :
+                           STEP SIZE IN TRACING GRAD(RHO) TRAJEC.    :    0.025
+                           ORDER OF A.B.M PREDICTOR CORRECTOR METHOD :     6
+                           SMALL STEPS PER REGULAR STEP IN A.B.M.    :     5
+                           PRECISION IN ATOMIC SURFACE DETERM. (AU)  :    0.002
+                           SECONDARY INTERSECTION SEARCH             :     N
+
+
+ ORIG.(AU)  (X  Y  Z)     :  1.5343E+00 -3.7238E+00  1.5632E+00
+
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ THE FEELER RAYS ARE DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     2083.97 TCPU     2083.00
+ NUMBER OF ATTRACTORS REACHED   :    8
+ ATTRACT. ID IN THE ORIG.CLUSTER:    1  2  3  4  5  8  9 12
+ NUMBER OF PSEUDOATOMS REACHED   :    0
+ PSEUDOATOMS. ID 
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ SURFACE DETERMINATION(1st INTERSECTIONS) IS DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4279.52 TCPU     4278.52
+
+ ATOMIC POPULATIONS
+
+              N   8.44055720265698E+00
+              Q  -1.44055720265698E+00
+
+ ATOMIC ENERGIES
+
+              L  -1.82373581302422E-03
+              G   5.50924212508348E+01
+              K   5.50905797916237E+01
+             EG  -5.51738409910118E+01
+             EK  -5.51719968103531E+01
+           VNEO  -1.35445108348613E+02
+          VNEOC  -1.35545193852931E+02
+
+ ATOMIC FORCES
+
+           FAXA  -4.32608296521475E-01
+           FAYA  -4.32394231261261E-01
+           FAZA   3.65561843186620E-01
+
+ RADIAL ATOMIC EXPECTATION VALUES
+
+          R(-1)   1.93493011926590E+01
+          R(+1)   9.36573982371134E+00
+          R(+2)   1.47905292491785E+01
+          R(+3)   2.77552522676969E+01
+          R(+4)   5.89363333307325E+01
+         GR(-1)  -3.63607971007417E+01
+         GR( 0)  -2.06596993095412E+01
+         GR(+1)  -2.76161874518359E+01
+         GR(+2)  -5.16511614708880E+01
+
+ ATOMIC VOLUMES AND RELATED POPULATIONS
+
+           V001   1.10433382205755E+02
+           N001   8.43061299357512E+00
+           R001   9.98821853955480E-01
+           V002   1.00094352581351E+02
+           N002   8.41547869544398E+00
+           R002   9.97028809045320E-01
+           VTOT   1.31974599141024E+02
+
+ ATOMIC DIPOLE MOMENT VECTOR
+
+             DX   1.42313685201305E-01
+             DY   1.42222015198948E-01
+             DZ  -1.21924077442322E-01
+             DM   2.35256811299880E-01
+            DCX  -1.68606979118046E-02
+            DCY  -1.68498372541304E-02
+            DCZ   1.44450270894370E-02
+             CX   1.51747125604435E+00
+             CY  -3.74068085093386E+00
+             CZ   1.57761590260275E+00
+
+ ATOMIC QUADRUPOLE MOMENT TENSOR
+
+            QXX  -6.26707831525200E-01
+            QXY   1.53955447311006E+00
+            QXZ   1.57762720480767E-01
+            QYY  -6.28828853406374E-01
+            QYZ   1.56114532578843E-01
+            QZZ   1.25553668493157E+00
+
+ ATOMIC SHANNON INFORMATION ENTROPY
+
+            IUN   6.65363086243419E+00
+            INO   2.92134117209488E+00
+ 
+     EIGENVALUES OF QUADRUPOLE MOMENT TENSOR:
+      -2.16732352893763E+00    8.02947069976003E-01    1.36437645896163E+00
+ 
+     EIGENVECTORS OF QUADRUPOLE MOMENT TENSOR:
+       7.06879458104070E-01   -6.34981951788549E-01    3.11639780216362E-01
+      -7.07333958985864E-01   -6.34772914529183E-01    3.11033788269878E-01
+      -3.19649623380533E-04    4.40296795222191E-01    8.97852231684694E-01
+ 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4303.59 TCPU     4302.59
+
+
+ *************** A T O M I C   B A S I N   I N T E G R A T I O N ***************
+
+
+ COMPUTATIONAL CONDITIONS:
+                           ATOM                                      : H    4
+                           METHOD                                    :     0
+                           NVI                                       :    10
+                           IRSUR                                     :     0
+                           IWSUR                                     :     0
+                           NUMBER OF RADIAL POINTS INSIDE BETA SPHERE:    96
+                           NUMBER OF PHI POINTS INSIDE BETA SPHERE   :    28
+                           NUMBER OF THETA POINTS INSIDE BETA SPHERE :    18
+                           NUMBER OF PHI POINTS OUTSIDE BETA SPHERE  :    24
+                           NUMBER OF THETA POINTS OUTSIDE BETA SPHERE:    16
+                           BETA SPHERE RADIUS (ANG)                  :    0.23
+                           SIZ (ANG)                                 :    4.76
+                           TIN (ANG)                                 :    5.29
+
+ PROMEGA SURFACE STEP    :
+                           STEP SIZE IN TRACING GRAD(RHO) TRAJEC.    :    0.025
+                           ORDER OF A.B.M PREDICTOR CORRECTOR METHOD :     6
+                           SMALL STEPS PER REGULAR STEP IN A.B.M.    :     5
+                           PRECISION IN ATOMIC SURFACE DETERM. (AU)  :    0.002
+                           SECONDARY INTERSECTION SEARCH             :     N
+
+
+ ORIG.(AU)  (X  Y  Z)     :  2.7080E+00 -2.5502E+00  2.5023E+00
+
+ THE FEELER RAYS ARE DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4336.45 TCPU     4335.45
+ NUMBER OF ATTRACTORS REACHED   :    5
+ ATTRACT. ID IN THE ORIG.CLUSTER:    1  3  5  6  8
+ NUMBER OF PSEUDOATOMS REACHED   :    0
+ PSEUDOATOMS. ID 
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ SURFACE DETERMINATION(1st INTERSECTIONS) IS DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4464.04 TCPU     4463.04
+
+ ATOMIC POPULATIONS
+
+              N   4.93413887191096E-01
+              Q   5.06586112808904E-01
+
+ ATOMIC ENERGIES
+
+              L   3.36594347879248E-04
+              G   4.01309961881108E-01
+              K   4.01646563651146E-01
+             EG  -4.01903048045864E-01
+             EK  -4.02240147271414E-01
+           VNEO  -7.97787611777099E-01
+          VNEOC  -7.98377127164085E-01
+
+ ATOMIC FORCES
+
+           FAXA  -3.15371306506787E-02
+           FAYA  -3.15906068209171E-02
+           FAZA  -2.45391364076382E-02
+
+ RADIAL ATOMIC EXPECTATION VALUES
+
+          R(-1)   7.97787611777099E-01
+          R(+1)   4.32120036146293E-01
+          R(+2)   4.89067538991718E-01
+          R(+3)   6.70220415788881E-01
+          R(+4)   1.06172876224657E+00
+         GR(-1)  -9.44484625746540E-01
+         GR( 0)  -8.59201188001755E-01
+         GR(+1)  -9.82344191350135E-01
+         GR(+2)  -1.33925832513814E+00
+
+ ATOMIC VOLUMES AND RELATED POPULATIONS
+
+           V001   1.74224751238967E+01
+           N001   4.92220554843244E-01
+           R001   9.97581477986675E-01
+           V002   1.56162170788391E+01
+           N002   4.89628224300208E-01
+           R002   9.92327611789690E-01
+           VTOT   1.96230792088401E+01
+
+ ATOMIC DIPOLE MOMENT VECTOR
+
+             DX  -7.24687367023335E-02
+             DY  -7.15385823927476E-02
+             DZ  -6.07399961567315E-02
+             DM   1.18569952783645E-01
+            DCX   1.46872105920819E-01
+            DCY   1.44986965810796E-01
+            DCZ   1.23101513219484E-01
+             CX   2.85482603425330E+00
+             CY  -2.40522207349261E+00
+             CZ   2.62541412085036E+00
+
+ ATOMIC QUADRUPOLE MOMENT TENSOR
+
+            QXX   2.04067781969859E-02
+            QXY   9.70987007165264E-02
+            QXZ   6.67948999470231E-02
+            QYY   2.63999593715214E-02
+            QYZ   6.33686847051460E-02
+            QZZ  -4.68067375685071E-02
+
+ ATOMIC SHANNON INFORMATION ENTROPY
+
+            IUN   1.34853114959472E+00
+            INO   2.02665588989775E+00
+ 
+     EIGENVALUES OF QUADRUPOLE MOMENT TENSOR:
+      -8.83316741503480E-02   -7.29049774512534E-02    1.61236651601602E-01
+ 
+     EIGENVECTORS OF QUADRUPOLE MOMENT TENSOR:
+      -4.40964325137892E-01    6.27863002864461E-01    6.41356775585715E-01
+      -1.18210104662529E-01   -7.48987537919612E-01    6.51954016167392E-01
+       8.89706038594410E-01    2.11673611192182E-01    4.04496535477751E-01
+ 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4474.78 TCPU     4473.78
+
+
+ *************** A T O M I C   B A S I N   I N T E G R A T I O N ***************
+
+
+ COMPUTATIONAL CONDITIONS:
+                           ATOM                                      : H    5
+                           METHOD                                    :     0
+                           NVI                                       :    10
+                           IRSUR                                     :     0
+                           IWSUR                                     :     0
+                           NUMBER OF RADIAL POINTS INSIDE BETA SPHERE:    96
+                           NUMBER OF PHI POINTS INSIDE BETA SPHERE   :    28
+                           NUMBER OF THETA POINTS INSIDE BETA SPHERE :    18
+                           NUMBER OF PHI POINTS OUTSIDE BETA SPHERE  :    24
+                           NUMBER OF THETA POINTS OUTSIDE BETA SPHERE:    16
+                           BETA SPHERE RADIUS (ANG)                  :    0.23
+                           SIZ (ANG)                                 :    4.76
+                           TIN (ANG)                                 :    5.29
+
+ PROMEGA SURFACE STEP    :
+                           STEP SIZE IN TRACING GRAD(RHO) TRAJEC.    :    0.025
+                           ORDER OF A.B.M PREDICTOR CORRECTOR METHOD :     6
+                           SMALL STEPS PER REGULAR STEP IN A.B.M.    :     5
+                           PRECISION IN ATOMIC SURFACE DETERM. (AU)  :    0.002
+                           SECONDARY INTERSECTION SEARCH             :     N
+
+
+ ORIG.(AU)  (X  Y  Z)     :  1.5154E+00 -3.7428E+00 -3.3636E-01
+
+ THE FEELER RAYS ARE DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4503.99 TCPU     4502.99
+ NUMBER OF ATTRACTORS REACHED   :    2
+ ATTRACT. ID IN THE ORIG.CLUSTER:    1  4
+ NUMBER OF PSEUDOATOMS REACHED   :    0
+ PSEUDOATOMS. ID 
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ PATHE2: OSCILLATION OF PATHS
+ PATHE2: THE ATTRACTOR OF THIS PATH WAS PROBABLY NOT INCLUDED IN THE CLUSTER:
+ INCREASE CLUSTER SIZE
+ SURFACE DETERMINATION(1st INTERSECTIONS) IS DONE
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4693.86 TCPU     4692.86
+
+ ATOMIC POPULATIONS
+
+              N   5.07151613192017E-01
+              Q   4.92848386807983E-01
+
+ ATOMIC ENERGIES
+
+              L   1.28380195487156E-04
+              G   4.10700071434711E-01
+              K   4.10828455650019E-01
+             EG  -4.11307035012416E-01
+             EK  -4.11435608963612E-01
+           VNEO  -8.15713728432628E-01
+          VNEOC  -8.16316490104014E-01
+
+ ATOMIC FORCES
+
+           FAXA   9.05346961033549E-04
+           FAYA   8.25866530620995E-04
+           FAZA   5.54906871651441E-02
+
+ RADIAL ATOMIC EXPECTATION VALUES
+
+          R(-1)   8.15713728432628E-01
+          R(+1)   4.46834120159183E-01
+          R(+2)   5.07525913122052E-01
+          R(+3)   6.93632620712589E-01
+          R(+4)   1.08644985385004E+00
+         GR(-1)  -9.78409257138332E-01
+         GR( 0)  -8.91679251259499E-01
+         GR(+1)  -1.01122284560672E+00
+         GR(+2)  -1.34892477805143E+00
+
+ ATOMIC VOLUMES AND RELATED POPULATIONS
+
+           V001   1.88723246648890E+01
+           N001   5.05927227649351E-01
+           R001   9.97585760331196E-01
+           V002   1.62612963340009E+01
+           N002   5.02081871770511E-01
+           R002   9.90003499368567E-01
+           VTOT   2.05890999670887E+01
+
+ ATOMIC DIPOLE MOMENT VECTOR
+
+             DX  -5.87163469892605E-03
+             DY  -5.73680106067614E-03
+             DZ   1.25181861128764E-01
+             DM   1.25450728718922E-01
+            DCX   1.15776713436243E-02
+            DCY   1.13118067880503E-02
+            DCZ  -2.46833210962039E-01
+             CX   1.52698023861629E+00
+             CY  -3.73144859357517E+00
+             CZ  -5.83189344990950E-01
+
+ ATOMIC QUADRUPOLE MOMENT TENSOR
+
+            QXX  -6.48829293673936E-02
+            QXY  -3.39094115073383E-03
+            QXZ   3.63623235826444E-02
+            QYY  -6.40514950227333E-02
+            QYZ   3.58635450020388E-02
+            QZZ   1.28934424390127E-01
+
+ ATOMIC SHANNON INFORMATION ENTROPY
+
+            IUN   1.38893226791737E+00
+            INO   2.05974711819529E+00
+ 
+     EIGENVALUES OF QUADRUPOLE MOMENT TENSOR:
+      -8.03350074310683E-02   -6.10642255964507E-02    1.41399233027519E-01
+ 
+     EIGENVECTORS OF QUADRUPOLE MOMENT TENSOR:
+       7.04612102972769E-01   -6.89294877329305E-01    1.68506250423750E-01
+       6.68825832917535E-01    7.24464804097741E-01    1.66801537300432E-01
+      -2.37052292894328E-01   -4.82904868487244E-03    9.71484889600626E-01
+ 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4703.34 TCPU     4702.34
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ATBP        TELAPSE     4703.34 TCPU     4702.34
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE     4703.34 TCPU     4702.34
+ EEEEEEEEEE TERMINATION  DATE 16 04 2018 TIME 18:40:17.8
+Mon 16 Apr 18:40:17 BST 2018
+Contents of temporary directory:
+total 3280
+-rw-r--r-- 1 giuseppe users 144792 Apr 16 17:21 fort.11
+-rw-r--r-- 1 giuseppe users 866920 Apr 16 17:21 fort.13
+-rw-r--r-- 1 giuseppe users 144792 Apr 16 17:21 fort.3
+-rw-r--r-- 1 giuseppe users 336100 Apr 16 17:21 fort.9
+-rw-r--r-- 1 giuseppe users 948828 Apr 16 18:40 fort.96
+-rw-r--r-- 1 giuseppe users 864917 Apr 16 17:21 fort.98
+-rw-r--r-- 1 giuseppe users  35386 Apr 16 17:27 SAVESUR.DAT
+file fort.98 saved as /home/giuseppe/Urea/urea_cry_atbp.f98
+file fort.13 saved as /home/giuseppe/Urea/urea_cry_atbp.f13
+removing temporary directories /local/giuseppe//tmp_p1635_giuseppe
