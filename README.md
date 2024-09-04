@@ -1,6 +1,6 @@
 # MSSC 2024 - Modelling Solid State Chemistry
 
-<img src="https://www.imperial.ac.uk/media/images/non-standard-dimensions/logo.png" width="200" align="center">
+<img style="float: center" src="https://www.imperial.ac.uk/media/images/non-standard-dimensions/logo.png" width="200">
 
 
 Welcome to the official GitHub repository for the MSSC 2024 
