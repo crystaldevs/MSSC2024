@@ -1,6 +1,6 @@
 # MSSC 2024 - Modelling Solid State Chemistry
 
-![MSSC 2024](https://www.imperial.ac.uk/media/images/non-standard-dimensions/logo.png){width=20%}
+![MSSC 2024](https://www.imperial.ac.uk/media/images/non-standard-dimensions/logo.png){width=250px}
 
 Welcome to the official GitHub repository for the MSSC 2024 
 (Modelling Solid State Chemistry) summer school! This repository contains all 
