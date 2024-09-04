@@ -1,0 +1,851 @@
+Pproperties executable in: /g100/home/userexternal/eascrizz/SVN_DEV1197/bin/Linux-ifort-i64_galileo100/std/Pproperties
+Master system: Linux r514n015 4.18.0-240.el8.x86_64 #1 SMP Fri Sep 25 19:48:47 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+ls -ltr $BINDIR
+total 458476
+-rwxr-xr-x 1 eascrizz interactive  87085824 Aug  4 16:07 crystal
+-rwxr-xr-x 1 eascrizz interactive  49283704 Aug  4 16:09 properties
+-rwxr-xr-x 1 eascrizz interactive  87203320 Aug  4 16:09 Pcrystal
+-rwxr-xr-x 1 eascrizz interactive  49400952 Aug  4 16:09 Pproperties
+-rwxr-xr-x 1 eascrizz interactive 117139648 Aug  4 16:10 MPPcrystal
+-rwxr-xr-x 1 eascrizz interactive  79343928 Aug  4 16:10 MPPproperties
+================================================================================
+Starting Pproperties SLURM job
+================================================================================
+Time: Fri Sep  9 03:53:12 CEST 2022
+SLURM job ID: 5759702
+Master hostname: r514n015
+User: eascrizz
+Input file: transport_zrnins_inter.d3
+Output file: transport_zrnins_inter.outp
+Number of processors: 48
+Nodes list: r514n015
+================================================================================
+Creating temporary directory /g100_scratch/userexternal/eascrizz/tmp_p46062 on each node...
+Copying input file transport_zrnins_inter.d3 on each node...
+Copying fort9 file interstiziale_restart.f9 on each node...
+Copying Pproperties on each node...
+================================================================================
+Contents of input file:
+================================================================================
+NEWK
+10 10
+1 0
+BOLTZTRA
+TDFRANGE
+-5.0 5.0 0.01
+MURANGE
+-5.0 5.0 0.01
+TRANGE
+300. 900. 100
+RELAXTIM
+18
+END
+END
+================================================================================
+Module loading in /g100_scratch/userexternal/eascrizz/tmp_p46062
+================================================================================
+Loading intel-openmpi modules ...
+1) profile/base
+2) intel/oneapi-2021--binary
+3) mkl/oneapi-2021--binary
+4) intelmpi/oneapi-2021--binary
+================================================================================
+Time: Fri Sep  9 03:53:12 CEST 2022
+Starting Pproperties job in /g100_scratch/userexternal/eascrizz/tmp_p46062 on each node...
+================================================================================
+          48 PROCESSORS WORKING
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                               CRYSTAL19                                     *
+ *                      public : 1.0.1 - Feb 1st, 2017                         *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(2,6), I.J. BUSH(7), Ph. D'ARCO(8),               *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8), L. MASCHIO(1,11), A. ERBA(1,11)  *
+ *  M. RE'RAT(14), S. CASASSA(1,11)                                            *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CODE HAVE ALSO BEEN GIVEN BY                    *
+ *                                                                             *
+ *  M. FERRABONE(1,11), M. DE LA PIERRE(1,11), M. FERRERO(1,11),               *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  B. KIRTMAN(15), V. LACIVITA(1,11), R. DEMICHELIS(1,16)                     *
+ *  G. BRANDEBURG(17), S. SALUSTRO(1,11), G. SANSONE(1,11)                     *
+ *  M.T. RUGGIERO(18)                                                          *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+
+ * (2) COMPUTATIONAL SCIENCE & ENGINEERING DEPARTMENT - STFC DARESBURY (UK)    *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET STUTTGART- STUTTGART (GERMANY)                             *
+ * (6) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (7) OXFORD E-RESEARCH CENTRE - OXFORD (UK)                                  *
+ * (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)                            *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF TROMSO - TROMSO (NORWAY)                                  *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *(17) UNIVERSITY COLLEGE LONDON - LONDON (UK)                                 *
+ *(18) CAMBRIDGE UNIVERSITY - CAMBRIDGE (UK)                                   *
+ *                                                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 09 09 2022 TIME 03:53:15.4
+ INFORMATION **** SET_MPP **** PCRYSTAL CALCULATION
+
+ *******************************************************************************
+ interstiziale zrnisn 97 atomi                                                   
+ CRYSTAL - PROPERTIES - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+ KOHN-SHAM HAMILTONIAN
+
+ (EXCHANGE)[CORRELATION] FUNCTIONAL:(PERDEW-BURKE-ERNZERHOF)[PERDEW-BURKE-ERNZERHOF]
+
+
+ DIRECT LATTICE VECTOR COMPONENTS (ANGSTROM)
+        11.92715   -0.00024   -0.00024
+        -0.00024   11.92715    0.00024
+        -0.00024    0.00024   11.92715
+
+ LATTICE PARAMETERS  (ANGSTROM AND DEGREES) - PRIMITIVE CELL
+       A          B          C         ALPHA      BETA     GAMMA        VOLUME
+   11.92715   11.92715   11.92715     89.9977   90.0023   90.0023    1696.71873
+ *******************************************************************************
+ N. OF ATOMS PER CELL        97 COULOMB OVERLAP TOL          (T1) 10**   -8
+ NUMBER OF SHELLS           841 COULOMB PENETRATION TOL      (T2) 10**   -8
+ NUMBER OF AO              2648 EXCHANGE OVERLAP TOL         (T3) 10**   20
+ N. OF ELECTRONS PER CELL  2908 EXCHANGE PSEUDO OVP (F(G))   (T4) 10**   20
+ CORE ELECTRONS PER CELL   1746 EXCHANGE PSEUDO OVP (P(G))   (T5) 10**   20
+ N. OF SYMMETRY OPERATORS     6 POLE ORDER IN MONO ZONE                   4
+ CORE  PSEUDO POTENTIAL         TOL. ON PSEUDO              (TP) 10**- 6
+ *******************************************************************************
+   ATOM N.AT.  SHELL    X(A)      Y(A)      Z(A)      EXAD       N.ELECT.
+ *******************************************************************************
+    1   40 ZR    8     0.019    -0.019    -0.019   5.900E-01      37.276
+    2   40 ZR    8    -0.003     0.003     5.973   5.900E-01      37.257
+    3   40 ZR    8    -0.003     5.973     0.003   5.900E-01      37.257
+    4   40 ZR    8     0.006     5.973     5.973   5.900E-01      37.256
+    5   40 ZR    8     5.954     0.003     0.003   5.900E-01      37.257
+    6   40 ZR    8     5.954    -0.006     5.973   5.900E-01      37.256
+    7   40 ZR    8     5.954     5.973    -0.006   5.900E-01      37.256
+    8   40 ZR    8     5.968     5.959     5.959   5.900E-01      37.254
+    9   40 ZR    8     2.983     2.988    -0.000   5.900E-01      37.257
+   10   40 ZR    8     2.998     2.994     5.963   5.900E-01      37.256
+   11   40 ZR    8     2.983    -2.983     0.027   5.900E-01      37.257
+   12   40 ZR    8     2.995    -2.995     5.982   5.900E-01      37.257
+   13   40 ZR    8    -2.988     2.988    -0.029   5.900E-01      37.274
+   14   40 ZR    8    -2.978     2.978     5.944   5.900E-01      37.257
+   15   40 ZR    8    -2.988    -2.983    -0.000   5.900E-01      37.257
+   16   40 ZR    8    -2.994    -2.998     5.963   5.900E-01      37.256
+   17   40 ZR    8     2.983    -0.000     2.988   5.900E-01      37.257
+   18   40 ZR    8     2.983     0.027    -2.983   5.900E-01      37.257
+   19   40 ZR    8     2.998     5.963     2.994   5.900E-01      37.256
+   20   40 ZR    8     2.995     5.982    -2.995   5.900E-01      37.257
+   21   40 ZR    8    -2.988    -0.029     2.988   5.900E-01      37.274
+   22   40 ZR    8    -2.988    -0.000    -2.983   5.900E-01      37.257
+   23   40 ZR    8    -2.978     5.944     2.978   5.900E-01      37.257
+   24   40 ZR    8    -2.994     5.963    -2.998   5.900E-01      37.256
+   25   40 ZR    8     0.029     2.988     2.988   5.900E-01      37.274
+   26   40 ZR    8     0.000     2.988    -2.983   5.900E-01      37.257
+   27   40 ZR    8     0.000    -2.983     2.988   5.900E-01      37.257
+   28   40 ZR    8    -0.027    -2.983    -2.983   5.900E-01      37.257
+   29   40 ZR    8     5.983     2.978     2.978   5.900E-01      37.257
+   30   40 ZR    8     5.964     2.994    -2.999   5.900E-01      37.256
+   31   40 ZR    8     5.964    -2.999     2.994   5.900E-01      37.256
+   32   40 ZR    8     5.945    -2.995    -2.995   5.900E-01      37.257
+   33   28 NI    9     1.488    -1.488    -1.488   4.374E-01      28.938
+   34   28 NI    9     1.508    -1.508     4.515   4.374E-01      28.945
+   35   28 NI    9     1.508     4.515    -1.508   4.374E-01      28.945
+   36   28 NI    9     1.517     4.476     4.476   4.374E-01      28.962
+   37   28 NI    9    -4.515    -1.508    -1.508   4.374E-01      28.945
+   38   28 NI    9    -4.476    -1.517     4.476   4.374E-01      28.962
+   39   28 NI    9    -4.476     4.476    -1.517   4.374E-01      28.962
+   40   28 NI    9    -4.460     4.460     4.460   4.374E-01      28.980
+   41   28 NI    9    -1.490     1.490    -1.466   4.374E-01      28.929
+   42   28 NI    9    -1.495     1.495     4.438   4.374E-01      28.925
+   43   28 NI    9    -1.505    -4.477    -1.490   4.374E-01      28.977
+   44   28 NI    9    -1.482    -4.477     4.461   4.374E-01      28.971
+   45   28 NI    9     4.477     1.505    -1.490   4.374E-01      28.977
+   46   28 NI    9     4.477     1.482     4.461   4.374E-01      28.971
+   47   28 NI    9     4.458    -4.458    -1.467   4.374E-01      28.987
+   48   28 NI    9     4.475    -4.475     4.480   4.374E-01      28.994
+   49   28 NI    9    -1.490    -1.466     1.490   4.374E-01      28.929
+   50   28 NI    9    -1.505    -1.490    -4.477   4.374E-01      28.977
+   51   28 NI    9    -1.495     4.438     1.495   4.374E-01      28.925
+   52   28 NI    9    -1.482     4.461    -4.477   4.374E-01      28.971
+   53   28 NI    9     4.477    -1.490     1.505   4.374E-01      28.977
+   54   28 NI    9     4.458    -1.467    -4.458   4.374E-01      28.987
+   55   28 NI    9     4.477     4.461     1.482   4.374E-01      28.971
+   56   28 NI    9     4.475     4.480    -4.475   4.374E-01      28.994
+   57   28 NI    9     1.466     1.490     1.490   4.374E-01      28.929
+   58   28 NI    9     1.490     1.505    -4.477   4.374E-01      28.977
+   59   28 NI    9     1.490    -4.477     1.505   4.374E-01      28.977
+   60   28 NI    9     1.467    -4.458    -4.458   4.374E-01      28.987
+   61   28 NI    9    -4.438     1.495     1.495   4.374E-01      28.925
+   62   28 NI    9    -4.461     1.482    -4.477   4.374E-01      28.971
+   63   28 NI    9    -4.461    -4.477     1.482   4.374E-01      28.971
+   64   28 NI    9    -4.480    -4.475    -4.475   4.374E-01      28.994
+   65   28 NI    9    -1.464     1.464     1.464   4.374E-01      28.679
+   66  250 SN    9    -0.012     0.012    -2.981   2.050E-01      23.777
+   67  250 SN    9     0.036    -0.036     3.024   2.050E-01      23.695
+   68  250 SN    9    -0.011     5.974    -2.972   2.050E-01      23.749
+   69  250 SN    9     0.015     5.958     2.990   2.050E-01      23.762
+   70  250 SN    9     5.953     0.011    -2.972   2.050E-01      23.749
+   71  250 SN    9     5.969    -0.016     2.990   2.050E-01      23.762
+   72  250 SN    9     5.958     5.969    -2.974   2.050E-01      23.784
+   73  250 SN    9     5.976     5.950     2.977   2.050E-01      23.784
+   74  250 SN    9     2.954    -2.954    -2.954   2.050E-01      23.763
+   75  250 SN    9     2.982    -2.982     2.999   2.050E-01      23.766
+   76  250 SN    9     2.982     2.999    -2.982   2.050E-01      23.766
+   77  250 SN    9     3.004     2.977     2.977   2.050E-01      23.764
+   78  250 SN    9    -2.999    -2.982    -2.982   2.050E-01      23.766
+   79  250 SN    9    -2.977    -3.004     2.977   2.050E-01      23.764
+   80  250 SN    9    -2.977     2.977    -3.004   2.050E-01      23.764
+   81  250 SN    9    -2.994     2.994     2.994   2.050E-01      23.667
+   82  250 SN    9     2.981     0.012     0.012   2.050E-01      23.777
+   83  250 SN    9     2.972     0.011     5.974   2.050E-01      23.749
+   84  250 SN    9     2.972     5.974     0.011   2.050E-01      23.749
+   85  250 SN    9     2.974     5.969     5.969   2.050E-01      23.784
+   86  250 SN    9    -3.024    -0.036    -0.036   2.050E-01      23.695
+   87  250 SN    9    -2.990    -0.015     5.958   2.050E-01      23.762
+   88  250 SN    9    -2.990     5.958    -0.015   2.050E-01      23.762
+   89  250 SN    9    -2.977     5.951     5.951   2.050E-01      23.784
+   90  250 SN    9    -0.012    -2.981     0.012   2.050E-01      23.777
+   91  250 SN    9    -0.011    -2.972     5.974   2.050E-01      23.749
+   92  250 SN    9     0.036     3.024    -0.036   2.050E-01      23.695
+   93  250 SN    9     0.015     2.990     5.958   2.050E-01      23.762
+   94  250 SN    9     5.953    -2.972     0.011   2.050E-01      23.749
+   95  250 SN    9     5.958    -2.974     5.969   2.050E-01      23.784
+   96  250 SN    9     5.969     2.990    -0.016   2.050E-01      23.762
+   97  250 SN    9     5.976     2.977     5.950   2.050E-01      23.784
+ *******************************************************************************
+ DE(K)                   0.000E+00  ENERGY LEVEL SHIFTING        0.60000
+ TOTAL ENERGY -1.6992287094924E+05  CONVERGENCE ON ENER       -3.336E-05
+ KIN. ENERGY   1.6551604000456E+05  VIR. COEFF.           1.00561762E+00
+ N. OF SCF CYCLES (TOO MANY)   120  FERMI ENERGY         -0.66650688E+00
+ WEIGHT OF F(I) IN F(I+1)      90
+ SHRINK. FACT.(MONKH.)     6  6  6  SHRINKING FACTOR(GILAT NET)        6
+ NUMBER OF K POINTS IN THE IBZ  32  CELL VOLUME (A.U.)      12314.314053
+ *******************************************************************************
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    30    30    30
+ NO.OF VECTORS CREATED59999 STARS 3925 RMAX   547.02759 BOHR
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        2.37 TCPU        1.25
+
+ MATRIX SIZE: P(G) 2284324, F(G) 1143486, P(G) IRR  236701, F(G) IRR  236701
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS  27
+
+
+ CAPPA:IS1  6;IS2  6;IS3  6; K PTS MONK NET  32; SYMMOPS:K SPACE  12;G SPACE   6
+
+
+ CAPPA:IS1 10;IS2 10;IS3 10; K PTS MONK NET 116; SYMMOPS:K SPACE  12;G SPACE   6
+
+ *******************************************************************************
+ RESTART WITH NEW K POINTS NET
+ *******************************************************************************
+ POINTS IN THE IBZ                 116 POINTS(GILAT NET)               116
+ SHRINK FACTORS(MONK.)        10 10 10 SHRINK FACTOR(GILAT)             10
+ *******************************************************************************
+ *** K POINTS COORDINATES (OBLIQUE COORDINATES IN UNITS OF IS = 10)
+   1-R(  0  0  0)   2-C(  1  0  0)   3-C(  2  0  0)   4-C(  3  0  0)
+   5-C(  4  0  0)   6-R(  5  0  0)   7-C(  1  1  0)   8-C(  2  1  0)
+   9-C(  3  1  0)  10-C(  4  1  0)  11-C(  5  1  0)  12-C(  6  1  0)
+  13-C(  7  1  0)  14-C(  8  1  0)  15-C(  9  1  0)  16-C(  2  2  0)
+  17-C(  3  2  0)  18-C(  4  2  0)  19-C(  5  2  0)  20-C(  6  2  0)
+  21-C(  7  2  0)  22-C(  8  2  0)  23-C(  3  3  0)  24-C(  4  3  0)
+  25-C(  5  3  0)  26-C(  6  3  0)  27-C(  7  3  0)  28-C(  4  4  0)
+  29-C(  5  4  0)  30-C(  6  4  0)  31-R(  5  5  0)  32-C(  1  1  1)
+  33-C(  2  1  1)  34-C(  3  1  1)  35-C(  4  1  1)  36-C(  5  1  1)
+  37-C(  6  1  1)  38-C(  7  1  1)  39-C(  8  1  1)  40-C(  9  1  1)
+  41-C(  1  2  1)  42-C(  2  2  1)  43-C(  3  2  1)  44-C(  4  2  1)
+  45-C(  5  2  1)  46-C(  6  2  1)  47-C(  7  2  1)  48-C(  8  2  1)
+  49-C(  1  3  1)  50-C(  2  3  1)  51-C(  3  3  1)  52-C(  4  3  1)
+  53-C(  5  3  1)  54-C(  6  3  1)  55-C(  7  3  1)  56-C(  1  4  1)
+  57-C(  2  4  1)  58-C(  3  4  1)  59-C(  4  4  1)  60-C(  5  4  1)
+  61-C(  6  4  1)  62-C(  1  5  1)  63-C(  2  5  1)  64-C(  3  5  1)
+  65-C(  4  5  1)  66-C(  5  5  1)  67-C(  2  6  1)  68-C(  3  6  1)
+  69-C(  4  6  1)  70-C(  2  7  1)  71-C(  3  7  1)  72-C(  2  8  1)
+  73-C(  2  2  2)  74-C(  3  2  2)  75-C(  4  2  2)  76-C(  5  2  2)
+  77-C(  6  2  2)  78-C(  7  2  2)  79-C(  8  2  2)  80-C(  2  3  2)
+  81-C(  3  3  2)  82-C(  4  3  2)  83-C(  5  3  2)  84-C(  6  3  2)
+  85-C(  7  3  2)  86-C(  2  4  2)  87-C(  3  4  2)  88-C(  4  4  2)
+  89-C(  5  4  2)  90-C(  6  4  2)  91-C(  2  5  2)  92-C(  3  5  2)
+  93-C(  4  5  2)  94-C(  5  5  2)  95-C(  3  6  2)  96-C(  4  6  2)
+  97-C(  3  7  2)  98-C(  3  3  3)  99-C(  4  3  3) 100-C(  5  3  3)
+ 101-C(  6  3  3) 102-C(  7  3  3) 103-C(  3  4  3) 104-C(  4  4  3)
+ 105-C(  5  4  3) 106-C(  6  4  3) 107-C(  3  5  3) 108-C(  4  5  3)
+ 109-C(  5  5  3) 110-C(  4  6  3) 111-C(  4  4  4) 112-C(  5  4  4)
+ 113-C(  6  4  4) 114-C(  4  5  4) 115-C(  5  5  4) 116-R(  5  5  5)
+
+ FERMI ENERGY AND DENSITY MATRIX CALCULATION ON COMPUTED EIGENVECTORS
+ DENSITY MATRIX AT SCF CYCLE (120+1)
+
+ POSSIBLY CONDUCTING STATE - EFERMI(AU) -6.5862916E-02 (RES. CHARGE  1.36E-12;IT. 16)
+
+ CORE DENSITY MATRIX CALCULATION
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NEWK        TELAPSE     2240.05 TCPU     2227.36
+ *******************************************************************************
+
+           THERMOELECTRIC AND ELECTRONIC TRANSPORT PROPERTIES CALCULATION
+
+ (Physical Constants: CODATA 2014 NIST, arXiv:1507.07956 http://physics.nist.gov/cuu/Constants/index.html)
+
+ *******************************************************************************
+  RELAXATION TIME (fs):                 18.0000
+  MIN TEMPERATURE VALUE (K):           300.0000
+  MAX TEMPERATURE VALUE (K):           900.0000
+  STEP TEMPERATURE VALUE (K):          100.0000
+  MIN CHEMICAL POTENTIAL VALUE (eV):    -5.0000
+  MAX CHEMICAL POTENTIAL VALUE (eV):     5.0000
+  STEP CHEMICAL POTENTIAL VALUE (eV):    0.0100
+  MIN TDF VALUE (eV):                   -5.0000
+  MAX TDF VALUE (eV):                    5.0000
+  STEP TDF VALUE (eV):                   0.0100
+  SMEARING FACTOR:                       0.0000
+  SMEARING SCHEME:                      GAUSSIAN
+  PROPERTIES FOR GIVEN CHEMICAL POTENTIAL ARE CALCULATED
+ *******************************************************************************
+ TDF CALCULATION IN PROGRESS...
+ TDF CALCULATION PERFORMED
+ TDF CALCULATED ALONG THE XX,XY,YY,XZ,YZ,ZZ DIRECTIONS
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT TDF_CALC    TELAPSE    27938.20 TCPU    26481.92
+
+ FERMI LEVEL -1.792
+
+
+
+                                    <<<<<< >>>>>       <<<<<<>>>>>>      <<<<<<>>>>>>
+
+ ELECTRICAL CONDUCTIVITY DATA WRITTEN ON SIGMA.DAT
+ ELECTRICAL CONDUCTIVITY * SEEBECK COEFFICIENT DATA WRITTEN ON SIGMAS.DAT
+ SEEBECK COEFFICIENT DATA WRITTEN ON SEEBECK.DAT
+ ELECTRICAL THERMAL CONDUCTIVITY DATA WRITTEN ON KAPPA.DAT
+ TRANSPORT DISTRIBUTION FUNCTION DATA WRITTEN ON TDF.DAT
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT BOLTZTRA    TELAPSE    27938.90 TCPU    26482.34
+ ENDPROP   
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE    27938.90 TCPU    26482.34
+ EEEEEEEEEE TERMINATION  DATE 09 09 2022 TIME 11:38:52.1
+NODE    0 CPU TIME =     26482.339
+    TOTAL CPU TIME =   1272025.352
+================================================================================
+Time: Fri Sep  9 11:38:54 CEST 2022
+Job terminated
+================================================================================
+Contents of temporary directory in master node r514n015:
+total 2465545536
+lrwxrwxrwx 1 eascrizz interactive          70 Sep  9 03:53 COM.DAT -> /g100/home/userexternal/eascrizz/zrnisn/COM_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          75 Sep  9 03:53 ENERGIES.DAT -> /g100/home/userexternal/eascrizz/zrnisn/ENERGIES_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          74 Sep  9 03:53 INITVEL.DAT -> /g100/home/userexternal/eascrizz/zrnisn/INITVEL_transport_zrnins_inter.DAT
+-rw-r--r-- 1 eascrizz interactive         142 Sep  9 03:53 INPUT
+-rw-r--r-- 1 eascrizz interactive      939469 Sep  9 11:38 KAPPA.DAT
+lrwxrwxrwx 1 eascrizz interactive          73 Sep  9 03:53 MDCELL.DAT -> /g100/home/userexternal/eascrizz/zrnisn/MDCELL_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          76 Sep  9 03:53 POSITIONS.DAT -> /g100/home/userexternal/eascrizz/zrnisn/POSITIONS_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          76 Sep  9 03:53 POSITIONS.XYZ -> /g100/home/userexternal/eascrizz/zrnisn/POSITIONS_transport_zrnins_inter.XYZ
+-rw-r--r-- 1 eascrizz interactive     1233767 Sep  9 11:38 POWER.DAT
+-rw-r--r-- 1 eascrizz interactive     1254808 Sep  9 11:38 POWER_C.DAT
+-rwxr-xr-x 1 eascrizz interactive    49400952 Sep  9 03:53 Pproperties-5759702
+lrwxrwxrwx 1 eascrizz interactive          67 Sep  9 03:53 SCFOUT.LOG -> /g100/home/userexternal/eascrizz/zrnisn/transport_zrnins_inter.out2
+-rw-r--r-- 1 eascrizz interactive     1296845 Sep  9 11:38 SEEBECK.DAT
+-rw-r--r-- 1 eascrizz interactive      939505 Sep  9 11:38 SIGMA.DAT
+-rw-r--r-- 1 eascrizz interactive      939537 Sep  9 11:38 SIGMAS.DAT
+-rw-r--r-- 1 eascrizz interactive      122867 Sep  9 11:38 TDF.DAT
+lrwxrwxrwx 1 eascrizz interactive          72 Sep  9 03:53 TIMES.DAT -> /g100/home/userexternal/eascrizz/zrnisn/TIMES_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          77 Sep  9 03:53 VELOCITIES.DAT -> /g100/home/userexternal/eascrizz/zrnisn/VELOCITIES_transport_zrnins_inter.DAT
+lrwxrwxrwx 1 eascrizz interactive          77 Sep  9 03:53 VELOCITIES.XYZ -> /g100/home/userexternal/eascrizz/zrnisn/VELOCITIES_transport_zrnins_inter.XYZ
+lrwxrwxrwx 1 eascrizz interactive          74 Sep  9 03:53 VIRTUAL.DAT -> /g100/home/userexternal/eascrizz/zrnisn/VIRTUAL_transport_zrnins_inter.DAT
+-rw-r--r-- 1 eascrizz interactive    90626888 Sep  9 03:59 fort.10.pe00
+-rw-r--r-- 1 eascrizz interactive    79357000 Sep  9 03:58 fort.10.pe01
+-rw-r--r-- 1 eascrizz interactive   180121656 Sep  9 04:09 fort.10.pe02
+-rw-r--r-- 1 eascrizz interactive   157581880 Sep  9 04:07 fort.10.pe03
+-rw-r--r-- 1 eascrizz interactive    90626888 Sep  9 03:59 fort.10.pe04
+-rw-r--r-- 1 eascrizz interactive    68009152 Sep  9 03:57 fort.10.pe05
+-rw-r--r-- 1 eascrizz interactive   163138864 Sep  9 04:08 fort.10.pe06
+-rw-r--r-- 1 eascrizz interactive   157581880 Sep  9 04:07 fort.10.pe07
+-rw-r--r-- 1 eascrizz interactive   180121656 Sep  9 04:09 fort.10.pe08
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:22 fort.10.pe09
+-rw-r--r-- 1 eascrizz interactive   157581880 Sep  9 04:07 fort.10.pe10
+-rw-r--r-- 1 eascrizz interactive    90626888 Sep  9 03:58 fort.10.pe11
+-rw-r--r-- 1 eascrizz interactive   258346536 Sep  9 04:16 fort.10.pe12
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:22 fort.10.pe13
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:23 fort.10.pe14
+-rw-r--r-- 1 eascrizz interactive   247076648 Sep  9 04:15 fort.10.pe15
+-rw-r--r-- 1 eascrizz interactive   258346536 Sep  9 04:16 fort.10.pe16
+-rw-r--r-- 1 eascrizz interactive   157581880 Sep  9 04:07 fort.10.pe17
+-rw-r--r-- 1 eascrizz interactive   180910432 Sep  9 04:09 fort.10.pe18
+-rw-r--r-- 1 eascrizz interactive   342724456 Sep  9 04:22 fort.10.pe19
+-rw-r--r-- 1 eascrizz interactive   339262624 Sep  9 04:22 fort.10.pe20
+-rw-r--r-- 1 eascrizz interactive   269772352 Sep  9 04:16 fort.10.pe21
+-rw-r--r-- 1 eascrizz interactive   292312128 Sep  9 04:17 fort.10.pe22
+-rw-r--r-- 1 eascrizz interactive   448761888 Sep  9 04:28 fort.10.pe23
+-rw-r--r-- 1 eascrizz interactive   338148960 Sep  9 04:22 fort.10.pe24
+-rw-r--r-- 1 eascrizz interactive   169887952 Sep  9 04:07 fort.10.pe25
+-rw-r--r-- 1 eascrizz interactive   185504064 Sep  9 04:09 fort.10.pe26
+-rw-r--r-- 1 eascrizz interactive   359267120 Sep  9 04:23 fort.10.pe27
+-rw-r--r-- 1 eascrizz interactive   259924080 Sep  9 04:16 fort.10.pe28
+-rw-r--r-- 1 eascrizz interactive   259382720 Sep  9 04:15 fort.10.pe29
+-rw-r--r-- 1 eascrizz interactive   263728944 Sep  9 04:16 fort.10.pe30
+-rw-r--r-- 1 eascrizz interactive   269772352 Sep  9 04:16 fort.10.pe31
+-rw-r--r-- 1 eascrizz interactive   292312128 Sep  9 04:17 fort.10.pe32
+-rw-r--r-- 1 eascrizz interactive   269772352 Sep  9 04:16 fort.10.pe33
+-rw-r--r-- 1 eascrizz interactive   181699200 Sep  9 04:09 fort.10.pe34
+-rw-r--r-- 1 eascrizz interactive   158540104 Sep  9 04:07 fort.10.pe35
+-rw-r--r-- 1 eascrizz interactive   168521272 Sep  9 04:08 fort.10.pe36
+-rw-r--r-- 1 eascrizz interactive    90782816 Sep  9 03:58 fort.10.pe37
+-rw-r--r-- 1 eascrizz interactive   135862368 Sep  9 04:01 fort.10.pe38
+-rw-r--r-- 1 eascrizz interactive   180277584 Sep  9 04:08 fort.10.pe39
+-rw-r--r-- 1 eascrizz interactive   214087248 Sep  9 04:10 fort.10.pe40
+-rw-r--r-- 1 eascrizz interactive   180277584 Sep  9 04:08 fort.10.pe41
+-rw-r--r-- 1 eascrizz interactive   103474320 Sep  9 04:00 fort.10.pe42
+-rw-r--r-- 1 eascrizz interactive    80393184 Sep  9 03:57 fort.10.pe43
+-rw-r--r-- 1 eascrizz interactive   107279184 Sep  9 04:00 fort.10.pe44
+-rw-r--r-- 1 eascrizz interactive    68875888 Sep  9 03:57 fort.10.pe45
+-rw-r--r-- 1 eascrizz interactive   108049816 Sep  9 04:00 fort.10.pe46
+-rw-r--r-- 1 eascrizz interactive   160273088 Sep  9 04:07 fort.10.pe47
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe00
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe01
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe02
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe03
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe04
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe05
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe06
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe07
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe08
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe09
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe10
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe11
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe12
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe13
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe14
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe15
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe16
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe17
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe18
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe19
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe20
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe21
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe22
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe23
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe24
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe25
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe26
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe27
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe28
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe29
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe30
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe31
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe32
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe33
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe34
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe35
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe36
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe37
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe38
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe39
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe40
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe41
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe42
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe43
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe44
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe45
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe46
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.11.pe47
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe00
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe01
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe02
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe03
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe04
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe05
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe06
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe07
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe08
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe09
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe10
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe11
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe12
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe13
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe14
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe15
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe16
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe17
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe18
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe19
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe20
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe21
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe22
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe23
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe24
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe25
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe26
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe27
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe28
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe29
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe30
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe31
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe32
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe33
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe34
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe35
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe36
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe37
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe38
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe39
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe40
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe41
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe42
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe43
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe44
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe45
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe46
+-rw-r--r-- 1 eascrizz interactive    54823800 Sep  9 04:29 fort.13.pe47
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe00
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe01
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe02
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe03
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe04
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe05
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe06
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe07
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe08
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe09
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe10
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe11
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe12
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe13
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe14
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe15
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe16
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe17
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe18
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe19
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe20
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe21
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe22
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe23
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe24
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe25
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe26
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe27
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe28
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe29
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe30
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe31
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe32
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe33
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe34
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe35
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe36
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe37
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe38
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe39
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe40
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe41
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe42
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe43
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe44
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe45
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe46
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.15.pe47
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe00
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe01
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe02
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe03
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe04
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe05
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe06
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe07
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe08
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe09
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe10
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe11
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe12
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe13
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe14
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe15
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe16
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe17
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe18
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe19
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe20
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe21
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe22
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe23
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe24
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe25
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe26
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe27
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe28
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe29
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe30
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe31
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe32
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe33
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe34
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe35
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe36
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe37
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe38
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe39
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe40
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe41
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe42
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe43
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe44
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe45
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe46
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.26.pe47
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe00
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe01
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe02
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe03
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe04
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe05
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe06
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe07
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe08
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe09
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe10
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe11
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe12
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe13
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe14
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe15
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe16
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe17
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe18
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe19
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe20
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe21
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe22
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe23
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe24
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe25
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe26
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe27
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe28
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe29
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe30
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe31
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe32
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe33
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe34
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe35
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe36
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe37
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe38
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe39
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe40
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe41
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe42
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe43
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe44
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe45
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe46
+-rw-r--r-- 1 eascrizz interactive     9147896 Sep  9 03:53 fort.3.pe47
+-rw-r--r-- 1 eascrizz interactive      301712 Sep  9 03:53 fort.61.pe00
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe01
+-rw-r--r-- 1 eascrizz interactive      141928 Sep  9 03:53 fort.61.pe02
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe03
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe04
+-rw-r--r-- 1 eascrizz interactive       72336 Sep  9 03:53 fort.61.pe05
+-rw-r--r-- 1 eascrizz interactive      150856 Sep  9 03:53 fort.61.pe06
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe07
+-rw-r--r-- 1 eascrizz interactive      266104 Sep  9 03:53 fort.61.pe08
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe09
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe10
+-rw-r--r-- 1 eascrizz interactive      302240 Sep  9 03:53 fort.61.pe11
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe12
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe13
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe14
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe15
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe16
+-rw-r--r-- 1 eascrizz interactive      386796 Sep  9 03:53 fort.61.pe17
+-rw-r--r-- 1 eascrizz interactive      302240 Sep  9 03:53 fort.61.pe18
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe19
+-rw-r--r-- 1 eascrizz interactive      223720 Sep  9 03:53 fort.61.pe20
+-rw-r--r-- 1 eascrizz interactive      302240 Sep  9 03:53 fort.61.pe21
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe22
+-rw-r--r-- 1 eascrizz interactive      151384 Sep  9 03:53 fort.61.pe23
+-rw-r--r-- 1 eascrizz interactive      150856 Sep  9 03:53 fort.61.pe24
+-rw-r--r-- 1 eascrizz interactive      223192 Sep  9 03:53 fort.61.pe25
+-rw-r--r-- 1 eascrizz interactive      150856 Sep  9 03:53 fort.61.pe26
+-rw-r--r-- 1 eascrizz interactive      150856 Sep  9 03:53 fort.61.pe27
+-rw-r--r-- 1 eascrizz interactive      212840 Sep  9 03:53 fort.61.pe28
+-rw-r--r-- 1 eascrizz interactive      141928 Sep  9 03:53 fort.61.pe29
+-rw-r--r-- 1 eascrizz interactive      214264 Sep  9 03:53 fort.61.pe30
+-rw-r--r-- 1 eascrizz interactive      266104 Sep  9 03:53 fort.61.pe31
+-rw-r--r-- 1 eascrizz interactive      223720 Sep  9 03:53 fort.61.pe32
+-rw-r--r-- 1 eascrizz interactive      302240 Sep  9 03:53 fort.61.pe33
+-rw-r--r-- 1 eascrizz interactive      223192 Sep  9 03:53 fort.61.pe34
+-rw-r--r-- 1 eascrizz interactive      292784 Sep  9 03:53 fort.61.pe35
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe36
+-rw-r--r-- 1 eascrizz interactive       72336 Sep  9 03:53 fort.61.pe37
+-rw-r--r-- 1 eascrizz interactive      150856 Sep  9 03:53 fort.61.pe38
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe39
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.61.pe40
+-rw-r--r-- 1 eascrizz interactive      223192 Sep  9 03:53 fort.61.pe41
+-rw-r--r-- 1 eascrizz interactive      396252 Sep  9 03:53 fort.61.pe42
+-rw-r--r-- 1 eascrizz interactive      302768 Sep  9 03:53 fort.61.pe43
+-rw-r--r-- 1 eascrizz interactive      302768 Sep  9 03:53 fort.61.pe44
+-rw-r--r-- 1 eascrizz interactive      302768 Sep  9 03:53 fort.61.pe45
+-rw-r--r-- 1 eascrizz interactive      302768 Sep  9 03:53 fort.61.pe46
+-rw-r--r-- 1 eascrizz interactive      363696 Sep  9 03:53 fort.61.pe47
+-rw-r--r-- 1 eascrizz interactive      161980 Sep  9 03:53 fort.62.pe00
+-rw-r--r-- 1 eascrizz interactive      157724 Sep  9 03:53 fort.62.pe01
+-rw-r--r-- 1 eascrizz interactive      109072 Sep  9 03:53 fort.62.pe02
+-rw-r--r-- 1 eascrizz interactive      100560 Sep  9 03:53 fort.62.pe03
+-rw-r--r-- 1 eascrizz interactive      153048 Sep  9 03:53 fort.62.pe04
+-rw-r--r-- 1 eascrizz interactive      145116 Sep  9 03:53 fort.62.pe05
+-rw-r--r-- 1 eascrizz interactive      105396 Sep  9 03:53 fort.62.pe06
+-rw-r--r-- 1 eascrizz interactive      105816 Sep  9 03:53 fort.62.pe07
+-rw-r--r-- 1 eascrizz interactive      114328 Sep  9 03:53 fort.62.pe08
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.62.pe09
+-rw-r--r-- 1 eascrizz interactive       96884 Sep  9 03:53 fort.62.pe10
+-rw-r--r-- 1 eascrizz interactive      158304 Sep  9 03:53 fort.62.pe11
+-rw-r--r-- 1 eascrizz interactive       57164 Sep  9 03:53 fort.62.pe12
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.62.pe13
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.62.pe14
+-rw-r--r-- 1 eascrizz interactive       52908 Sep  9 03:53 fort.62.pe15
+-rw-r--r-- 1 eascrizz interactive       57164 Sep  9 03:53 fort.62.pe16
+-rw-r--r-- 1 eascrizz interactive      105816 Sep  9 03:53 fort.62.pe17
+-rw-r--r-- 1 eascrizz interactive      153280 Sep  9 03:53 fort.62.pe18
+-rw-r--r-- 1 eascrizz interactive      144576 Sep  9 03:53 fort.62.pe19
+-rw-r--r-- 1 eascrizz interactive       50776 Sep  9 03:53 fort.62.pe20
+-rw-r--r-- 1 eascrizz interactive       96884 Sep  9 03:53 fort.62.pe21
+-rw-r--r-- 1 eascrizz interactive      105396 Sep  9 03:53 fort.62.pe22
+-rw-r--r-- 1 eascrizz interactive           0 Sep  9 03:53 fort.62.pe23
+-rw-r--r-- 1 eascrizz interactive       49436 Sep  9 03:53 fort.62.pe24
+-rw-r--r-- 1 eascrizz interactive      285648 Sep  9 03:53 fort.62.pe25
+-rw-r--r-- 1 eascrizz interactive      174996 Sep  9 03:53 fort.62.pe26
+-rw-r--r-- 1 eascrizz interactive       50280 Sep  9 03:53 fort.62.pe27
+-rw-r--r-- 1 eascrizz interactive      103972 Sep  9 03:53 fort.62.pe28
+-rw-r--r-- 1 eascrizz interactive      230112 Sep  9 03:53 fort.62.pe29
+-rw-r--r-- 1 eascrizz interactive      115156 Sep  9 03:53 fort.62.pe30
+-rw-r--r-- 1 eascrizz interactive      103188 Sep  9 03:53 fort.62.pe31
+-rw-r--r-- 1 eascrizz interactive      111700 Sep  9 03:53 fort.62.pe32
+-rw-r--r-- 1 eascrizz interactive       94256 Sep  9 03:53 fort.62.pe33
+-rw-r--r-- 1 eascrizz interactive      152204 Sep  9 03:53 fort.62.pe34
+-rw-r--r-- 1 eascrizz interactive      280392 Sep  9 03:53 fort.62.pe35
+-rw-r--r-- 1 eascrizz interactive      169740 Sep  9 03:53 fort.62.pe36
+-rw-r--r-- 1 eascrizz interactive      203748 Sep  9 03:53 fort.62.pe37
+-rw-r--r-- 1 eascrizz interactive      220772 Sep  9 03:53 fort.62.pe38
+-rw-r--r-- 1 eascrizz interactive      150840 Sep  9 03:53 fort.62.pe39
+-rw-r--r-- 1 eascrizz interactive      163608 Sep  9 03:53 fort.62.pe40
+-rw-r--r-- 1 eascrizz interactive      150840 Sep  9 03:53 fort.62.pe41
+-rw-r--r-- 1 eascrizz interactive      213044 Sep  9 03:53 fort.62.pe42
+-rw-r--r-- 1 eascrizz interactive      333300 Sep  9 03:53 fort.62.pe43
+-rw-r--r-- 1 eascrizz interactive      226856 Sep  9 03:53 fort.62.pe44
+-rw-r--r-- 1 eascrizz interactive      192420 Sep  9 03:53 fort.62.pe45
+-rw-r--r-- 1 eascrizz interactive      310812 Sep  9 03:53 fort.62.pe46
+-rw-r--r-- 1 eascrizz interactive      151336 Sep  9 03:53 fort.62.pe47
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe00
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe01
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe02
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe03
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe04
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe05
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe06
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe07
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe08
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe09
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe10
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe11
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe12
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe13
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe14
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe15
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe16
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe17
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe18
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe19
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe20
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe21
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe22
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe23
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe24
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe25
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe26
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe27
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe28
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe29
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe30
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe31
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe32
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe33
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe34
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe35
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe36
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe37
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe38
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe39
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe40
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe41
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe42
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe43
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe44
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe45
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe46
+-rw-r--r-- 1 eascrizz interactive 52056375296 Sep  9 05:11 fort.70.pe47
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe00
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe01
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe02
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe03
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe04
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe05
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe06
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe07
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe08
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe09
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe10
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe11
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe12
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe13
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe14
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe15
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe16
+-rw-r--r-- 1 eascrizz interactive   168285712 Sep  9 04:30 fort.8.pe17
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe18
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe19
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe20
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe21
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe22
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe23
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe24
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe25
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe26
+-rw-r--r-- 1 eascrizz interactive   224380944 Sep  9 04:30 fort.8.pe27
+-rw-r--r-- 1 eascrizz interactive   280476184 Sep  9 04:30 fort.8.pe28
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe29
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe30
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe31
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe32
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe33
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe34
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe35
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe36
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe37
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe38
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe39
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe40
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe41
+-rw-r--r-- 1 eascrizz interactive   280476184 Sep  9 04:30 fort.8.pe42
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe43
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe44
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe45
+-rw-r--r-- 1 eascrizz interactive   336571416 Sep  9 04:30 fort.8.pe46
+-rw-r--r-- 1 eascrizz interactive   280476184 Sep  9 04:30 fort.8.pe47
+-rw-r--r-- 1 eascrizz interactive    10007104 Sep  9 03:53 fort.9
+================================================================================
+Copying output file back on run directory...
+================================================================================
+Removing temporary directory /g100_scratch/userexternal/eascrizz/tmp_p46062 from each node...
+Job terminated
