@@ -1,0 +1,25 @@
+TOPO
+ATBP
+UNI
+1, 0.43                          integration over C1 atom,TOL (size of the beta and capture sphere)
+10,0,1,0                        NVI,IRSUR,IWSUR(the surface data are saved on fortran unit 98),IPRINT
+64,48,120,2,1,0,0.0   IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+5. 8.
+1, 0.8                            integration over O3 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                        NVI,IRSUR,IWSUR,IPRINT
+64,48,120,2,1,0,0.0   IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+5. 8.
+1, 0.74                          integration over N5 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+64,48,120,2,1,0,0.0   IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+5. 8.
+1, 0.24                           integration over H9 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+48,24,96,2,1,0,0.0    IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+5. 8.
+1, 0.24                           integration over H13 atom,TOL (size of the beta and capture sphere)
+10,0,0,0                         NVI,IRSUR,IWSUR,IPRINT
+48,24,96,2,1,0,0.0    IPHI,ITH,IBETP,IMUL,IEXT,NOSE,ACC
+5. 8.
+0                                    NNA (no NNA is present)
+END
