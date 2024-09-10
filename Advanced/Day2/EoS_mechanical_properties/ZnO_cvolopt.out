@@ -1,0 +1,2205 @@
+/home/desmarais/CRYSTAL23_public_for_Ale/bin/Linux-ifort_openmpi_i64_macchina_istrana/std/Pcrystal
+/scratch/desmarais/tmp_p4111197
+script started on node2
+###
+CRYSTAL
+0 0 0
+186
+3.4 5.1
+2
+30    3.333333333333E-01  -3.333333333333E-01  -2.621777839722E-04
+8     3.333333333333E-01  -3.333333333333E-01   3.830621777840E-01
+OPTGEOM
+END
+END
+30 12
+0 0 8 2.0 1.0
+  405924.31028      .22442017483E-03
+  60846.955735      .17402086626E-02
+  13847.343092      .90513339565E-02
+  3919.6158551      .36817341445E-01
+  1276.3594167      .12004850256
+  458.67254435      .28576057621
+  178.28725246      .41087462062
+  70.612192837      .21816962456
+0 0 4 2.0 1.0
+  443.88077950     -.24934274984E-01
+  137.55875267     -.11817955766
+  22.268083479      .55367318468
+  9.5217310606      .52628934936
+0 0 2 2.0 1.0
+  14.874114065     -.22929955254
+  2.4647517612      .71135484742
+0 0 1 2.0 1.0
+  1.0113272238       1.0000000000
+0 0 1 0.0 1.0
+  0.40               1.0000000000
+0 1 1 0.0 1.0
+  0.16               1.0 1.0
+0 2 6 6.0 1.0
+  2205.3508534      .23356240448E-02
+  522.35300699      .19031022634E-01
+  167.73055542      .89955758675E-01
+  62.670045373      .26113248631
+  25.109749456      .42348448173
+  10.225142681      .24618926885
+0 2 3 6.0 1.0
+  40.713442521     -.30029667592E-01
+  5.6247090696      .55575254864
+  2.2279949116      .95581013442
+0 2 1 0.0 1.0
+  0.83354741691      1.0000000000
+0 3 4 10.0 1.0
+  88.554315311      .12728170015E-01
+  25.721525557      .79394499843E-01
+  9.1278367624      .24491506805
+  3.4312364064      .40390526479
+0 3 1 0.0 1.0
+  1.2308920645      .40158491145
+0 3 1 0.0 1.0
+  0.39031845112      .21579805034
+8 7
+0 0 6 2.0 1.0
+  27032.382631      0.21726302465E-03
+  4052.3871392      0.16838662199E-02
+  922.32722710      0.87395616265E-02
+  261.24070989      0.35239968808E-01
+  85.354641351      0.11153519115
+  31.035035245      0.25588953961
+0 0 2 2.0 1.0
+  12.271113873      0.39768730901
+  4.9159842006      0.24627849430
+0 0 1 0.0 1.0
+ 0.90086482370      1.0000000000
+0 1 1 0.0 1.0
+ 0.25000000000      1.0 1.0
+0 2 4 4.0 1.0
+  75.300554155      0.60685103418E-02
+  17.743733858      0.41912575824E-01
+  5.5355828651      0.16153841088
+  2.0685535103      0.35706951311
+0 2 1 0.0 1.0
+ 0.78238772422      1.0000000000
+0 3 1 0.0 1.0
+ 1.2000000000       1.0000000000
+99 0 
+ENDBAS 
+DFT 
+PBE0 
+ENDDFT 
+SHRINK 
+8 8
+TOLINTEG 
+8 8 8 8 16 
+MAXCYCLE 
+60 
+FMIXING 
+80 
+EXCHSIZE 
+30000000 
+BIPOSIZE 
+30000000
+END
+
+
+************************************************
+ANOTHER DROLLERY FILLED RUN OF THE CRYSTAL CODE!
+************************************************
+Tue Sep 10 10:14:46 CEST 2024
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           node2
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       udcm
+--------------------------------------------------------------------------
+ PROCESS           16  OF           32  WORKING
+ PROCESS           24  OF           32  WORKING
+ PROCESS            5  OF           32  WORKING
+ PROCESS            6  OF           32  WORKING
+ PROCESS           28  OF           32  WORKING
+ PROCESS            3  OF           32  WORKING
+ PROCESS           29  OF           32  WORKING
+ PROCESS           11  OF           32  WORKING
+ PROCESS           17  OF           32  WORKING
+ PROCESS            8  OF           32  WORKING
+ PROCESS           12  OF           32  WORKING
+ PROCESS           31  OF           32  WORKING
+ PROCESS           18  OF           32  WORKING
+ PROCESS           26  OF           32  WORKING
+ PROCESS            7  OF           32  WORKING
+ PROCESS           15  OF           32  WORKING
+ PROCESS           30  OF           32  WORKING
+ PROCESS            2  OF           32  WORKING
+ PROCESS            4  OF           32  WORKING
+ PROCESS           13  OF           32  WORKING
+ PROCESS           27  OF           32  WORKING
+ PROCESS            0  OF           32  WORKING
+ PROCESS            1  OF           32  WORKING
+ PROCESS           20  OF           32  WORKING
+ PROCESS           10  OF           32  WORKING
+ PROCESS           25  OF           32  WORKING
+ PROCESS           22  OF           32  WORKING
+ PROCESS           14  OF           32  WORKING
+ PROCESS            9  OF           32  WORKING
+ PROCESS           23  OF           32  WORKING
+
+         
+ *******************************************************************************
+ *                                                                             *
+ PROCESS           19  OF           32  WORKING
+ *                               CRYSTAL23                                     *
+ *                      public : 1.0.1 - October 2022                          *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(6), I.J. BUSH(7), Ph. D'ARCO(8),                 *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8), L. MASCHIO(1,11), A. ERBA(1,11)  *
+ *  M. RE'RAT(14), S. CASASSA(1,11), B.G. SEARLE(2), J.K. DESMARAIS(1)         *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CODE HAVE ALSO BEEN GIVEN BY                    *
+ *                                                                             *
+ *  M. FERRABONE(1,11), M. DE LA PIERRE(1,11), M. FERRERO(1,11),               *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  B. KIRTMAN(15), V. LACIVITA(1,11), R. DEMICHELIS(1,16)                     *
+ *  G. BRANDEBURG(17), S. SALUSTRO(1,11), G. SANSONE(1,11)                     *
+ *  M.T. RUGGIERO(18), L.E. DAGA(1), L. DONA'(1), A. COSSARD(1)                *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+ * (2) SCIENTIFIC COMPUTING DEPARTMENT - STFC DARESBURY (UK)                   *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET STUTTGART- STUTTGART (GERMANY)                             *
+ * (6) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (7) SCIENTIFIC COMPUTING DEPARTMENT - STFC RAL (UK)                         *
+ * (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)                            *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF TROMSO - TROMSO (NORWAY)                                  *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *(17) UNIVERSITY COLLEGE LONDON - LONDON (UK)                                 *
+ *(18) UNIVERSITY OF VERMONT - BURLINGTON (USA)                                *
+ *                                                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 10 09 2024 TIME 10:14:49.2
+ ###                                                                             
+ PROCESS           21  OF           32  WORKING
+
+ CRYSTAL CALCULATION
+ (INPUT ACCORDING TO THE INTERNATIONAL TABLES FOR X-RAY CRYSTALLOGRAPHY)
+ CRYSTAL FAMILY                       :  HEXAGONAL   
+ CRYSTAL CLASS  (GROTH - 1921)        :  DIHEXAGONAL PYRAMIDAL                
+
+ SPACE GROUP (NONCENTROSYMMETRIC)     :  P 63 M C        
+
+ LATTICE PARAMETERS  (ANGSTROMS AND DEGREES) - CONVENTIONAL CELL
+        A           B           C        ALPHA        BETA       GAMMA
+     3.40000     3.40000     5.10000    90.00000    90.00000   120.00000
+
+
+ NUMBER OF IRREDUCIBLE ATOMS IN THE CONVENTIONAL CELL:    2
+
+ INPUT COORDINATES
+
+ ATOM AT. N.              COORDINATES
+   1  30     3.333333333333E-01 -3.333333333333E-01 -2.621777839722E-04
+   2   8     3.333333333333E-01 -3.333333333333E-01  3.830621777840E-01
+
+ *******************************************************************************
+
+ << INFORMATION >>: FROM NOW ON, ALL COORDINATES REFER TO THE PRIMITIVE CELL
+
+ *******************************************************************************
+
+ LATTICE PARAMETERS  (ANGSTROMS AND DEGREES) - PRIMITIVE CELL
+       A          B          C        ALPHA      BETA     GAMMA        VOLUME
+    3.40000    3.40000    5.10000    90.00000  90.00000 120.00000     51.057394
+
+ COORDINATES OF THE EQUIVALENT ATOMS (FRACTIONAL UNITS)
+
+ N. ATOM EQUIV AT. N.          X                  Y                  Z
+
+   1   1   1   30 ZN    3.33333333333E-01 -3.33333333333E-01 -2.62177783972E-04
+   2   1   2   30 ZN   -3.33333333333E-01  3.33333333333E-01  4.99737822216E-01
+
+   3   2   1    8 O     3.33333333333E-01 -3.33333333333E-01  3.83062177784E-01
+   4   2   2    8 O    -3.33333333333E-01  3.33333333333E-01 -1.16937822216E-01
+
+ NUMBER OF SYMMETRY OPERATORS         :   12
+ *******************************************************************************
+ * GEOMETRY EDITING - INPUT COORDINATES ARE GIVEN IN ANGSTROM         
+ *******************************************************************************
+
+ GEOMETRY NOW FULLY CONSISTENT WITH THE GROUP
+ INFORMATION **** NEW DEFAULT **** FINALRUN 4 FOR GEOMETRY OPTIMIZATIONS
+ INFORMATION **** NEW DEFAULT **** OPTGEOM OPTIMIZES BOTH ATOMIC COORDINATES AND CELL PARAMETERS
+ INFORMATION **** NEW DEFAULT **** TOL. ON ATOMIC DISP TO REDEFINE REF. GEOMETRY: 0.8 Angs
+ INFORMATION **** NEW DEFAULT **** N POINTS TO REDEFINE REF. GEOMETRY: N OF OPT DEGS OF FREEDOM
+ INFORMATION **** NEW DEFAULT **** TOL. ON ENERGY TO REDEFINE REF. GEOMETRY: 10**-3*(5*N. ATOMS)
+
+ IMPORTANT INFORMATION:
+ THE COORDINATE SYSTEM ADOPTED IN THE OPTIMIZATION IS NOT IN
+ GENERAL HOMOGENEOUS UNITS. FOR THIS REASON THE GRADIENT AND 
+ HESSIAN MATRIX IN TERMS OF THIS SYSTEM ARE GIVEN WITHOUT
+ UNITS. FOR MORE DETAILS SEE THE MANUAL.
+
+ *******************************************************************************
+ COMBINED CELL/ATOM OPTIMIZATION CONTROL
+
+ INITIAL TRUST RADIUS         0.50000 MAXIMUM TRUST RADIUS               4.00000
+ MAXIMUM GRADIENT COMPONENT   0.00045 MAXIMUM DISPLACEMENT COMPONENT     0.00180
+ R.M.S. OF GRADIENT COMPONENT 0.00030 R.M.S. OF DISPLACEMENT COMPONENTS  0.00120
+ THRESHOLD ON ENERGY CHANGE 0.100E-06 EXTRAPOLATING POLYNOMIAL ORDER           2
+ MAXIMUM ALLOWED NUMBER OF STEPS   -1 SORTING OF ENERGY POINTS:               NO
+ ANALYTICAL  GRADIENT                 HESSIAN UPDATING                      BFGS
+ STEP SIZE NUMERICAL GRADIENT 0.00100
+ INITIAL HESSIAN MATRIX: SCHLEGEL MODEL 2
+ *******************************************************************************
+
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    17    17    10
+ NO.OF VECTORS CREATED 6999 STARS  180 RMAX    83.09231 BOHR
+
+ GEOMETRY FOR WAVE FUNCTION - DIMENSIONALITY OF THE SYSTEM    3
+ (NON PERIODIC DIRECTION: LATTICE PARAMETER FORMALLY SET TO 500)
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    51.057394 - DENSITY  5.199 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.40000000     3.40000000     5.10000000    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.621777839722E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997378222160E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830621777840E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169378222160E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ ****   12 SYMMOPS - TRANSLATORS IN FRACTIONAL UNITS
+ **** MATRICES AND TRANSLATORS IN THE CRYSTALLOGRAPHIC REFERENCE FRAME
+   V INV                    ROTATION MATRICES                   TRANSLATORS
+   1   1  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   2   2 -1.00  0.00  0.00 -0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   3   4 -0.00 -1.00  0.00  1.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   4   3 -1.00  1.00  0.00 -1.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   5   6  1.00 -1.00  0.00  1.00 -0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   6   5  0.00  1.00  0.00 -1.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   7   7 -1.00  1.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   8   8  1.00  0.00  0.00  1.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   9   9 -0.00 -1.00  0.00 -1.00 -0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+  10  10  0.00  1.00  0.00  1.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+  11  11 -1.00  0.00  0.00 -1.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+  12  12  1.00 -1.00  0.00 -0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+
+ DIRECT LATTICE VECTORS CARTESIAN COMPONENTS (ANGSTROM)
+          X                    Y                    Z
+   0.294448637287E+01  -0.170000000000E+01   0.000000000000E+00
+   0.000000000000E+00   0.340000000000E+01   0.000000000000E+00
+   0.000000000000E+00   0.000000000000E+00   0.510000000000E+01
+
+
+ CARTESIAN COORDINATES - PRIMITIVE CELL
+ *******************************************************************************
+ *      ATOM          X(ANGSTROM)         Y(ANGSTROM)         Z(ANGSTROM)
+ *******************************************************************************
+    1    30 ZN   -1.962990915245E+00  0.000000000000E+00 -1.337106698258E-03
+    2    30 ZN   -9.814954576224E-01 -1.700000000000E+00  2.548662893302E+00
+    3     8 O    -1.962990915245E+00  0.000000000000E+00  1.953617106698E+00
+    4     8 O    -9.814954576224E-01 -1.700000000000E+00 -5.963828933016E-01
+
+ *******************************************************************************
+ LOCAL ATOMIC FUNCTIONS BASIS SET
+ *******************************************************************************
+   ATOM   X(AU)   Y(AU)   Z(AU)  N. TYPE  EXPONENT  S COEF   P COEF   D/F/G COEF
+ *******************************************************************************
+   1 ZN  -3.710   0.000  -0.003
+                                  1 S  
+                                         4.059E+05 2.244E-04 0.000E+00 0.000E+00
+                                         6.085E+04 1.740E-03 0.000E+00 0.000E+00
+                                         1.385E+04 9.051E-03 0.000E+00 0.000E+00
+                                         3.920E+03 3.682E-02 0.000E+00 0.000E+00
+                                         1.276E+03 1.200E-01 0.000E+00 0.000E+00
+                                         4.587E+02 2.858E-01 0.000E+00 0.000E+00
+                                         1.783E+02 4.109E-01 0.000E+00 0.000E+00
+                                         7.061E+01 2.182E-01 0.000E+00 0.000E+00
+                                  2 S  
+                                         4.439E+02-2.493E-02 0.000E+00 0.000E+00
+                                         1.376E+02-1.182E-01 0.000E+00 0.000E+00
+                                         2.227E+01 5.537E-01 0.000E+00 0.000E+00
+                                         9.522E+00 5.263E-01 0.000E+00 0.000E+00
+                                  3 S  
+                                         1.487E+01-2.293E-01 0.000E+00 0.000E+00
+                                         2.465E+00 7.114E-01 0.000E+00 0.000E+00
+                                  4 S  
+                                         1.011E+00 1.000E+00 0.000E+00 0.000E+00
+                                  5 S  
+                                         4.000E-01 1.000E+00 0.000E+00 0.000E+00
+                           6-     9 SP 
+                                         1.600E-01 1.000E+00 1.000E+00 0.000E+00
+                          10-    12 P  
+                                         2.205E+03 0.000E+00 2.336E-03 0.000E+00
+                                         5.224E+02 0.000E+00 1.903E-02 0.000E+00
+                                         1.677E+02 0.000E+00 8.996E-02 0.000E+00
+                                         6.267E+01 0.000E+00 2.611E-01 0.000E+00
+                                         2.511E+01 0.000E+00 4.235E-01 0.000E+00
+                                         1.023E+01 0.000E+00 2.462E-01 0.000E+00
+                          13-    15 P  
+                                         4.071E+01 0.000E+00-3.003E-02 0.000E+00
+                                         5.625E+00 0.000E+00 5.558E-01 0.000E+00
+                                         2.228E+00 0.000E+00 9.558E-01 0.000E+00
+                          16-    18 P  
+                                         8.335E-01 0.000E+00 1.000E+00 0.000E+00
+                          19-    23 D  
+                                         8.855E+01 0.000E+00 0.000E+00 1.273E-02
+                                         2.572E+01 0.000E+00 0.000E+00 7.939E-02
+                                         9.128E+00 0.000E+00 0.000E+00 2.449E-01
+                                         3.431E+00 0.000E+00 0.000E+00 4.039E-01
+                          24-    28 D  
+                                         1.231E+00 0.000E+00 0.000E+00 4.016E-01
+                          29-    33 D  
+                                         3.903E-01 0.000E+00 0.000E+00 2.158E-01
+   2 ZN  -1.855  -3.213   4.816
+   3 O   -3.710   0.000   3.692
+                                 67 S  
+                                         2.703E+04 2.173E-04 0.000E+00 0.000E+00
+                                         4.052E+03 1.684E-03 0.000E+00 0.000E+00
+                                         9.223E+02 8.740E-03 0.000E+00 0.000E+00
+                                         2.612E+02 3.524E-02 0.000E+00 0.000E+00
+                                         8.535E+01 1.115E-01 0.000E+00 0.000E+00
+                                         3.104E+01 2.559E-01 0.000E+00 0.000E+00
+                                 68 S  
+                                         1.227E+01 3.977E-01 0.000E+00 0.000E+00
+                                         4.916E+00 2.463E-01 0.000E+00 0.000E+00
+                                 69 S  
+                                         9.009E-01 1.000E+00 0.000E+00 0.000E+00
+                          70-    73 SP 
+                                         2.500E-01 1.000E+00 1.000E+00 0.000E+00
+                          74-    76 P  
+                                         7.530E+01 0.000E+00 6.069E-03 0.000E+00
+                                         1.774E+01 0.000E+00 4.191E-02 0.000E+00
+                                         5.536E+00 0.000E+00 1.615E-01 0.000E+00
+                                         2.069E+00 0.000E+00 3.571E-01 0.000E+00
+                          77-    79 P  
+                                         7.824E-01 0.000E+00 1.000E+00 0.000E+00
+                          80-    84 D  
+                                         1.200E+00 0.000E+00 0.000E+00 1.000E+00
+   4 O   -1.855  -3.213  -1.127
+ INFORMATION **** SET_MPP **** PCRYSTAL CALCULATION
+ INFORMATION **** READM2 **** NEW DEFAULT: FOCK/KS MATRIX MIXING SET TO 30 %
+ INFORMATION **** READM2 **** NEW DEFAULT: FULL DIRECT SCF MODE
+ INFORMATION **** READM2 **** NEW DEFAULT: COULOMB BIPOLAR BUFFER SET TO 32 Mb
+ INFORMATION **** READM2 **** NEW DEFAULT: EXCHANGE BIPOLAR BUFFER SET TO 32 Mb
+
+ *******************************************************************************
+ NEW DEFAULT: DFT INTEGRATION GRID INCREASED TO XLGRID
+ NEW DEFAULT: DIIS ACCELERATOR ACTIVE
+ USE KEYWORD NODIIS TO TURN IT OFF
+ *******************************************************************************
+
+ INFORMATION **** TOLINTEG **** COULOMB AND EXCHANGE SERIES TOLERANCES MODIFIED
+ INFORMATION **** MAXCYCLE **** MAX NUMBER OF SCF CYCLES SET TO          60
+ INFORMATION **** EXCHSIZE **** EXCHANGE BIPOLAR BUFFER SIZE SET TO    30000000
+ INFORMATION **** BIPOSIZE **** COULOMB BIPOLAR BUFFER SET TO    30000000
+ *******************************************************************************
+ N. OF ATOMS PER CELL         4  COULOMB OVERLAP TOL         (T1) 10**   -8
+ NUMBER OF SHELLS            38  COULOMB PENETRATION TOL     (T2) 10**   -8
+ NUMBER OF AO               102  EXCHANGE OVERLAP TOL        (T3) 10**   -8
+ N. OF ELECTRONS PER CELL    76  EXCHANGE PSEUDO OVP (F(G))  (T4) 10**   -8
+ CORE ELECTRONS PER CELL     40  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**  -16
+ N. OF SYMMETRY OPERATORS    12  POLE ORDER IN MONO ZONE                  4
+ *******************************************************************************
+ TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ KOHN-SHAM HAMILTONIAN
+
+ (EXCHANGE)[CORRELATION] FUNCTIONAL:(PERDEW-BURKE-ERNZERHOF)[PERDEW-BURKE-ERNZERHOF]
+
+
+ HYBRID EXCHANGE - PERCENTAGE OF FOCK EXCHANGE    25.0000
+
+ CAPPA:IS1  8;IS2  8;IS3  8; K PTS MONK NET  50; SYMMOPS:K SPACE  24;G SPACE  12
+
+ *******************************************************************************
+ MAX NUMBER OF SCF CYCLES      60  CONVERGENCE ON DELTAP        10**-16
+ WEIGHT OF F(I) IN F(I+1)      80% CONVERGENCE ON ENERGY        10**- 7
+ SHRINK. FACT.(MONKH.)    8  8  8  NUMBER OF K POINTS IN THE IBZ     50
+ SHRINKING FACTOR(GILAT NET)    8  NUMBER OF K POINTS(GILAT NET)     50
+ *******************************************************************************
+ *** K POINTS COORDINATES (OBLIQUE COORDINATES IN UNITS OF IS =  8)
+   1-R(  0  0  0)   2-C(  1  0  0)   3-C(  2  0  0)   4-C(  3  0  0)
+   5-R(  4  0  0)   6-C(  1  1  0)   7-C(  2  1  0)   8-C(  3  1  0)
+   9-C(  2  2  0)  10-C(  3  2  0)  11-C(  0  0  1)  12-C(  1  0  1)
+  13-C(  2  0  1)  14-C(  3  0  1)  15-C(  4  0  1)  16-C(  1  1  1)
+  17-C(  2  1  1)  18-C(  3  1  1)  19-C(  2  2  1)  20-C(  3  2  1)
+  21-C(  0  0  2)  22-C(  1  0  2)  23-C(  2  0  2)  24-C(  3  0  2)
+  25-C(  4  0  2)  26-C(  1  1  2)  27-C(  2  1  2)  28-C(  3  1  2)
+  29-C(  2  2  2)  30-C(  3  2  2)  31-C(  0  0  3)  32-C(  1  0  3)
+  33-C(  2  0  3)  34-C(  3  0  3)  35-C(  4  0  3)  36-C(  1  1  3)
+  37-C(  2  1  3)  38-C(  3  1  3)  39-C(  2  2  3)  40-C(  3  2  3)
+  41-R(  0  0  4)  42-C(  1  0  4)  43-C(  2  0  4)  44-C(  3  0  4)
+  45-R(  4  0  4)  46-C(  1  1  4)  47-C(  2  1  4)  48-C(  3  1  4)
+  49-C(  2  2  4)  50-C(  3  2  4)
+
+ DIRECT LATTICE VECTORS COMPON. (A.U.)     RECIP. LATTICE VECTORS COMPON. (A.U.) 
+        X            Y            Z              X            Y            Z
+    5.5642728   -3.2125344    0.0000000      1.1292015    0.0000000    0.0000000
+    0.0000000    6.4250689    0.0000000      0.5646008    0.9779172    0.0000000
+    0.0000000    0.0000000    9.6376033      0.0000000    0.0000000    0.6519448
+
+ DISK SPACE FOR EIGENVECTORS (FTN 10)      998784 REALS
+
+ SYMMETRY ADAPTION OF THE BLOCH FUNCTIONS ENABLED
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        2.49 TCPU        2.04
+
+ MATRIX SIZE: P(G)  184006, F(G)   32398, P(G) IRR   13978, F(G) IRR    5965
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS 229
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        2.49 TCPU        2.05
+
+ NEIGHBORS OF THE NON-EQUIVALENT ATOMS
+
+ N = NUMBER OF NEIGHBORS AT DISTANCE R
+    ATOM  N     R/ANG      R/AU   NEIGHBORS (ATOM LABELS AND CELL INDICES)
+   1 ZN   1     1.9550     3.6943    3 O    0 0 0
+   1 ZN   3     2.0512     3.8762    4 O    0 0 0    4 O   -1 0 0    4 O    0 1 0
+   1 ZN   1     3.1450     5.9433    3 O    0 0-1
+   1 ZN   6     3.2180     6.0812    2 ZN   0 0 0    2 ZN  -1 0 0    2 ZN   0 1 0
+                                     2 ZN   0 0-1    2 ZN  -1 0-1    2 ZN   0 1-1
+   1 ZN   6     3.4000     6.4251    1 ZN  -1-1 0    1 ZN   1 1 0    1 ZN  -1 0 0
+                                     1 ZN   1 0 0    1 ZN   0-1 0    1 ZN   0 1 0
+   1 ZN   6     3.9220     7.4114    3 O    1 1 0    3 O   -1-1 0    3 O    1 0 0
+                                     3 O   -1 0 0    3 O    0 1 0    3 O    0-1 0
+
+   3 O    1     1.9550     3.6943    1 ZN   0 0 0
+   3 O    3     2.0512     3.8762    2 ZN   0 0 0    2 ZN  -1 0 0    2 ZN   0 1 0
+   3 O    1     3.1450     5.9433    1 ZN   0 0 1
+   3 O    6     3.2180     6.0812    4 O    0 0 0    4 O   -1 0 0    4 O    0 1 0
+                                     4 O    0 0 1    4 O   -1 0 1    4 O    0 1 1
+   3 O    6     3.4000     6.4251    3 O   -1-1 0    3 O    1 1 0    3 O   -1 0 0
+                                     3 O    1 0 0    3 O    0-1 0    3 O    0 1 0
+   3 O    6     3.9220     7.4114    1 ZN  -1-1 0    1 ZN   1 1 0    1 ZN  -1 0 0
+                                     1 ZN   1 0 0    1 ZN   0-1 0    1 ZN   0 1 0
+
+
+ SYMMETRY ALLOWED ELASTIC DISTORTION 1
+  0.5773503  0.0000000  0.0000000
+  0.0000000  0.5773503  0.0000000
+  0.0000000  0.0000000  0.5773503
+
+ SYMMETRY ALLOWED ELASTIC DISTORTION 2
+  0.4082483  0.0000000  0.0000000
+  0.0000000  0.4082483  0.0000000
+  0.0000000  0.0000000 -0.8164966
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   1
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        2.49 TCPU        2.05
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        2.50 TCPU        2.05
+
+ *******************************************************************************
+ *                             OPTIMIZATION STARTS                             *
+ *******************************************************************************
+ RECLASIFICATION OF INDICES FOR INTEGRAL CALC ACCORDING TO DIFFERENT CRITERIA:
+           FIXDELTE                  FIXDELTX              FIXDELTN
+          0.10000000E-01           0.80000000                 10
+ DEFAULT MAX NUM OF POINTS  100
+ *******************************************************************************
+
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    1
+
+ DFT PARAMETERS
+
+     ATOM       ELECTRONS   NET CHARGE   R(ANGSTROM)
+   1  30  ZN     30.0000      0.0000     1.37000000
+   3   8  O       8.0000      0.0000     0.74000000
+
+ SIZE OF GRID=       9668
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MAKE_GRID2  TELAPSE        3.05 TCPU        2.60
+ BECKE WEIGHT FUNCTION
+ RADSAFE =     2.00
+ TOLERANCES - DENSITY:10**- 6; POTENTIAL:10**- 9; GRID WGT:10**-14
+
+ RADIAL INTEGRATION  - INTERVALS (POINTS,UPPER LIMIT):            1( 75,  4.0*R)
+
+ ANGULAR INTEGRATION - INTERVALS (ACCURACY LEVEL [N. POINTS] UPPER LIMIT):
+  1(  4[  86]   0.2)  2(  8[ 194]   0.5)  3( 12[ 350]   0.9)  4( 16[ 974]   3.5)
+  5( 12[ 350]9999.0)
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_CALC    TELAPSE        3.08 TCPU        2.63
+
+ *******************************************************************************
+ ###                                                                             
+ CRYSTAL - SCF - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+
+ CAPPA:IS1  8;IS2  8;IS3  8; K PTS MONK NET  50; SYMMOPS:K SPACE  24;G SPACE  12
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SDIK        TELAPSE        3.08 TCPU        2.63
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+         ATOMIC WAVEFUNCTION(S)
+
+
+ NUCLEAR CHARGE 30.0  SYMMETRY SPECIES            S    P    D
+ N. ELECTRONS   30.0  NUMBER OF PRIMITIVE GTOS   17   11    6
+                      NUMBER OF CONTRACTED GTOS   6    4    3
+                      NUMBER OF CLOSED SHELLS     4    2    1
+                      OPEN SHELL OCCUPATION       0    0    0
+
+  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+  30.0    17    -1.777744549E+03  1.778156450E+03 -1.999768355E+00  4.8E-06
+
+ NUCLEAR CHARGE  8.0  SYMMETRY SPECIES            S    P
+ N. ELECTRONS    8.0  NUMBER OF PRIMITIVE GTOS   10    6
+                      NUMBER OF CONTRACTED GTOS   4    3
+                      NUMBER OF CLOSED SHELLS     2    0
+                      OPEN SHELL OCCUPATION       0    4
+
+  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+   8.0    13    -7.480154908E+01  7.478929752E+01 -2.000163814E+00  2.2E-06
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  30.0000000  30.0000000   8.0000000   8.0000000
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        3.13 TCPU        2.68
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        4.84 TCPU        4.39
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        4.84 TCPU        4.40
+ NUMERICALLY INTEGRATED DENSITY     76.0000175586
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        4.88 TCPU        4.43
+ CYC   0 ETOT(AU) -3.708825611726E+03 DETOT -3.71E+03 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        4.88 TCPU        4.43
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        4.91 TCPU        4.47
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.6971856E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.9224681E-01 AU
+ DIRECT ENERGY BAND GAP:   2.1081 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        4.93 TCPU        4.48
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  28.7390183  28.7390183   9.2609817   9.2609817
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        4.93 TCPU        4.48
+[node2:4111287] 31 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[node2:4111287] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        6.69 TCPU        6.25
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        6.70 TCPU        6.25
+ NUMERICALLY INTEGRATED DENSITY     76.0000197383
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        6.73 TCPU        6.28
+ CYC   1 ETOT(AU) -3.708651570318E+03 DETOT  1.74E-01 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        6.73 TCPU        6.28
+ DIIS TEST: 0.16908E+01 AT SCF   CYCLE   1 - MIX   80 %
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        6.74 TCPU        6.29
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.4394758E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.6228150E-01 AU
+ DIRECT ENERGY BAND GAP:   2.2222 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        6.76 TCPU        6.31
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  28.9088874  28.9088874   9.0911126   9.0911126
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        6.76 TCPU        6.31
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        8.52 TCPU        8.07
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        8.52 TCPU        8.07
+ NUMERICALLY INTEGRATED DENSITY     76.0000216133
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        8.56 TCPU        8.11
+ CYC   2 ETOT(AU) -3.708799184075E+03 DETOT -1.48E-01 tst  1.26E-03 PX  6.94E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        8.56 TCPU        8.11
+ DIIS TEST: 0.30661E+00 AT SCF   CYCLE   2 - DIIS ACTIVE - HISTORY:     2 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        8.63 TCPU        8.18
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.1707188E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0340942E-01 AU
+ DIRECT ENERGY BAND GAP:   3.0929 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        8.64 TCPU        8.19
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0732145  29.0732145   8.9267855   8.9267855
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        8.65 TCPU        8.19
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       10.41 TCPU        9.96
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       10.41 TCPU        9.96
+ NUMERICALLY INTEGRATED DENSITY     76.0000237334
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       10.44 TCPU        9.99
+ CYC   3 ETOT(AU) -3.708833789361E+03 DETOT -3.46E-02 tst  1.30E-03 PX  5.71E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE       10.45 TCPU        9.99
+ DIIS TEST: 0.30647E-01 AT SCF   CYCLE   3 - DIIS ACTIVE - HISTORY:     3 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE       10.46 TCPU       10.01
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.3177665E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0864477E-01 AU
+ DIRECT ENERGY BAND GAP:   3.3506 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE       10.47 TCPU       10.02
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0374475  29.0374475   8.9625525   8.9625525
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE       10.48 TCPU       10.02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       12.24 TCPU       11.78
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       12.24 TCPU       11.79
+ NUMERICALLY INTEGRATED DENSITY     76.0000233442
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       12.27 TCPU       11.82
+ CYC   4 ETOT(AU) -3.708836283194E+03 DETOT -2.49E-03 tst  6.42E-05 PX  2.26E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE       12.28 TCPU       11.82
+ DIIS TEST: 0.13622E-02 AT SCF   CYCLE   4 - DIIS ACTIVE - HISTORY:     4 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE       12.29 TCPU       11.84
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.3038239E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0597763E-01 AU
+ DIRECT ENERGY BAND GAP:   3.3852 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE       12.30 TCPU       11.85
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0364431  29.0364431   8.9635569   8.9635569
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE       12.31 TCPU       11.85
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       14.07 TCPU       13.61
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       14.07 TCPU       13.62
+ NUMERICALLY INTEGRATED DENSITY     76.0000234047
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       14.10 TCPU       13.65
+ CYC   5 ETOT(AU) -3.708836389062E+03 DETOT -1.06E-04 tst  3.62E-06 PX  3.63E-03
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE       14.10 TCPU       13.65
+ DIIS TEST: 0.26334E-04 AT SCF   CYCLE   5 - DIIS ACTIVE - HISTORY:     5 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE       14.12 TCPU       13.66
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.3009345E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0551322E-01 AU
+ DIRECT ENERGY BAND GAP:   3.3900 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE       14.13 TCPU       13.68
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0373965  29.0373965   8.9626035   8.9626035
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE       14.13 TCPU       13.68
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       15.90 TCPU       15.44
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       15.90 TCPU       15.44
+ NUMERICALLY INTEGRATED DENSITY     76.0000234172
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       15.93 TCPU       15.47
+ CYC   6 ETOT(AU) -3.708836391716E+03 DETOT -2.65E-06 tst  5.78E-08 PX  4.31E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE       15.93 TCPU       15.48
+ DIIS TEST: 0.38736E-06 AT SCF   CYCLE   6 - DIIS ACTIVE - HISTORY:     6 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE       15.95 TCPU       15.49
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.3006417E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0545428E-01 AU
+ DIRECT ENERGY BAND GAP:   3.3908 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE       15.96 TCPU       15.50
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0374643  29.0374643   8.9625357   8.9625357
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE       15.96 TCPU       15.51
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       17.72 TCPU       17.27
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       17.73 TCPU       17.27
+ NUMERICALLY INTEGRATED DENSITY     76.0000234184
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       17.76 TCPU       17.30
+ CYC   7 ETOT(AU) -3.708836391752E+03 DETOT -3.59E-08 tst  1.26E-09 PX  5.70E-05
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE       17.76 TCPU       17.30
+ DIIS TEST: 0.23010E-08 AT SCF   CYCLE   7 - DIIS ACTIVE - HISTORY:     7 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE       17.77 TCPU       17.31
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     38; K    1; EIG -2.3006284E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     39; K    1; EIG -1.0544698E-01 AU
+ DIRECT ENERGY BAND GAP:   3.3910 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE       17.79 TCPU       17.33
+ CHARGE NORMALIZATION FACTOR   1.00000000
+ TOTAL ATOMIC CHARGES:
+  29.0374605  29.0374605   8.9625395   8.9625395
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE       17.79 TCPU       17.33
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE       19.55 TCPU       19.09
+ +++ ENERGIES IN A.U. +++
+ ::: EXT EL-POLE                                  -1.6948262914232E+03
+ ::: EXT EL-SPHEROPOLE                             1.7708387302193E+01
+ ::: BIELET ZONE E-E                               2.7581893984193E+03
+ ::: TOTAL E-E                                     1.0810714942983E+03
+ ::: TOTAL E-N + N-E                              -7.8305499966603E+03
+ ::: TOTAL N-N                                    -5.4280520266412E+02
+ ::: KINETIC ENERGY                                3.7036168353344E+03
+ ::: PSEUDO TOTAL   ENERGY                        -3.5886668696917E+03
+ ::: VIRIAL COEFFICIENT                            1.0157632327941E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE       19.55 TCPU       19.09
+ NUMERICALLY INTEGRATED DENSITY     76.0000234184
+ EXCHANGE ENERGY: -0.116718725143E+03  CORRELATION ENERGY: -0.345079690694E+01
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE       19.58 TCPU       19.12
+ CYC   8 ETOT(AU) -3.708836391741E+03 DETOT  1.08E-08 tst  1.27E-10 PX  5.70E-05
+
+ == SCF ENDED - CONVERGENCE ON ENERGY      E(AU) -3.7088363917413E+03 CYCLES   8
+
+
+ ENERGY EXPRESSION=HARTREE+FOCK EXCH*0.25000+(PBE        EXCH)*0.75000+PBE        CORR
+
+
+ TOTAL ENERGY(DFT)(AU)(  8) -3.7088363917413E+03 DE 1.1E-08 tester 1.3E-10
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT EDFT        TELAPSE       19.58 TCPU       19.13
+
+ *******************************************************************************
+ *                             FORCE CALCULATION                               *
+ *******************************************************************************
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFG      TELAPSE       20.01 TCPU       19.55
+ INFORMATION **** EXCPOG **** EXCH. BIPO BUFFER LENGTH (WORDS) =     2774988
+ INFORMATION **** GENPOG **** BIPO BUFFER LENGTH (WORDS) =      326800
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELXG      TELAPSE       34.85 TCPU       34.39
+
+ CARTESIAN FORCES IN HARTREE/BOHR (ANALYTICAL)
+   ATOM                     X                   Y                   Z
+   1  30            -1.371093590029E-14 -2.943497886450E-15 -1.001678998415E-02
+   2  30             1.192321034686E-14  5.895599642314E-15 -1.001678998417E-02
+   3   8            -4.401974159332E-15 -4.153343871399E-15  1.001678998351E-02
+   4   8             6.187386748130E-15  1.209337491756E-15  1.001678998351E-02
+
+ RESULTANT FORCE    -2.312964634634E-18  8.095376221227E-18 -1.305622276959E-12
+
+ ATOMIC PART
+
+ SYMMETRY ALLOWED FORCES (ANALYTICAL) (DIRECTION, FORCE)
+
+    1 -2.0033580E-02
+
+ CELL PART
+
+ GRADIENT WITH RESPECT TO THE CELL PARAMETER IN HARTREE/BOHR
+ORDER: -D/DA1X, -D/DA1Y, -D/DA1Z
+       -D/DA2X, -D/DA2Y, -D/DA2Z
+       -D/DA3X, -D/DA3Y, -D/DA3Z
+ -0.239914493881E-01  0.473924868878E-14 -0.609096577415E-15
+ -0.119957246940E-01 -0.207772046436E-01 -0.112172547304E-14
+ -0.218089861941E-15 -0.575600124768E-15  0.130244714007E-02
+
+STRESS TENSOR, IN HARTREE/BOHR^3:
+ORDER: 11 12 13
+       21 22 23
+       31 32 33
+  0.387444637349E-03 -0.132513733868E-15  0.610027303373E-17
+ -0.765354547711E-16  0.387444637349E-03  0.161003262053E-16
+  0.983647126649E-17  0.152383789478E-16 -0.364312357104E-04
+
+STRESS TENSOR DOES NOT CORRESPOND TO
+HYDROSTATIC PRESSURE, NO PRESSURE COMPUTED!
+
+ SYMMETRY ALLOWED FORCES (ANALYTICAL) (DIRECTION, FORCE)
+
+    1 -2.6364376E-02    2 -2.0281131E-02
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT TOTGRA      TELAPSE       35.19 TCPU       34.72
+ INFORMATION **** optc001 **** GEOMETRY OUTPUT FILE
+ CLASSICAL MODEL (SCHLEGEL) USED AS INITIAL HESSIAN MATRIX
+ REFERENCE GEOMETRY DEFINED
+
+ MAX GRADIENT      0.026364  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.022418  THRESHOLD              0.000300 CONVERGED NO
+
+ GRADIENT NORM     0.038830  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.9216E-01  0.1657      0.6914    
+
+ INITIAL TRUST RADIUS    0.5000000000E+00
+
+ PREDICTED ENERGY CHANGE    -0.373E-02
+
+ INITIAL DISPLACEMENTS
+ -0.005669 -0.160274 -0.153420
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE       35.19 TCPU       34.72
+
+ OPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPT
+
+ - INFORMATION ON SCF MOVED TO SCFOUT.LOG
+ GEOMETRY OPTIMIZATION INFORMATION STORED IN OPTINFO.DAT
+
+ OPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPTOPT
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    2
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.538657 - DENSITY  5.469 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.30731666     3.30731666     5.12395804    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -5.562705511926E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.994437294488E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.833562705512E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.166437294488E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  7) -3.7088412764759E+03     DE (AU)   -4.885E-03
+
+ UPDATED TRUST RADIUS     0.100E+01
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1 -9.6426921E-03    2 -3.5759576E-03    3 -9.5126718E-03
+
+ GRADIENT NORM     0.014009  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.7109E-01  0.1645      0.6499    
+
+ PREDICTED ENERGY CHANGE    -0.600E-03
+
+ MAX GRADIENT      0.009643  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.008088  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.111521  THRESHOLD              0.001800 CONVERGED NO
+ RMS DISPLAC.      0.068197  THRESHOLD              0.001200 CONVERGED NO
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE       65.39 TCPU       64.91
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    3
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    47.944980 - DENSITY  5.536 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26836608     3.26836608     5.18264100    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -5.521578414473E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.994478421586E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.833521578415E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.166478421585E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  7) -3.7088418677682E+03     DE (AU)   -5.913E-04
+
+ UPDATED TRUST RADIUS     0.200E+01
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1 -2.7531563E-04    2  2.6678378E-03    3 -8.2937871E-04
+
+ GRADIENT NORM     0.002807  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.6401E-01  0.1883      0.6364    
+
+ PREDICTED ENERGY CHANGE    -0.225E-04
+
+ MAX GRADIENT      0.002668  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.001621  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.013715  THRESHOLD              0.001800 CONVERGED NO
+ RMS DISPLAC.      0.010213  THRESHOLD              0.001200 CONVERGED NO
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE       95.45 TCPU       94.95
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    4
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.149593 - DENSITY  5.513 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27052599     3.27052599     5.19788638    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -4.367827731764E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.995632172268E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.832367827732E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.167632172268E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  5) -3.7088418965030E+03     DE (AU)   -2.873E-05
+
+ UPDATED TRUST RADIUS     0.400E+01
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  3.2624975E-04    2  4.8908475E-04    3 -2.0806425E-04
+
+ GRADIENT NORM     0.000624  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.5713E-01  0.1620      0.6502    
+
+ PREDICTED ENERGY CHANGE    -0.165E-05
+
+ MAX GRADIENT      0.000489  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000360  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.004957  THRESHOLD              0.001800 CONVERGED NO
+ RMS DISPLAC.      0.003643  THRESHOLD              0.001200 CONVERGED NO
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      121.86 TCPU      121.36
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    5
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.202180 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27059094     3.27059094     5.20335657    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.485729615964E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996514270384E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831485729616E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168514270384E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  5) -3.7088418983569E+03     DE (AU)   -1.854E-06
+
+ UPDATED TRUST RADIUS     0.400E+01
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  4.7435830E-04    2 -5.5214698E-05    3  2.1613753E-05
+
+ GRADIENT NORM     0.000478  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.4597E-01  0.1647      0.6735    
+
+ PREDICTED ENERGY CHANGE    -0.282E-06
+
+ MAX GRADIENT      0.000474  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000276  THRESHOLD              0.000300 CONVERGED YES
+ MAX DISPLAC.      0.001845  THRESHOLD              0.001800 CONVERGED NO
+ RMS DISPLAC.      0.001347  THRESHOLD              0.001200 CONVERGED NO
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      148.22 TCPU      147.72
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    6
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.209857 - DENSITY  5.506 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27034554     3.27034554     5.20496636    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.794289599837E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997205710400E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830794289600E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169205710400E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088418982311E+03     DE (AU)    1.258E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+ ENERGY CHANGE > 0: STEP REJECTED. RETRYING WITH A NEW STEP
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.4597E-01  0.1647      0.6735    
+ NEWTON STEP ( 0.2333366015E-02) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.1271715176E+00
+
+ PREDICTED ENERGY CHANGE    -0.175E-06
+
+ MAX GRADIENT      0.000474  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000276  THRESHOLD              0.000300 CONVERGED YES
+ MAX DISPLAC.      0.000515  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      155.77 TCPU      155.27
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    7
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.203539 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27056300     3.27056300     5.20359225    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.218532417969E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996781467582E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831218532418E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168781467582E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088418983002E+03     DE (AU)    5.666E-08
+
+ UPDATED TRUST RADIUS     0.146E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  4.1712742E-04    2 -6.6848035E-05    3 -3.6390273E-06
+
+ GRADIENT NORM     0.000422  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2514E-01  0.1858      0.2233    
+ NEWTON STEP ( 0.9411213664E-02) EXCEEDS TRUST RADIUS ( 0.1458353760E-03)
+ LEVEL SHIFT    -0.1571464719E+01
+
+ PREDICTED ENERGY CHANGE    -0.600E-07
+
+ MAX GRADIENT      0.000417  THRESHOLD              0.000450 CONVERGED YES
+ RMS GRADIENT      0.000244  THRESHOLD              0.000300 CONVERGED YES
+ MAX DISPLAC.      0.000144  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000084  THRESHOLD              0.001200 CONVERGED YES
+
+ CONVERGENCE TESTS SATISFIED AFTER   7 ENERGY AND GRADIENT CALCULATIONS
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ FINALRUN OPTION: RE-STARTING OPTIMIZATION
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      178.48 TCPU      177.98
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    8
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.203204 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27055338     3.27055338     5.20358664    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.143914633749E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996856085366E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831143914634E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168856085366E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ REFERENCE GEOMETRY WILL BE CHANGED
+
+ TOTAL ENERGY(DFT)(AU)(  6) -3.7088427293088E+03     DE (AU)   -8.310E-04
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.6256117E-04    2 -7.9794374E-04    3 -2.8933870E-04
+
+ GRADIENT NORM     0.000864  GRADIENT THRESHOLD     0.500000
+
+ HESSIAN UPDATE SKIPPED
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2514E-01  0.1858      0.2233    
+ NEWTON STEP ( 0.1095031149E-01) EXCEEDS TRUST RADIUS ( 0.1458353760E-03)
+ LEVEL SHIFT    -0.1704040715E+01
+
+ PREDICTED ENERGY CHANGE    -0.124E-06
+
+ MAX GRADIENT      0.000798  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000499  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000133  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000084  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      212.10 TCPU      211.59
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT    9
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.201208 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27049660     3.27049660     5.20355188    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.128301851305E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996871698149E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831128301852E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168871698148E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427294019E+03     DE (AU)   -9.308E-08
+
+ UPDATED TRUST RADIUS     0.146E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.6124177E-04    2 -7.7389231E-04    3 -2.8791597E-04
+
+ GRADIENT NORM     0.000841  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2400E-01  0.1775      0.2213    
+ NEWTON STEP ( 0.1364936740E-01) EXCEEDS TRUST RADIUS ( 0.1458353760E-03)
+ LEVEL SHIFT    -0.2103314518E+01
+
+ PREDICTED ENERGY CHANGE    -0.121E-06
+
+ MAX GRADIENT      0.000774  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000486  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000133  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000084  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      239.18 TCPU      238.66
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   10
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.199220 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27043964     3.27043964     5.20351852    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.112994334882E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996887005665E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831112994335E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168887005665E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427294958E+03     DE (AU)   -9.390E-08
+
+ UPDATED TRUST RADIUS     0.292E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.6069851E-04    2 -7.5230309E-04    3 -2.8591336E-04
+
+ GRADIENT NORM     0.000821  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2413E-01  0.1610      0.2199    
+ NEWTON STEP ( 0.1353144370E-01) EXCEEDS TRUST RADIUS ( 0.2916707519E-03)
+ LEVEL SHIFT    -0.1024714973E+01
+
+ PREDICTED ENERGY CHANGE    -0.233E-06
+
+ MAX GRADIENT      0.000752  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000474  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000262  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000168  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      266.35 TCPU      265.83
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   11
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.195296 - DENSITY  5.507 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27032558     3.27032558     5.20345777    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.079994974614E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996920005025E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831079994975E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168920005025E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427296720E+03     DE (AU)   -1.762E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.5921232E-04    2 -7.0975657E-04    3 -2.8176932E-04
+
+ GRADIENT NORM     0.000780  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2422E-01  0.1603      0.2199    
+ NEWTON STEP ( 0.1315704999E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4891914728E+00
+
+ PREDICTED ENERGY CHANGE    -0.431E-06
+
+ MAX GRADIENT      0.000710  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000450  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000507  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      293.29 TCPU      292.77
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   12
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.187703 - DENSITY  5.508 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.27009711     3.27009711     5.20336499    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -3.004786775740E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.996995213224E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.831004786776E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.168995213224E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427299819E+03     DE (AU)   -3.099E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.5565429E-04    2 -6.2733581E-04    3 -2.7286404E-04
+
+ GRADIENT NORM     0.000702  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2426E-01  0.1599      0.2200    
+ NEWTON STEP ( 0.1266908472E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4757911818E+00
+
+ PREDICTED ENERGY CHANGE    -0.386E-06
+
+ MAX GRADIENT      0.000627  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000405  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000494  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      320.64 TCPU      320.12
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   13
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.180309 - DENSITY  5.509 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26986891     3.26986891     5.20329277    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.923454698870E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997076545301E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830923454699E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169076545301E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427302422E+03     DE (AU)   -2.603E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.5203091E-04    2 -5.4733512E-04    3 -2.6370456E-04
+
+ GRADIENT NORM     0.000626  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2419E-01  0.1593      0.2200    
+ NEWTON STEP ( 0.1234405453E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4668093638E+00
+
+ PREDICTED ENERGY CHANGE    -0.343E-06
+
+ MAX GRADIENT      0.000547  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000362  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000477  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      347.96 TCPU      347.43
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   14
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.173163 - DENSITY  5.510 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26964162     3.26964162     5.20324440    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.834999354908E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997165000645E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830834999355E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169165000645E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427304634E+03     DE (AU)   -2.212E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.4799858E-04    2 -4.6983380E-04    3 -2.5411490E-04
+
+ GRADIENT NORM     0.000554  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2421E-01  0.1593      0.2201    
+ NEWTON STEP ( 0.1188226835E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4528857431E+00
+
+ PREDICTED ENERGY CHANGE    -0.302E-06
+
+ MAX GRADIENT      0.000470  THRESHOLD              0.000450 CONVERGED NO
+ RMS GRADIENT      0.000320  THRESHOLD              0.000300 CONVERGED NO
+ MAX DISPLAC.      0.000456  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      375.16 TCPU      374.63
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   15
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.166335 - DENSITY  5.511 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26941615     3.26941615     5.20322452    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.738484688210E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997261515312E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830738484688E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169261515312E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427306384E+03     DE (AU)   -1.750E-07
+
+ UPDATED TRUST RADIUS     0.583E-03
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.4348234E-04    2 -3.9564016E-04    3 -2.4404150E-04
+
+ GRADIENT NORM     0.000486  GRADIENT THRESHOLD     0.500000
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2424E-01  0.1590      0.2202    
+ NEWTON STEP ( 0.1139915846E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4375560221E+00
+
+ PREDICTED ENERGY CHANGE    -0.264E-06
+
+ MAX GRADIENT      0.000396  THRESHOLD              0.000450 CONVERGED YES
+ RMS GRADIENT      0.000281  THRESHOLD              0.000300 CONVERGED YES
+ MAX DISPLAC.      0.000429  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+
+ CONVERGENCE TESTS SATISFIED AFTER  15 ENERGY AND GRADIENT CALCULATIONS
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ FINALRUN OPTION: RE-STARTING OPTIMIZATION
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT OPTI        TELAPSE      402.30 TCPU      401.77
+ *******************************************************************************
+ COORDINATE AND CELL OPTIMIZATION - POINT   16
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.159910 - DENSITY  5.512 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26919383     3.26919383     5.20323797    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.633096537080E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997366903463E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830633096537E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169366903463E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ REFERENCE GEOMETRY WILL BE CHANGED
+
+ TOTAL ENERGY(DFT)(AU)(  3) -3.7088427320842E+03     DE (AU)   -1.446E-06
+
+ SYMMETRY ALLOWED FORCES  (COORDINATE, FORCE)
+
+    1  1.3934006E-04    2 -3.2670570E-04    3 -2.3192506E-04
+
+ GRADIENT NORM     0.000424  GRADIENT THRESHOLD     0.500000
+
+ HESSIAN UPDATE SKIPPED
+
+ EIGENVALUES OF THE ESTIMATED HESSIAN
+  0.2424E-01  0.1590      0.2202    
+ NEWTON STEP ( 0.1090132410E-01) EXCEEDS TRUST RADIUS ( 0.5833415039E-03)
+ LEVEL SHIFT    -0.4202662848E+00
+
+ PREDICTED ENERGY CHANGE    -0.230E-06
+
+ MAX GRADIENT      0.000327  THRESHOLD              0.000450 CONVERGED YES
+ RMS GRADIENT      0.000245  THRESHOLD              0.000300 CONVERGED YES
+ MAX DISPLAC.      0.000397  THRESHOLD              0.001800 CONVERGED YES
+ RMS DISPLAC.      0.000337  THRESHOLD              0.001200 CONVERGED YES
+
+ CONVERGENCE TESTS SATISFIED AFTER  16 ENERGY AND GRADIENT CALCULATIONS
+
+ ******************************************************************
+ * OPT END - CONVERGED * E(AU):  -3.708842732084E+03  POINTS   16 *
+ ******************************************************************
+
+   BAND GAP:                      3.5554  eV 
+
+ EIGENVECTORS IN FORTRAN UNIT  8
+
+ NEIGHBORS OF THE NON-EQUIVALENT ATOMS
+
+ N = NUMBER OF NEIGHBORS AT DISTANCE R
+    ATOM  N     R/ANG      R/AU   NEIGHBORS (ATOM LABELS AND CELL INDICES)
+   1 ZN   3     1.9827     3.7468    4 O    0 0 0    4 O   -1 0 0    4 O    0 1 0
+   1 ZN   1     1.9945     3.7691    3 O    0 0 0
+   1 ZN   1     3.2087     6.0636    3 O    0 0-1
+   1 ZN   6     3.2142     6.0739    2 ZN   0 0 0    2 ZN  -1 0 0    2 ZN   0 1 0
+                                     2 ZN   0 0-1    2 ZN  -1 0-1    2 ZN   0 1-1
+   1 ZN   6     3.2692     6.1779    1 ZN  -1-1 0    1 ZN   1 1 0    1 ZN  -1 0 0
+                                     1 ZN   1 0 0    1 ZN   0-1 0    1 ZN   0 1 0
+   1 ZN   3     3.8234     7.2253    4 O   -1-1 0    4 O    1 1 0    4 O   -1 1 0
+
+   3 O    3     1.9827     3.7468    2 ZN   0 0 0    2 ZN  -1 0 0    2 ZN   0 1 0
+   3 O    1     1.9945     3.7691    1 ZN   0 0 0
+   3 O    1     3.2087     6.0636    1 ZN   0 0 1
+   3 O    6     3.2142     6.0739    4 O    0 0 0    4 O   -1 0 0    4 O    0 1 0
+                                     4 O    0 0 1    4 O   -1 0 1    4 O    0 1 1
+   3 O    6     3.2692     6.1779    3 O   -1-1 0    3 O    1 1 0    3 O   -1 0 0
+                                     3 O    1 0 0    3 O    0-1 0    3 O    0 1 0
+   3 O    3     3.8234     7.2253    2 ZN  -1-1 0    2 ZN   1 1 0    2 ZN  -1 1 0
+
+
+ FINAL OPTIMIZED GEOMETRY - DIMENSIONALITY OF THE SYSTEM      3
+ (NON PERIODIC DIRECTION: LATTICE PARAMETER FORMALLY SET TO 500)
+ *******************************************************************************
+ LATTICE PARAMETERS (ANGSTROMS AND DEGREES) - BOHR = 0.5291772083 ANGSTROM
+ PRIMITIVE CELL - CENTRING CODE 1/0 VOLUME=    48.159910 - DENSITY  5.512 g/cm^3
+         A              B              C           ALPHA      BETA       GAMMA 
+     3.26919383     3.26919383     5.20323797    90.000000  90.000000 120.000000
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    4
+     ATOM                 X/A                 Y/B                 Z/C    
+ *******************************************************************************
+      1 T  30 ZN    3.333333333333E-01 -3.333333333333E-01 -2.633096537080E-04
+      2 F  30 ZN   -3.333333333333E-01  3.333333333333E-01  4.997366903463E-01
+      3 T   8 O     3.333333333333E-01 -3.333333333333E-01  3.830633096537E-01
+      4 F   8 O    -3.333333333333E-01  3.333333333333E-01 -1.169366903463E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+ INFORMATION **** fort.34 **** GEOMETRY OUTPUT FILE
+
+ DIRECT LATTICE VECTORS CARTESIAN COMPONENTS (ANGSTROM)
+          X                    Y                    Z
+   0.283120490846E+01  -0.163459691603E+01   0.000000000000E+00
+   0.000000000000E+00   0.326919383206E+01   0.000000000000E+00
+   0.000000000000E+00   0.000000000000E+00   0.520323797447E+01
+
+
+ CARTESIAN COORDINATES - PRIMITIVE CELL
+ *******************************************************************************
+ *      ATOM          X(ANGSTROM)         Y(ANGSTROM)         Z(ANGSTROM)
+ *******************************************************************************
+    1    30 ZN   -1.887469938976E+00  0.000000000000E+00 -1.370062789219E-03
+    2    30 ZN   -9.437349694878E-01 -1.634596916032E+00  2.600248924448E+00
+    3     8 O    -1.887469938976E+00  0.000000000000E+00  1.993169559418E+00
+    4     8 O    -9.437349694878E-01 -1.634596916032E+00 -6.084494278190E-01
+
+ ****   12 SYMMOPS - TRANSLATORS IN FRACTIONAL UNITS
+ **** MATRICES AND TRANSLATORS IN THE CRYSTALLOGRAPHIC REFERENCE FRAME
+   V INV                    ROTATION MATRICES                   TRANSLATORS
+   1   1  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   2   2 -1.00  0.00  0.00 -0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   3   4 -0.00 -1.00  0.00  1.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   4   3 -1.00  1.00  0.00 -1.00 -0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   5   6  1.00 -1.00  0.00  1.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   6   5  0.00  1.00  0.00 -1.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+   7   7 -1.00  1.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   8   8  1.00  0.00  0.00  1.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   9   9 -0.00 -1.00  0.00 -1.00  0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+  10  10  0.00  1.00  0.00  1.00 -0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+  11  11 -1.00  0.00  0.00 -1.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+  12  12  1.00 -1.00  0.00 -0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.50
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE      431.44 TCPU      430.90
+ EEEEEEEEEE TERMINATION  DATE 10 09 2024 TIME 10:21:58.3
+NODE    0 CPU TIME =       430.905
+NODE    1 CPU TIME =       430.955
+NODE    2 CPU TIME =       431.137
+NODE    3 CPU TIME =       431.246
+NODE    4 CPU TIME =       430.891
+NODE    5 CPU TIME =       430.730
+NODE    6 CPU TIME =       430.719
+NODE    7 CPU TIME =       430.904
+NODE    8 CPU TIME =       430.641
+NODE    9 CPU TIME =       430.921
+NODE   10 CPU TIME =       430.969
+NODE   11 CPU TIME =       430.712
+NODE   12 CPU TIME =       431.012
+NODE   13 CPU TIME =       430.583
+NODE   14 CPU TIME =       431.017
+NODE   15 CPU TIME =       431.086
+NODE   16 CPU TIME =       430.828
+NODE   17 CPU TIME =       431.145
+NODE   18 CPU TIME =       430.724
+NODE   19 CPU TIME =       430.736
+NODE   20 CPU TIME =       430.769
+NODE   21 CPU TIME =       431.148
+NODE   22 CPU TIME =       430.700
+NODE   23 CPU TIME =       430.887
+NODE   24 CPU TIME =       430.350
+NODE   25 CPU TIME =       430.616
+NODE   26 CPU TIME =       430.633
+NODE   27 CPU TIME =       431.297
+NODE   28 CPU TIME =       431.382
+NODE   29 CPU TIME =       430.549
+NODE   30 CPU TIME =       430.414
+NODE   31 CPU TIME =       430.786
+    TOTAL CPU TIME =     13787.391
+Tue Sep 10 10:21:58 CEST 2024
+total 233192
+-rw-r--r-- 1 desmarais avogadro      8715 Sep 10 10:21 FORCES.DAT
+-rw-r--r-- 1 desmarais avogadro       192 Sep 10 10:21 HESSOPT.DAT
+-rw-r--r-- 1 desmarais avogadro      2290 Sep 10 10:14 INPUT
+-rw-r--r-- 1 desmarais avogadro    357642 Sep 10 10:21 OPTINFO.DAT
+-rwxr-xr-x 1 desmarais avogadro 220192088 Sep 10 10:14 Pcrystal-8820
+lrwxrwxrwx 1 desmarais avogadro        62 Sep 10 10:14 SCFOUT.LOG -> /home/desmarais/CRYSTAL23_public_for_Ale/test/ZnO_cvolopt.out2
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 dffit3.dat
+-rw-r--r-- 1 desmarais avogadro    146136 Sep 10 10:21 diis_Fg
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_Sk.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err1.pe27
+-rw-r--r-- 1 desmarais avogadro      3616 Sep 10 10:21 diis_err1.pe28
+-rw-r--r-- 1 desmarais avogadro      3616 Sep 10 10:21 diis_err1.pe29
+-rw-r--r-- 1 desmarais avogadro      7072 Sep 10 10:21 diis_err1.pe30
+-rw-r--r-- 1 desmarais avogadro      7072 Sep 10 10:21 diis_err1.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 diis_err2.pe27
+-rw-r--r-- 1 desmarais avogadro      1808 Sep 10 10:21 diis_err2.pe28
+-rw-r--r-- 1 desmarais avogadro      1808 Sep 10 10:21 diis_err2.pe29
+-rw-r--r-- 1 desmarais avogadro      3536 Sep 10 10:21 diis_err2.pe30
+-rw-r--r-- 1 desmarais avogadro      3536 Sep 10 10:21 diis_err2.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.1.pe31
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.10.pe00
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.10.pe01
+-rw-r--r-- 1 desmarais avogadro    195288 Sep 10 10:21 fort.10.pe02
+-rw-r--r-- 1 desmarais avogadro    332376 Sep 10 10:21 fort.10.pe03
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.10.pe04
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.10.pe05
+-rw-r--r-- 1 desmarais avogadro     14424 Sep 10 10:21 fort.10.pe06
+-rw-r--r-- 1 desmarais avogadro     21336 Sep 10 10:21 fort.10.pe07
+-rw-r--r-- 1 desmarais avogadro     69432 Sep 10 10:21 fort.10.pe08
+-rw-r--r-- 1 desmarais avogadro     69432 Sep 10 10:21 fort.10.pe09
+-rw-r--r-- 1 desmarais avogadro     97656 Sep 10 10:21 fort.10.pe10
+-rw-r--r-- 1 desmarais avogadro    166200 Sep 10 10:21 fort.10.pe11
+-rw-r--r-- 1 desmarais avogadro    222504 Sep 10 10:21 fort.10.pe12
+-rw-r--r-- 1 desmarais avogadro    291048 Sep 10 10:21 fort.10.pe13
+-rw-r--r-- 1 desmarais avogadro    222504 Sep 10 10:21 fort.10.pe14
+-rw-r--r-- 1 desmarais avogadro    291048 Sep 10 10:21 fort.10.pe15
+-rw-r--r-- 1 desmarais avogadro     48840 Sep 10 10:21 fort.10.pe16
+-rw-r--r-- 1 desmarais avogadro     48840 Sep 10 10:21 fort.10.pe17
+-rw-r--r-- 1 desmarais avogadro     29616 Sep 10 10:21 fort.10.pe18
+-rw-r--r-- 1 desmarais avogadro     29616 Sep 10 10:21 fort.10.pe19
+-rw-r--r-- 1 desmarais avogadro     66408 Sep 10 10:21 fort.10.pe20
+-rw-r--r-- 1 desmarais avogadro    134952 Sep 10 10:21 fort.10.pe21
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.10.pe22
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.10.pe23
+-rw-r--r-- 1 desmarais avogadro    195288 Sep 10 10:21 fort.10.pe24
+-rw-r--r-- 1 desmarais avogadro    374000 Sep 10 10:21 fort.10.pe25
+-rw-r--r-- 1 desmarais avogadro    101264 Sep 10 10:21 fort.10.pe26
+-rw-r--r-- 1 desmarais avogadro    294656 Sep 10 10:21 fort.10.pe27
+-rw-r--r-- 1 desmarais avogadro    178952 Sep 10 10:21 fort.10.pe28
+-rw-r--r-- 1 desmarais avogadro     54104 Sep 10 10:21 fort.10.pe29
+-rw-r--r-- 1 desmarais avogadro     73112 Sep 10 10:21 fort.10.pe30
+-rw-r--r-- 1 desmarais avogadro    107384 Sep 10 10:21 fort.10.pe31
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe00
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe01
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe02
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe03
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe04
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe05
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe06
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe07
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe08
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe09
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe10
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe11
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe12
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe13
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe14
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe15
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe16
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe17
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe18
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe19
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe20
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe21
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe22
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe23
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe24
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe25
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe26
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe27
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe28
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe29
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe30
+-rw-r--r-- 1 desmarais avogadro     48712 Sep 10 10:21 fort.11.pe31
+-rw-r--r-- 1 desmarais avogadro    187496 Sep 10 10:21 fort.12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.17.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.18.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.19.pe31
+-rw-r--r-- 1 desmarais avogadro    482332 Sep 10 10:21 fort.20
+-rw-r--r-- 1 desmarais avogadro     61216 Sep 10 10:21 fort.21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.28.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.29.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.3.pe31
+-rw-r--r-- 1 desmarais avogadro      5775 Sep 10 10:21 fort.33
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:21 fort.34
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.38.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.40.pe31
+-rw-r--r-- 1 desmarais avogadro      4688 Sep 10 10:21 fort.61.pe00
+-rw-r--r-- 1 desmarais avogadro      6944 Sep 10 10:21 fort.61.pe01
+-rw-r--r-- 1 desmarais avogadro      5672 Sep 10 10:21 fort.61.pe02
+-rw-r--r-- 1 desmarais avogadro      9104 Sep 10 10:21 fort.61.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.61.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.61.pe05
+-rw-r--r-- 1 desmarais avogadro      9104 Sep 10 10:21 fort.61.pe06
+-rw-r--r-- 1 desmarais avogadro      6944 Sep 10 10:21 fort.61.pe07
+-rw-r--r-- 1 desmarais avogadro      4688 Sep 10 10:21 fort.61.pe08
+-rw-r--r-- 1 desmarais avogadro      4688 Sep 10 10:21 fort.61.pe09
+-rw-r--r-- 1 desmarais avogadro      4688 Sep 10 10:21 fort.61.pe10
+-rw-r--r-- 1 desmarais avogadro      6944 Sep 10 10:21 fort.61.pe11
+-rw-r--r-- 1 desmarais avogadro      6944 Sep 10 10:21 fort.61.pe12
+-rw-r--r-- 1 desmarais avogadro      9104 Sep 10 10:21 fort.61.pe13
+-rw-r--r-- 1 desmarais avogadro      6944 Sep 10 10:21 fort.61.pe14
+-rw-r--r-- 1 desmarais avogadro      7160 Sep 10 10:21 fort.61.pe15
+-rw-r--r-- 1 desmarais avogadro     11840 Sep 10 10:21 fort.61.pe16
+-rw-r--r-- 1 desmarais avogadro      9680 Sep 10 10:21 fort.61.pe17
+-rw-r--r-- 1 desmarais avogadro     11848 Sep 10 10:21 fort.61.pe18
+-rw-r--r-- 1 desmarais avogadro      8256 Sep 10 10:21 fort.61.pe19
+-rw-r--r-- 1 desmarais avogadro      9088 Sep 10 10:21 fort.61.pe20
+-rw-r--r-- 1 desmarais avogadro     11344 Sep 10 10:21 fort.61.pe21
+-rw-r--r-- 1 desmarais avogadro     11344 Sep 10 10:21 fort.61.pe22
+-rw-r--r-- 1 desmarais avogadro     12072 Sep 10 10:21 fort.61.pe23
+-rw-r--r-- 1 desmarais avogadro      9680 Sep 10 10:21 fort.61.pe24
+-rw-r--r-- 1 desmarais avogadro     11840 Sep 10 10:21 fort.61.pe25
+-rw-r--r-- 1 desmarais avogadro      7064 Sep 10 10:21 fort.61.pe26
+-rw-r--r-- 1 desmarais avogadro      4792 Sep 10 10:21 fort.61.pe27
+-rw-r--r-- 1 desmarais avogadro     13504 Sep 10 10:21 fort.61.pe28
+-rw-r--r-- 1 desmarais avogadro     11344 Sep 10 10:21 fort.61.pe29
+-rw-r--r-- 1 desmarais avogadro      9088 Sep 10 10:21 fort.61.pe30
+-rw-r--r-- 1 desmarais avogadro      9480 Sep 10 10:21 fort.61.pe31
+-rw-r--r-- 1 desmarais avogadro      6104 Sep 10 10:21 fort.62.pe00
+-rw-r--r-- 1 desmarais avogadro      7448 Sep 10 10:21 fort.62.pe01
+-rw-r--r-- 1 desmarais avogadro      1696 Sep 10 10:21 fort.62.pe02
+-rw-r--r-- 1 desmarais avogadro      3040 Sep 10 10:21 fort.62.pe03
+-rw-r--r-- 1 desmarais avogadro      6104 Sep 10 10:21 fort.62.pe04
+-rw-r--r-- 1 desmarais avogadro      7448 Sep 10 10:21 fort.62.pe05
+-rw-r--r-- 1 desmarais avogadro      7208 Sep 10 10:21 fort.62.pe06
+-rw-r--r-- 1 desmarais avogadro      4696 Sep 10 10:21 fort.62.pe07
+-rw-r--r-- 1 desmarais avogadro      6744 Sep 10 10:21 fort.62.pe08
+-rw-r--r-- 1 desmarais avogadro      6744 Sep 10 10:21 fort.62.pe09
+-rw-r--r-- 1 desmarais avogadro      8224 Sep 10 10:21 fort.62.pe10
+-rw-r--r-- 1 desmarais avogadro      8896 Sep 10 10:21 fort.62.pe11
+-rw-r--r-- 1 desmarais avogadro      3808 Sep 10 10:21 fort.62.pe12
+-rw-r--r-- 1 desmarais avogadro      4480 Sep 10 10:21 fort.62.pe13
+-rw-r--r-- 1 desmarais avogadro      5256 Sep 10 10:21 fort.62.pe14
+-rw-r--r-- 1 desmarais avogadro      5928 Sep 10 10:21 fort.62.pe15
+-rw-r--r-- 1 desmarais avogadro      6616 Sep 10 10:21 fort.62.pe16
+-rw-r--r-- 1 desmarais avogadro      6616 Sep 10 10:21 fort.62.pe17
+-rw-r--r-- 1 desmarais avogadro      4624 Sep 10 10:21 fort.62.pe18
+-rw-r--r-- 1 desmarais avogadro      4624 Sep 10 10:21 fort.62.pe19
+-rw-r--r-- 1 desmarais avogadro      5336 Sep 10 10:21 fort.62.pe20
+-rw-r--r-- 1 desmarais avogadro      6008 Sep 10 10:21 fort.62.pe21
+-rw-r--r-- 1 desmarais avogadro      6104 Sep 10 10:21 fort.62.pe22
+-rw-r--r-- 1 desmarais avogadro      7448 Sep 10 10:21 fort.62.pe23
+-rw-r--r-- 1 desmarais avogadro      1696 Sep 10 10:21 fort.62.pe24
+-rw-r--r-- 1 desmarais avogadro      8912 Sep 10 10:21 fort.62.pe25
+-rw-r--r-- 1 desmarais avogadro     13832 Sep 10 10:21 fort.62.pe26
+-rw-r--r-- 1 desmarais avogadro      8344 Sep 10 10:21 fort.62.pe27
+-rw-r--r-- 1 desmarais avogadro      4400 Sep 10 10:21 fort.62.pe28
+-rw-r--r-- 1 desmarais avogadro     10560 Sep 10 10:21 fort.62.pe29
+-rw-r--r-- 1 desmarais avogadro      6288 Sep 10 10:21 fort.62.pe30
+-rw-r--r-- 1 desmarais avogadro      6960 Sep 10 10:21 fort.62.pe31
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.8.pe00
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.8.pe01
+-rw-r--r-- 1 desmarais avogadro    195288 Sep 10 10:21 fort.8.pe02
+-rw-r--r-- 1 desmarais avogadro    332376 Sep 10 10:21 fort.8.pe03
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.8.pe04
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.8.pe05
+-rw-r--r-- 1 desmarais avogadro     14424 Sep 10 10:21 fort.8.pe06
+-rw-r--r-- 1 desmarais avogadro     21336 Sep 10 10:21 fort.8.pe07
+-rw-r--r-- 1 desmarais avogadro     69432 Sep 10 10:21 fort.8.pe08
+-rw-r--r-- 1 desmarais avogadro     69432 Sep 10 10:21 fort.8.pe09
+-rw-r--r-- 1 desmarais avogadro     97656 Sep 10 10:21 fort.8.pe10
+-rw-r--r-- 1 desmarais avogadro    166200 Sep 10 10:21 fort.8.pe11
+-rw-r--r-- 1 desmarais avogadro    222504 Sep 10 10:21 fort.8.pe12
+-rw-r--r-- 1 desmarais avogadro    291048 Sep 10 10:21 fort.8.pe13
+-rw-r--r-- 1 desmarais avogadro    222504 Sep 10 10:21 fort.8.pe14
+-rw-r--r-- 1 desmarais avogadro    291048 Sep 10 10:21 fort.8.pe15
+-rw-r--r-- 1 desmarais avogadro     48840 Sep 10 10:21 fort.8.pe16
+-rw-r--r-- 1 desmarais avogadro     48840 Sep 10 10:21 fort.8.pe17
+-rw-r--r-- 1 desmarais avogadro     29616 Sep 10 10:21 fort.8.pe18
+-rw-r--r-- 1 desmarais avogadro     29616 Sep 10 10:21 fort.8.pe19
+-rw-r--r-- 1 desmarais avogadro     66408 Sep 10 10:21 fort.8.pe20
+-rw-r--r-- 1 desmarais avogadro    134952 Sep 10 10:21 fort.8.pe21
+-rw-r--r-- 1 desmarais avogadro     70440 Sep 10 10:21 fort.8.pe22
+-rw-r--r-- 1 desmarais avogadro    207528 Sep 10 10:21 fort.8.pe23
+-rw-r--r-- 1 desmarais avogadro    195288 Sep 10 10:21 fort.8.pe24
+-rw-r--r-- 1 desmarais avogadro    374000 Sep 10 10:21 fort.8.pe25
+-rw-r--r-- 1 desmarais avogadro    101264 Sep 10 10:21 fort.8.pe26
+-rw-r--r-- 1 desmarais avogadro    294656 Sep 10 10:21 fort.8.pe27
+-rw-r--r-- 1 desmarais avogadro    178952 Sep 10 10:21 fort.8.pe28
+-rw-r--r-- 1 desmarais avogadro     54104 Sep 10 10:21 fort.8.pe29
+-rw-r--r-- 1 desmarais avogadro     73112 Sep 10 10:21 fort.8.pe30
+-rw-r--r-- 1 desmarais avogadro    107384 Sep 10 10:21 fort.8.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.82.pe31
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe00
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe01
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe02
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe03
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe04
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe05
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe06
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe07
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe08
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe09
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe10
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe11
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe12
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe13
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe14
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe15
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe16
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe17
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe18
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe19
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe20
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe21
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe22
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe23
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe24
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe25
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe26
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe27
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe28
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe29
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe30
+-rw-r--r-- 1 desmarais avogadro         0 Sep 10 10:14 fort.83.pe31
+-rw-r--r-- 1 desmarais avogadro    482332 Sep 10 10:21 fort.9
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe00
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe01
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe02
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe03
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe04
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe05
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe06
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe07
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe08
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe09
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe10
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe11
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe12
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe13
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe14
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe15
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe16
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe17
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe18
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe19
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe20
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe21
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe22
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe23
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe24
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe25
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe26
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe27
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe28
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe29
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe30
+-rw-r--r-- 1 desmarais avogadro    124952 Sep 10 10:21 fort.95.pe31
+-rw-r--r-- 1 desmarais avogadro   1240397 Sep 10 10:21 fort.98
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:15 optc001
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:15 optc002
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:16 optc003
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:16 optc004
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:17 optc005
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:17 optc007
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:18 optc008
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:18 optc009
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:19 optc010
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:19 optc011
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:20 optc012
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:20 optc013
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:21 optc014
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:21 optc015
+-rw-r--r-- 1 desmarais avogadro      3450 Sep 10 10:21 optc016
