@@ -1,0 +1,2071 @@
+/home/erba/Mitoli/Xmerge/bin/Linux-ifort_dav/std/Pcrystal
+/scratch/alessandro/tmp_p32735
+script started on node80
+H2O - PES restart - VSCF+VCI
+MOLECULE
+15
+2
+8      0.000000000000E+00  0.000000000000E+00  1.175717600266E-01
+1      0.000000000000E+00  7.603952673740E-01 -4.710508800133E-01
+FREQCALC
+NUMDERIV
+2
+ANHAPES
+3
+7 8 9
+3 0.9
+3MODTERM
+VSCF
+VCI
+5 3
+1
+END
+END
+1 6
+0 0 1 0 1.0
+      3.258000D-01           1.000000D+00
+0 0 5 1 1.0
+      3.387000D+01           6.068000D-03
+      5.095000D+00           4.530800D-02
+      1.159000D+00           2.028220D-01
+      3.258000D-01           5.039030D-01
+      1.027000D-01           3.834210D-01
+0 0 1 0 1.0
+      1.027000D-01           1.000000D+00
+0 2 1 0 1.0
+      1.407000D+00           1.000000D+00
+0 2 1 0 1.0
+      3.880000D-01           1.000000D+00
+0 3 1 0 1.0
+      1.057000D+00           1.0000000
+8 10
+0 0 10 2 1.0
+      1.533000D+04           5.080000D-04
+      2.299000D+03           3.929000D-03
+      5.224000D+02           2.024300D-02
+      1.473000D+02           7.918100D-02
+      4.755000D+01           2.306870D-01
+      1.676000D+01           4.331180D-01
+      6.207000D+00           3.502600D-01
+      1.752000D+00           4.272800D-02
+      6.882000D-01          -8.154000D-03
+      2.384000D-01           2.381000D-03
+0 0 1 0 1.0
+      1.752000D+00           1.000000D+00
+0 0 10 2 1.0
+      1.533000D+04          -1.150000D-04
+      2.299000D+03          -8.950000D-04
+      5.224000D+02          -4.636000D-03
+      1.473000D+02          -1.872400D-02
+      4.755000D+01          -5.846300D-02
+      1.676000D+01          -1.364630D-01
+      6.207000D+00          -1.757400D-01
+      1.752000D+00           1.609340D-01
+      6.882000D-01           6.034180D-01
+      2.384000D-01           3.787650D-01
+0 0 1 0 1.0
+      2.384000D-01           1.000000D+00
+0 2 1 0 1.0
+      7.156000D-01           1.000000D+00
+0 2 5 4 1.0
+      3.446000D+01           1.592800D-02
+      7.749000D+00           9.974000D-02
+      2.280000D+00           3.104920D-01
+      7.156000D-01           4.910260D-01
+      2.140000D-01           3.363370D-01
+0 2 1 0 1.0
+      2.140000D-01           1.000000D+00
+0 3 1 0 1.0
+      2.314000D+00           1.000000D+00
+0 3 1 0 1.0
+      6.450000D-01           1.000000D+00
+0 4 1 0 1.0
+      1.428000D+00           1.0000000
+99 0
+END
+DFT
+B3LYP
+XXLGRID
+END
+SHRINK
+2 2
+TOLINTEG
+10 10 10 10 20
+TOLDEE
+10
+MAXCYCLE
+100
+END
+
+************************************************
+ANOTHER DROLLERY FILLED RUN OF THE CRYSTAL CODE!
+************************************************
+Sat 07 Sep 2024 10:13:40 PM CEST
+ PROCESS            0  OF           10  WORKING
+ PROCESS            2  OF           10  WORKING
+ PROCESS            4  OF           10  WORKING
+ PROCESS            7  OF           10  WORKING
+ PROCESS            6  OF           10  WORKING
+ PROCESS            9  OF           10  WORKING
+ PROCESS            1  OF           10  WORKING
+ PROCESS            3  OF           10  WORKING
+ PROCESS            8  OF           10  WORKING
+ PROCESS            5  OF           10  WORKING
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                               CRYSTAL23                                     *
+ *                      public : 1.0.1 - October 2022                          *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(6), I.J. BUSH(7), Ph. D'ARCO(8),                 *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8), L. MASCHIO(1,11), A. ERBA(1,11)  *
+ *  M. RE'RAT(14), S. CASASSA(1,11), B.G. SEARLE(2), J.K. DESMARAIS(1)         *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CODE HAVE ALSO BEEN GIVEN BY                    *
+ *                                                                             *
+ *  M. FERRABONE(1,11), M. DE LA PIERRE(1,11), M. FERRERO(1,11),               *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  B. KIRTMAN(15), V. LACIVITA(1,11), R. DEMICHELIS(1,16)                     *
+ *  G. BRANDEBURG(17), S. SALUSTRO(1,11), G. SANSONE(1,11)                     *
+ *  M.T. RUGGIERO(18), L.E. DAGA(1), L. DONA'(1), A. COSSARD(1)                *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+ * (2) SCIENTIFIC COMPUTING DEPARTMENT - STFC DARESBURY (UK)                   *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET STUTTGART- STUTTGART (GERMANY)                             *
+ * (6) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (7) SCIENTIFIC COMPUTING DEPARTMENT - STFC RAL (UK)                         *
+ * (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)                            *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF TROMSO - TROMSO (NORWAY)                                  *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *(17) UNIVERSITY COLLEGE LONDON - LONDON (UK)                                 *
+ *(18) UNIVERSITY OF VERMONT - BURLINGTON (USA)                                *
+ *                                                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 07 09 2024 TIME 22:13:40.4
+ H2O - PES restart - VSCF+VCI                                                    
+
+ MOLECULAR CALCULATION
+ POINT  GROUP  N. 15                  :  MM2    OR  C2V  
+ CORRESPONDING SPACE GROUP            :  P M M 2         
+
+
+ NUMBER OF IRREDUCIBLE ATOMS IN THE CONVENTIONAL CELL:    2
+
+ INPUT COORDINATES
+
+ ATOM AT. N.              COORDINATES
+   1   8     0.000000000000E+00  0.000000000000E+00  1.175717600266E-01
+   2   1     0.000000000000E+00  7.603952673740E-01 -4.710508800133E-01
+
+ COORDINATES OF THE EQUIVALENT ATOMS (ANGSTROMS)
+
+ N. ATOM EQUIV AT. N.          X                  Y                  Z
+
+   1   1   1    8 O     0.00000000000E+00  0.00000000000E+00  1.17571760027E-01
+
+   2   2   1    1 H     0.00000000000E+00  7.60395267374E-01 -4.71050880013E-01
+   3   2   2    1 H     0.00000000000E+00 -7.60395267374E-01 -4.71050880013E-01
+
+ NUMBER OF SYMMETRY OPERATORS         :    4
+ *******************************************************************************
+ * GEOMETRY EDITING - INPUT COORDINATES ARE GIVEN IN ANGSTROM         
+ *******************************************************************************
+
+ GEOMETRY NOW FULLY CONSISTENT WITH THE GROUP
+
+ FRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQFRQ
+
+                       FREQUENCY CALCULATION
+
+ INFORMATION **** INPFREQ **** NUMERICAL DERIVATIVE OF GRADIENT OPTION           2
+ INFORMATION **** INPFREQ **** SCAN OF PES ALONG NORMAL MODES
+ INFORMATION **** INPFREQ **** THREE MODES COUPLINGS ACTIVE
+ INFORMATION **** INPFREQ **** VSCF ACTIVE
+ INFORMATION **** INPFREQ **** VCI AND VSCF ACTIVE
+ INFORMATION **** INPFREQ **** NEW DEFAULT - IMPOSING ECKART CONDITIONS TO THE HESSIAN
+
+ GEOMETRY FOR WAVE FUNCTION - DIMENSIONALITY OF THE SYSTEM    0
+ (NON PERIODIC DIRECTION: LATTICE PARAMETER FORMALLY SET TO 500)
+ *******************************************************************************
+ ATOMS IN THE ASYMMETRIC UNIT    2 - ATOMS IN THE UNIT CELL:    3
+     ATOM             X(ANGSTROM)         Y(ANGSTROM)         Z(ANGSTROM)
+ *******************************************************************************
+      1 T   8 O     0.000000000000E+00  0.000000000000E+00  1.175717600266E-01
+      2 T   1 H     0.000000000000E+00  7.603952673740E-01 -4.710508800133E-01
+      3 F   1 H     0.000000000000E+00 -7.603952673740E-01 -4.710508800133E-01
+
+ T = ATOM BELONGING TO THE ASYMMETRIC UNIT
+
+ ****    4 SYMMOPS - TRANSLATORS IN FRACTIONAL UNITS
+ **** MATRICES AND TRANSLATORS IN THE CRYSTALLOGRAPHIC REFERENCE FRAME
+   V INV                    ROTATION MATRICES                   TRANSLATORS
+   1   1  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   2   2 -1.00  0.00  0.00  0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   3   3 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+   4   4  1.00  0.00  0.00  0.00 -1.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00
+
+ *******************************************************************************
+ LOCAL ATOMIC FUNCTIONS BASIS SET
+ *******************************************************************************
+   ATOM   X(AU)   Y(AU)   Z(AU)  N. TYPE  EXPONENT  S COEF   P COEF   D/F/G COEF
+ *******************************************************************************
+   1 O    0.000   0.000   0.222
+                                  1 S  
+                                         1.533E+04 5.080E-04 0.000E+00 0.000E+00
+                                         2.299E+03 3.929E-03 0.000E+00 0.000E+00
+                                         5.224E+02 2.024E-02 0.000E+00 0.000E+00
+                                         1.473E+02 7.918E-02 0.000E+00 0.000E+00
+                                         4.755E+01 2.307E-01 0.000E+00 0.000E+00
+                                         1.676E+01 4.331E-01 0.000E+00 0.000E+00
+                                         6.207E+00 3.503E-01 0.000E+00 0.000E+00
+                                         1.752E+00 4.273E-02 0.000E+00 0.000E+00
+                                         6.882E-01-8.154E-03 0.000E+00 0.000E+00
+                                         2.384E-01 2.381E-03 0.000E+00 0.000E+00
+                                  2 S  
+                                         1.752E+00 1.000E+00 0.000E+00 0.000E+00
+                                  3 S  
+                                         1.533E+04-1.150E-04 0.000E+00 0.000E+00
+                                         2.299E+03-8.950E-04 0.000E+00 0.000E+00
+                                         5.224E+02-4.636E-03 0.000E+00 0.000E+00
+                                         1.473E+02-1.872E-02 0.000E+00 0.000E+00
+                                         4.755E+01-5.846E-02 0.000E+00 0.000E+00
+                                         1.676E+01-1.365E-01 0.000E+00 0.000E+00
+                                         6.207E+00-1.757E-01 0.000E+00 0.000E+00
+                                         1.752E+00 1.609E-01 0.000E+00 0.000E+00
+                                         6.882E-01 6.034E-01 0.000E+00 0.000E+00
+                                         2.384E-01 3.788E-01 0.000E+00 0.000E+00
+                                  4 S  
+                                         2.384E-01 1.000E+00 0.000E+00 0.000E+00
+                           5-     7 P  
+                                         7.156E-01 0.000E+00 1.000E+00 0.000E+00
+                           8-    10 P  
+                                         3.446E+01 0.000E+00 1.593E-02 0.000E+00
+                                         7.749E+00 0.000E+00 9.974E-02 0.000E+00
+                                         2.280E+00 0.000E+00 3.105E-01 0.000E+00
+                                         7.156E-01 0.000E+00 4.910E-01 0.000E+00
+                                         2.140E-01 0.000E+00 3.363E-01 0.000E+00
+                          11-    13 P  
+                                         2.140E-01 0.000E+00 1.000E+00 0.000E+00
+                          14-    18 D  
+                                         2.314E+00 0.000E+00 0.000E+00 1.000E+00
+                          19-    23 D  
+                                         6.450E-01 0.000E+00 0.000E+00 1.000E+00
+                          24-    30 F  
+                                         1.428E+00 0.000E+00 0.000E+00 1.000E+00
+   2 H    0.000   1.437  -0.890
+                                 31 S  
+                                         3.258E-01 1.000E+00 0.000E+00 0.000E+00
+                                 32 S  
+                                         3.387E+01 6.068E-03 0.000E+00 0.000E+00
+                                         5.095E+00 4.531E-02 0.000E+00 0.000E+00
+                                         1.159E+00 2.028E-01 0.000E+00 0.000E+00
+                                         3.258E-01 5.039E-01 0.000E+00 0.000E+00
+                                         1.027E-01 3.834E-01 0.000E+00 0.000E+00
+                                 33 S  
+                                         1.027E-01 1.000E+00 0.000E+00 0.000E+00
+                          34-    36 P  
+                                         1.407E+00 0.000E+00 1.000E+00 0.000E+00
+                          37-    39 P  
+                                         3.880E-01 0.000E+00 1.000E+00 0.000E+00
+                          40-    44 D  
+                                         1.057E+00 0.000E+00 0.000E+00 1.000E+00
+   3 H    0.000  -1.437  -0.890
+ INFORMATION **** SET_MPP **** PCRYSTAL CALCULATION
+ INFORMATION **** READM2 **** NEW DEFAULT: FOCK/KS MATRIX MIXING SET TO 30 %
+ INFORMATION **** READM2 **** NEW DEFAULT: FULL DIRECT SCF MODE
+ INFORMATION **** READM2 **** NEW DEFAULT: COULOMB BIPOLAR BUFFER SET TO 32 Mb
+ INFORMATION **** READM2 **** NEW DEFAULT: EXCHANGE BIPOLAR BUFFER SET TO 32 Mb
+
+ *******************************************************************************
+ NEW DEFAULT: DFT INTEGRATION GRID INCREASED TO XLGRID
+ NEW DEFAULT: DIIS ACCELERATOR ACTIVE
+ USE KEYWORD NODIIS TO TURN IT OFF
+ *******************************************************************************
+
+ WARNING **** SHRINK **** MOLECULAR CASE - SHRINKING NOT USED
+ INFORMATION **** TOLINTEG **** COULOMB AND EXCHANGE SERIES TOLERANCES MODIFIED
+ INFORMATION **** TOLDEE **** SCF TOL ON TOTAL ENERGY SET TO          10
+ INFORMATION **** MAXCYCLE **** MAX NUMBER OF SCF CYCLES SET TO         100
+ *******************************************************************************
+ N. OF ATOMS PER CELL         3  COULOMB OVERLAP TOL         (T1) 10**  -10
+ NUMBER OF SHELLS            22  COULOMB PENETRATION TOL     (T2) 10**  -10
+ NUMBER OF AO                58  EXCHANGE OVERLAP TOL        (T3) 10**  -10
+ N. OF ELECTRONS PER CELL    10  EXCHANGE PSEUDO OVP (F(G))  (T4) 10**  -10
+ CORE ELECTRONS PER CELL      2  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**  -20
+ N. OF SYMMETRY OPERATORS     4  POLE ORDER IN MONO ZONE                  4
+ *******************************************************************************
+ TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ KOHN-SHAM HAMILTONIAN
+
+ (EXCHANGE)[CORRELATION] FUNCTIONAL:(BECKE 88)[LEE-YANG-PARR]
+
+ NON-LOCAL WEIGHTING FACTOR (EXCHANGE) =           0.9000
+ NON-LOCAL WEIGHTING FACTOR [CORRELATION] =        0.8100
+
+ HYBRID EXCHANGE - PERCENTAGE OF FOCK EXCHANGE    20.0000
+
+ CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
+
+ *******************************************************************************
+ MAX NUMBER OF SCF CYCLES     100  CONVERGENCE ON DELTAP        10**-20
+ WEIGHT OF F(I) IN F(I+1)      30% CONVERGENCE ON ENERGY        10**-10
+
+ DISK SPACE FOR EIGENVECTORS (FTN 10)        3364 REALS
+
+ SYMMETRY ADAPTION OF THE BLOCH FUNCTIONS ENABLED
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.14 TCPU        0.12
+
+ MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.14 TCPU        0.12
+
+ NEIGHBORS OF THE NON-EQUIVALENT ATOMS
+
+ N = NUMBER OF NEIGHBORS AT DISTANCE R
+    ATOM  N     R/ANG      R/AU   NEIGHBORS (ATOM LABELS AND CELL INDICES)
+   1 O    2     0.9616     1.8172    2 H    0 0 0    3 H    0 0 0
+
+   2 H    1     0.9616     1.8172    1 O    0 0 0
+   2 H    1     1.5208     2.8739    3 H    0 0 0
+
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.14 TCPU        0.12
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.14 TCPU        0.12
+
+ *******************************************************************************
+ *                                                                             *
+ *                                                                             *
+ *         FFFFF  RRRR   EEEE   QQQ   U   U  EEEE  N   N   CCC  Y   Y          *
+ *         F      R   R  E     Q   Q  U   U  E     NN  N  C      Y Y           *
+ *         FFF    RRRR   EEEE  Q   Q  U   U  EEEE  N N N  C       Y            *
+ *         F      R   R  E     Q  QQ  U   U  E     N  NN  C       Y            *
+ *         F      R   R  EEEE   QQ Q   UUU   EEEE  N   N   CCC    Y            *
+ *                                                                             *
+ *                                                                             *
+ * CALCULATION OF PHONON FREQUENCIES AT THE GAMMA POINT.                       *
+ *                                                                             *
+ * SYMMETRY IS EXPLOITED TO BUILD THE TOTAL HESSIAN MATRIX.                    *
+ * (F. PASCALE PHD THESIS TURIN-PARIS 2002)                                    *
+ *                                                                             *
+ *******************************************************************************
+
+
+ * INTENSITIES COMPUTED VIA THE BERRY PHASE APPROACH                           *
+ *                                                                             *
+ * REFERENCES TO BE QUOTED WHEN USING THIS MODULE:                             *
+ *                                                                             *
+ * F. Pascale, C.M. Zicovich-Wilson, F. Lopez, B. Civalleri                    *
+ * R. Orlando, R. Dovesi                                                       *
+ * The calculation of the vibration frequencies of crystalline                 *
+ * compounds and its implementation in the CRYSTAL code                        *
+ * J. Comput. Chem. 25 (2004) 888-897                                          *
+ *                                                                             *
+ * C.M. Zicovich-Wilson, F. Pascale, C. Roetti, V.R. Saunders,                 *
+ * R. Orlando, R. Dovesi                                                       *
+ * The calculation of the vibration frequencies of alpha-quartz:               *
+ * the effect of hamiltonian and basis set                                     *
+ * J. Comput. Chem. 25 (2004) 1873-1881                                        *
+ *******************************************************************************
+
+
+
+ ATOMS ISOTOPIC MASS (AMU) FOR FREQUENCY CALCULATION 
+
+    1 O      15.9949    2 H       1.0078    3 H       1.0078
+
+ INFORMATION CONCERNING THE SCF+GRADIENT CALCULATIONS REQUIRED FOR
+ GENERATING FREQUENCIES. IN PRINCIPLE 3N+1 SCF + GRADIENT
+ CALCULATIONS  ARE REQUIRED;
+ FOR EACH OF THEM THE REMAINING POINT SYMMETRY IS INDICATED.
+ POINT SYMMETRY PERMITS TO GENERATE GRADIENTS FOR DISPLACEMENT B 
+ STARTING FROM THE GRADIENT GENERATED BY DISPLACEMENT A.
+
+   N   LABEL SYMBOL DISPLACEMENT     SYM. 
+
+   1     EQUILIBRIUM GEOMETRY            4
+
+   2      1   O            DX        GENERATED BY TRANSLATIONAL INVARIANCE
+   3      1   O            DY        GENERATED BY TRANSLATIONAL INVARIANCE
+   4      1   O            DZ        GENERATED BY TRANSLATIONAL INVARIANCE
+   5      2   H            DX           1
+   6      2   H            DY           2
+   7      2   H            DZ           2
+ USE OF RESIDUAL SYMMETRY AFTER DISPLACEMENT
+
+ NUMERICAL GRADIENT COMPUTED WITH A DOUBLE DISPLACEMENT (+-DX) FOR EACH
+ CARTESIAN COORDINATE WITH RESPECT TO THE EQUILIBRIUM CONFIGURATION
+ DX=  0.003 ANGSTROM
+ NUMBER OF IRREDUCIBLE ATOMS                     2
+ NUMBER OF SCF+GRADIENT CALCULATIONS             7
+
+  ATOM  SYMOP  ORDER
+    1      4      2
+    2      2      2
+
+ ATOM  : IRREDUCIBLE ATOM
+ SYMOP : NUMBER OF SYMMETRY OPERATORS THAT DOESN'T MOVE THE IRREDUCIBLE ATOM
+ ORDER : MAXIMUM ORDER AMONG THE OPERATORS OF THE IRREDUCIBLE ATOM
+
+ *******************************************************************************
+
+
+ CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.14 TCPU        0.12
+
+ MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.14 TCPU        0.12
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.14 TCPU        0.12
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.14 TCPU        0.12
+
+ DFT PARAMETERS
+
+     ATOM       ELECTRONS   NET CHARGE   R(ANGSTROM)
+   1   8  O       8.0000      0.0000     0.74000000
+   2   1  H       1.0000      0.0000     1.11000000
+
+ SIZE OF GRID=      55307
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MAKE_GRID2  TELAPSE        0.17 TCPU        0.15
+ BECKE WEIGHT FUNCTION
+ RADSAFE =     2.00
+ TOLERANCES - DENSITY:10**- 6; POTENTIAL:10**- 9; GRID WGT:10**-14
+
+ RADIAL INTEGRATION  - INTERVALS (POINTS,UPPER LIMIT):            1( 99,  4.0*R)
+
+ ANGULAR INTEGRATION - INTERVALS (ACCURACY LEVEL [N. POINTS] UPPER LIMIT):
+  1(  6[ 146]   0.2)  2( 11[ 302]   0.5)  3( 14[ 590]   0.9)  4( 18[1454]   3.5)
+  5( 14[ 590]9999.0)
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_CALC    TELAPSE        0.17 TCPU        0.15
+
+ *******************************************************************************
+ H2O - PES restart - VSCF+VCI                                                    
+ CRYSTAL - SCF - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+
+ CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SDIK        TELAPSE        0.17 TCPU        0.15
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+         ATOMIC WAVEFUNCTION(S)
+
+
+ NUCLEAR CHARGE  8.0  SYMMETRY SPECIES            S    P
+ N. ELECTRONS    8.0  NUMBER OF PRIMITIVE GTOS   22    7
+                      NUMBER OF CONTRACTED GTOS   4    3
+                      NUMBER OF CLOSED SHELLS     2    0
+                      OPEN SHELL OCCUPATION       0    4
+
+  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+   8.0    14    -7.480307855E+01  7.480320520E+01 -1.999998307E+00  2.4E-06
+
+ NUCLEAR CHARGE  1.0  SYMMETRY SPECIES            S
+ N. ELECTRONS    1.0  NUMBER OF PRIMITIVE GTOS    7
+                      NUMBER OF CONTRACTED GTOS   3
+                      NUMBER OF CLOSED SHELLS     0
+                      OPEN SHELL OCCUPATION       1
+
+  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
+   1.0     1    -4.998098113E-01  4.997871260E-01 -2.000045390E+00  1.0E-11
+
+ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.17 TCPU        0.15
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.28 TCPU        0.25
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.28 TCPU        0.25
+ NUMERICALLY INTEGRATED DENSITY      9.9999429189
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.30 TCPU        0.28
+ CYC   0 ETOT(AU) -7.639307053152E+01 DETOT -7.64E+01 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.30 TCPU        0.28
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.30 TCPU        0.28
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -4.1875779E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG -1.5474420E-02 AU
+ DIRECT ENERGY BAND GAP:  10.9739 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.30 TCPU        0.28
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.30 TCPU        0.28
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.41 TCPU        0.39
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.41 TCPU        0.39
+ NUMERICALLY INTEGRATED DENSITY      9.9999939964
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.43 TCPU        0.41
+ CYC   1 ETOT(AU) -7.635161132486E+01 DETOT  4.15E-02 tst  0.00E+00 PX  1.00E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.43 TCPU        0.41
+ DIIS TEST: 0.63637E+00 AT SCF   CYCLE   1 - MIX   30 %
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.43 TCPU        0.41
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -2.2999749E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  3.2272477E-02 AU
+ DIRECT ENERGY BAND GAP:   7.1367 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.43 TCPU        0.41
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.44 TCPU        0.41
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.54 TCPU        0.52
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.54 TCPU        0.52
+ NUMERICALLY INTEGRATED DENSITY      9.9999881221
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.56 TCPU        0.54
+ CYC   2 ETOT(AU) -7.638151490880E+01 DETOT -2.99E-02 tst  9.76E-03 PX  4.92E-01
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.56 TCPU        0.54
+ DIIS TEST: 0.37794E+00 AT SCF   CYCLE   2 - DIIS ACTIVE - HISTORY:     2 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.57 TCPU        0.54
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0732401E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.5190378E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0482 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.57 TCPU        0.54
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.57 TCPU        0.54
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.68 TCPU        0.66
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.68 TCPU        0.66
+ NUMERICALLY INTEGRATED DENSITY      9.9999912980
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.70 TCPU        0.68
+ CYC   3 ETOT(AU) -7.642269408612E+01 DETOT -4.12E-02 tst  2.02E-03 PX  2.43E-01
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.70 TCPU        0.68
+ DIIS TEST: 0.73536E-03 AT SCF   CYCLE   3 - DIIS ACTIVE - HISTORY:     3 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.70 TCPU        0.68
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0573450E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6995947E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0541 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.70 TCPU        0.68
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.70 TCPU        0.68
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.81 TCPU        0.79
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.81 TCPU        0.79
+ NUMERICALLY INTEGRATED DENSITY      9.9999911691
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.83 TCPU        0.81
+ CYC   4 ETOT(AU) -7.642273712964E+01 DETOT -4.30E-05 tst  2.61E-06 PX  4.17E-03
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.83 TCPU        0.81
+ DIIS TEST: 0.51400E-05 AT SCF   CYCLE   4 - DIIS ACTIVE - HISTORY:     4 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.83 TCPU        0.81
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0600787E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6892794E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0587 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.83 TCPU        0.81
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.83 TCPU        0.81
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.94 TCPU        0.92
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.94 TCPU        0.92
+ NUMERICALLY INTEGRATED DENSITY      9.9999911646
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.96 TCPU        0.94
+ CYC   5 ETOT(AU) -7.642273747478E+01 DETOT -3.45E-07 tst  3.25E-08 PX  6.62E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.96 TCPU        0.94
+ DIIS TEST: 0.40572E-07 AT SCF   CYCLE   5 - DIIS ACTIVE - HISTORY:     5 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.96 TCPU        0.94
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604253E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6878564E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0592 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.96 TCPU        0.94
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.96 TCPU        0.94
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        1.07 TCPU        1.05
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.07 TCPU        1.05
+ NUMERICALLY INTEGRATED DENSITY      9.9999911650
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.09 TCPU        1.07
+ CYC   6 ETOT(AU) -7.642273747944E+01 DETOT -4.66E-09 tst  4.86E-10 PX  1.10E-04
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        1.09 TCPU        1.07
+ DIIS TEST: 0.43177E-10 AT SCF   CYCLE   6 - DIIS ACTIVE - HISTORY:     6 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        1.09 TCPU        1.07
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604105E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6879533E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0592 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        1.09 TCPU        1.07
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        1.09 TCPU        1.07
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        1.20 TCPU        1.18
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.20 TCPU        1.18
+ NUMERICALLY INTEGRATED DENSITY      9.9999911649
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.22 TCPU        1.20
+ CYC   7 ETOT(AU) -7.642273747944E+01 DETOT -6.88E-12 tst  8.61E-13 PX  5.06E-06
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        1.23 TCPU        1.20
+ DIIS TEST: 0.68651E-11 AT SCF   CYCLE   7 - DIIS ACTIVE - HISTORY:     7 CYCLES
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        1.23 TCPU        1.20
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604150E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6879346E-02 AU
+ DIRECT ENERGY BAND GAP:   9.0592 eV
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        1.23 TCPU        1.20
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        1.23 TCPU        1.20
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        1.33 TCPU        1.31
+
+ ::: DIPOLE MOMENT ALONG NON PERIODIC DIRECTIONS:
+ ::: A.U.     (X)  0.00000E+00   (Y)  0.00000E+00   (Z)  7.54958E-01
+ ::: DEBYE         0.00000E+00        0.00000E+00       -1.91891E+00
+
+ ::: PSEUDO TOTAL   ENERGY                        -6.8900330114939E+01
+ ::: VIRIAL COEFFICIENT                            1.0494505888611E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.33 TCPU        1.31
+ NUMERICALLY INTEGRATED DENSITY      9.9999911650
+ EXCHANGE ENERGY: -0.712013507019E+01  CORRELATION ENERGY: -0.402272294316E+00
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.36 TCPU        1.33
+ CYC   8 ETOT(AU) -7.642273747944E+01 DETOT -1.04E-12 tst  7.44E-14 PX  5.06E-06
+
+ == SCF ENDED - CONVERGENCE ON ENERGY      E(AU) -7.6422737479444E+01 CYCLES   8
+
+
+ ENERGY EXPRESSION=HARTREE+FOCK EXCH*0.20000+(BECKE      EXCH)*0.80000+LYP        CORR
+
+
+ TOTAL ENERGY(DFT)(AU)(  8) -7.6422737479444E+01 DE-1.0E-12 tester 7.4E-14
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT EDFT        TELAPSE        1.36 TCPU        1.33
+
+ *******************************************************************************
+ *                             FORCE CALCULATION                               *
+ *******************************************************************************
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFG      TELAPSE        1.45 TCPU        1.43
+ INFORMATION **** EXCPOG **** EXCH. BIPO BUFFER LENGTH (WORDS) =      150336
+ INFORMATION **** GENPOG **** BIPO BUFFER LENGTH (WORDS) =       25300
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELXG      TELAPSE        1.96 TCPU        1.94
+
+ CARTESIAN FORCES IN HARTREE/BOHR (ANALYTICAL)
+   ATOM                     X                   Y                   Z
+   1   8             0.000000000000E+00  0.000000000000E+00  4.416117707517E-06
+   2   1             0.000000000000E+00  2.344663486031E-06 -2.208058851982E-06
+   3   1            -1.040834085586E-17 -2.344663486031E-06 -2.208058851982E-06
+
+ RESULTANT FORCE    -1.040834085586E-17  0.000000000000E+00  3.552713678801E-15
+
+ SYMMETRY ALLOWED FORCES (ANALYTICAL) (DIRECTION, FORCE)
+
+    1  5.4086175E-06    2  3.3158549E-06
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT TOTGRA      TELAPSE        1.97 TCPU        1.95
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+                   FORCE CONSTANT MATRIX - NUMERICAL ESTIMATE
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+ MAX ABS(DGRAD): MAXIMUM ABSOLUTE GRADIENT DIFFERENCE WITH RESPECT TO
+                 THE CENTRAL POINT
+ DE:             ENERGY DIFFERENCE WITH RESPECT TO THE CENTRAL POINT
+                 (DE IS EXPECTED TO BE POSITIVE FOR ALL DISPLACEMENTS)
+
+   ATOM      MAX ABS(DGRAD)       TOTAL ENERGY (AU)  N.CYC      DE       SYM
+    CENTRAL POINT             -7.642273747944E+01     8     0.0000E+00     4
+    2 H  DX   3.5307E-06      -7.642273747690E+01     5     2.5484E-09     1
+    2 H  DX   3.5307E-06      -7.642273747690E+01     5     2.5483E-09     1
+    2 H  DY   2.0720E-03      -7.642273160736E+01     6     5.8721E-06     2
+    2 H  DY   2.0976E-03      -7.642273153105E+01     6     5.9484E-06     2
+    2 H  DZ   1.4846E-03      -7.642273409550E+01     6     3.3839E-06     2
+    2 H  DZ   1.4647E-03      -7.642273401139E+01     6     3.4681E-06     2
+
+ CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE       16.84 TCPU       16.82
+
+ MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE       16.84 TCPU       16.82
+
+ SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE       16.84 TCPU       16.82
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE       16.84 TCPU       16.82
+
+ +++ SYMMETRY ADAPTION OF VIBRATIONAL MODES +++
+
+ SYMMETRY INFORMATION:
+ K-LITTLE GROUP: CLASS TABLE, CHARACTER TABLE.
+ IRREP-(DIMENSION, NO. IRREDUCIBLE SETS)
+ [WARNINGS: (1) ONLY ACTIVE IRREPS ARE GENERATED AND LISTED.
+            (2) ONLY RELEVANT CLASSES ARE CONSIDERED IN THE CHARACTER TABLE
+            (3) SYMBOLS MAY NOT FULLY COINCIDE WITH THOSE FROM TEXT BOOKS.]
+
+ (P, D, RP, RD, STAND FOR PAIRING, DOUBLING, REAL PAIRING AND REAL DOUBLING 
+ OF THE IRREPS (SEE MANUAL))
+
+ CLASS  | GROUP OPERATORS (SEE SYMMOPS KEYWORD)
+ --------------------------------------------------------------------
+ C2     |   2;
+ SGV    |   3;
+ SGV'   |   4;
+
+ IRREP/CLA      E     C2    SGV   SGV'
+ -------------------------------------
+  MULTIP |      1      1      1      1
+ -------------------------------------
+    A1   |   1.00   1.00   1.00   1.00
+    A2   |   1.00   1.00  -1.00  -1.00
+    B1   |   1.00  -1.00   1.00  -1.00
+    B2   |   1.00  -1.00  -1.00   1.00
+ 
+ A1 -(1,   3); A2 -(1,   1); B1 -(1,   3); B2 -(1,   2);
+
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+ EIGENVALUES (EIGV) OF THE MASS WEIGHTED HESSIAN MATRIX AND HARMONIC TRANSVERSE
+ OPTICAL (TO) FREQUENCIES. IRREP LABELS REFER TO SYMMETRY REPRESENTATION
+ ANALYSIS; A AND I INDICATE WHETHER THE MODE IS ACTIVE OR INACTIVE,
+ RESPECTIVELY, FOR IR AND RAMAN; INTEGRATED IR INTENSITIES IN BRACKETS.
+
+ CONVERSION FACTORS FOR FREQUENCIES:
+      1 CM**(-1) =   0.4556335E-05 HARTREE
+      1 THZ      =   0.3335641E+02 CM**(-1)
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+    MODES         EIGV          FREQUENCIES     IRREP  IR   INTENS    RAMAN
+             (HARTREE**2)   (CM**-1)     (THZ)             (KM/MOL)
+    1-   1   -0.1523E-19      0.0000    0.0000  (B1 )   A (     0.00)   A
+    2-   2   -0.3717E-23      0.0000    0.0000  (B2 )   A (     0.00)   A
+    3-   3   -0.2117E-23      0.0000    0.0000  (B2 )   A (     0.00)   A
+    4-   4    0.3502E-38      0.0000    0.0000  (A2 )   I (     0.00)   A
+    5-   5    0.1903E-19      0.0000    0.0000  (B1 )   A (     0.00)   A
+    6-   6    0.2284E-19      0.0000    0.0000  (A1 )   A (     0.00)   A
+    7-   7    0.5577E-04   1639.0730   49.1382  (A1 )   A (     0.00)   A
+    8-   8    0.2995E-03   3798.2185  113.8677  (A1 )   A (     0.00)   A
+    9-   9    0.3156E-03   3898.9462  116.8875  (B1 )   A (     0.00)   A
+
+ NORMAL MODES NORMALIZED TO CLASSICAL AMPLITUDES (IN BOHR)
+
+ FREQ(CM**-1)      0.00      0.00      0.00      0.00      0.00      0.00
+
+ AT.   1 O  X     0.0000    0.0000    0.2500    0.0000    0.0000    0.0000
+            Y     0.0493    0.0000    0.0000    0.0000    0.2356    0.0000
+            Z     0.0000    0.0000    0.0000    0.0000    0.0000    0.2356
+ AT.   2 H  X     0.0000    0.7044    0.0000    0.7044    0.0000    0.0000
+            Y    -0.3912    0.0000    0.0000    0.0000    0.2356    0.0000
+            Z    -0.5690    0.0000    0.0000    0.0000    0.0000    0.2356
+ AT.   3 H  X     0.0000    0.7044    0.0000   -0.7044    0.0000    0.0000
+            Y    -0.3912    0.0000    0.0000    0.0000    0.2356   -0.0000
+            Z     0.5690    0.0000    0.0000    0.0000    0.0000    0.2356
+
+ FREQ(CM**-1)   1639.07   3798.22   3898.95
+
+ AT.   1 O  X     0.0000    0.0000    0.0000
+            Y     0.0000    0.0000   -0.0119
+            Z    -0.0185    0.0086    0.0000
+ AT.   2 H  X     0.0000    0.0000    0.0000
+            Y     0.1108    0.1021    0.0942
+            Z     0.1465   -0.0686   -0.0729
+ AT.   3 H  X     0.0000    0.0000    0.0000
+            Y    -0.1108   -0.1021    0.0942
+            Z     0.1465   -0.0686    0.0729
+
+ *******************************************************************************
+
+ VIBRATIONAL TEMPERATURES (K) [MODE NUMBER;IRREP]
+
+ TO MODES
+  2358.3 [   7;A1 ]  5464.8 [   8;A1 ]  5609.7 [   9;B1 ]
+
+ *******************************************************************************
+
+ HARMONIC VIBRATIONAL CONTRIBUTIONS TO THERMODYNAMIC FUNCTIONS AT GIVEN
+ TEMPERATURE AND PRESSURE:
+
+ (EL = ELECTRONIC ENERGY
+  E0 = ZERO-POINT ENERGY
+  ET = THERMAL CONTRIBUTION TO THE VIBRATIONAL ENERGY
+  PV = PRESSURE * VOLUME
+  TS = TEMPERATURE * ENTROPY)
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ EL            :     -76.422737479444   -2079.568410030698     -200647.86897587
+ E0            :       0.021269514363       0.578772910050          55.84310209
+
+ 
+ WARNING **** THERMOFRQ **** PV TERM COMPUTED ONLY FOR 3D SYSTEMS
+
+ ---------------------
+ -- THERMOCHEMISTRY --
+ ---------------------
+
+ Temperature  298.15 K, Pressure  0.10132500E+00 MPA
+ Rotational symmetry number:   3
+ Moments of inertia (a.u.) and Rotational temperatures (K)
+ with respect to principal axes:
+                          1                   2                     3
+ Moments --            6.376735253311       2.214834959809       4.161900293502
+ Temperatures --      13.582783807247      39.106216902609      20.811122380084
+
+ THERMAL ENERGY           AU                  EV                      J/MOL
+ Translational:        0.001416278906       0.038538908301        3718.43974020
+ Rotational:           0.001416278906       0.038538908301        3718.43974020
+ E0(Vibrational)       0.021269514363       0.578772910050       55843.10208908
+ Vibr. corr.:          0.000002743543       0.000074655613           7.20317238
+ Total:                0.024104815717       0.655925382266       63287.18474662
+
+
+ ENTROPY                  AU/K                EV/K                    J/(MOL*K)
+ Translational:        0.000055151864       0.001500758505         144.80119733
+ Rotational:           0.000015406118       0.000419221774          40.44875611
+ Vibrational:          0.000000010365       0.000000282045           0.02721325
+ Total:                0.000070568346       0.001920262324         185.27716681
+
+ HEAT CAPACITY            mAU/K               mEV/K                   J/(MOL*K)
+ Translational:        0.004750222725       0.129260131817          12.47170800
+ Rotational:           0.004750222725       0.129260131817          12.47170800
+ Vibrational:          0.000072821326       0.001981569032           0.19119237
+ Total:                0.009573266777       0.260501832666          25.13460838
+
+
+ *******************************************************************************
+
+ THERMODYNAMIC FUNCTIONS TAKING INTO ACCOUNT MOLECULAR
+ ROTATIONAL, TRANSLATIONAL AND VIBRATIONAL CONTRIBUTIONS
+
+ AT (T =  298.15 K, P =   0.10132500E+00 MPA):
+
+                          AU/CELL             EV/CELL                 KJ/MOL
+ ET            :       0.002835301355       0.077152472216           7.44408266
+ PV            :       0.000944185937       0.025692605534           2.47895983
+ TS            :       0.021039952416       0.572526211905          55.24038728
+ ET+PV-TS      :      -0.017260465124      -0.469681134155         -45.31734480
+ EL+E0+ET+PV-TS:     -76.418728430206   -2079.459318254802     -200637.34321858
+
+ OTHER THERMODYNAMIC FUNCTIONS:
+
+                      mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
+ ENTROPY       :       0.070568346188       1.920262324013         185.27716681
+ HEAT CAPACITY :       0.009573266777       0.260501832666          25.13460838
+
+ *******************************************************************************
+ REDUCED MASS OF MODE (AMU)           7   1.08314950242946     
+ REDUCED MASS OF MODE (AMU)           8   1.04472589658004     
+ REDUCED MASS OF MODE (AMU)           9   1.08186924995098     
+
+ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+  CALCULATION OF CUBIC AND QUARTIC TERMS OF THE POTENTIAL-ENERGY SURFACE (PES)
+
+                      M. Ferrabone, M. Rérat, A. Erba
+
+
+            THIRD AND FOURTH ENERGY DERIVATIVES W.R.T. NORMAL MODES
+                             ARE COMPUTED NUMERICALLY
+
+                             SCAN ALONG NORMAL MODES
+              STARTING POINT:  -1 ENDING POINT:  1 STEP:   0.90000
+   (STEP GIVEN AS TIMES OF THE CLASSICAL AMPLITUDE AT THE GROUND STATE ENERGY)
+
+ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+ SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+
+
+ *******************************************************************************
+
+ MODE:     7 (FREQ:   1639.07 CM-1)
+
+ STEP:   0.24392 BOHR
+
+      STEP        ENE         HARM. ENE   N. CYC   DE
+  (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
+
+ C   -0.900   0.317719E-02   0.302461E-02      8 -0.1E-12
+      0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
+ C    0.900   0.286286E-02   0.302461E-02      8  0.7E-13
+ tipotapo:  0.101668873380878     
+ stpanh0:  0.243924532658176     
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   7,   7,   7)      =     -6.3119E-02    -275.7935
+ ETA(   7,   7,   7,   7) =     -3.8130E-02     -45.1547
+ ABS ABS ABS ABS ABS
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   7,   7,   7)      =     -6.3119E-02    -275.7935
+ ETA(   7,   7,   7,   7) =     -3.8130E-02     -45.1547
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE       23.41 TCPU       23.38
+
+ *******************************************************************************
+
+ MODE:     8 (FREQ:   3798.22 CM-1)
+
+ STEP:   0.16024 BOHR
+
+      STEP        ENE         HARM. ENE   N. CYC   DE
+  (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
+
+ C   -0.900   0.810688E-02   0.700891E-02      8  0.3E-13
+      0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
+ C    0.900   0.609885E-02   0.700891E-02      8  0.9E-13
+ tipotapo:  0.545948068665362     
+ stpanh0:  0.160237680905081     
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   8,   8,   8)      =     -1.4720E+00   -1823.2787
+ ETA(   8,   8,   8,   8) =      3.4723E+00     765.7648
+ ABS ABS ABS ABS ABS
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   8,   8,   8)      =     -1.4720E+00   -1823.2787
+ ETA(   8,   8,   8,   8) =      3.4723E+00     765.7648
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE       29.88 TCPU       29.85
+
+ *******************************************************************************
+
+ MODE:     9 (FREQ:   3898.95 CM-1)
+
+ STEP:   0.15815 BOHR
+
+      STEP        ENE         HARM. ENE   N. CYC   DE
+  (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
+
+ C   -0.900   0.728912E-02   0.719479E-02      8 -0.3E-12
+      0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
+ C    0.900   0.728912E-02   0.719479E-02      8 -0.3E-12
+ tipotapo:  0.575288811653490     
+ stpanh0:  0.158154299307734     
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   9,   9,   9)      =     -2.1813E-06      -0.0026
+ ETA(   9,   9,   9,   9) =      3.7049E+00     775.3768
+ ABS ABS ABS ABS ABS
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   9,   9,   9)      =     -2.1813E-06      -0.0026
+ ETA(   9,   9,   9,   9) =      3.7049E+00     775.3768
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE       36.43 TCPU       36.41
+
+ *******************************************************************************
+
+ COUPLE OF MODES:     7    8  (FREQs:   1639.07 CM-1,   3798.22 CM-1)
+
+ STEPS:   0.24392   0.16024 BOHR
+
+
+ C    0.900   0.900  -7.641329E+01  -7.641971E+01      8 -0.2E-12
+ C   -0.900  -0.900  -7.641231E+01  -7.641064E+01      8  0.9E-13
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   7,   7,   8)      =      1.1030E-01     316.5947
+ ETA(   7,   8,   8)      =      3.9364E-02      74.2228
+ ETA(   7,   7,   7,   8) =      2.0119E-01     156.5137
+ ETA(   7,   8,   8,   8) =     -2.0116E-01     -67.5310
+ ETA(   7,   7,   8,   8) =     -5.9322E-01    -303.1598
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE       43.12 TCPU       43.10
+
+ *******************************************************************************
+
+ COUPLE OF MODES:     7    9  (FREQs:   1639.07 CM-1,   3898.95 CM-1)
+
+ STEPS:   0.24392   0.15815 BOHR
+
+
+ C    0.900   0.900  -7.641242E+01  -7.641971E+01      8 -0.7E-12
+ C   -0.900  -0.900  -7.641298E+01  -7.641064E+01      8 -0.6E-12
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   7,   7,   9)      =     -4.0366E-08      -0.0001
+ ETA(   7,   9,   9)      =      1.5036E-01     276.1912
+ ETA(   7,   7,   7,   9) =      2.5740E-07       0.0002
+ ETA(   7,   9,   9,   9) =      9.1892E-05       0.0297
+ ETA(   7,   7,   9,   9) =     -7.3265E-01    -364.7396
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE       49.59 TCPU       49.56
+
+ *******************************************************************************
+
+ COUPLE OF MODES:     8    9  (FREQs:   3798.22 CM-1,   3898.95 CM-1)
+
+ STEPS:   0.16024   0.15815 BOHR
+
+
+ C    0.900   0.900  -7.641186E+01  -7.641573E+01      9  0.4E-13
+ C   -0.900  -0.900  -7.640364E+01  -7.639470E+01      8 -0.4E-12
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   8,   8,   9)      =     -7.6827E-08      -0.0001
+ ETA(   8,   9,   9)      =     -1.5148E+00   -1827.7982
+ ETA(   8,   8,   8,   9) =      4.9164E-06       0.0011
+ ETA(   8,   9,   9,   9) =     -2.5725E-04      -0.0545
+ ETA(   8,   8,   9,   9) =      3.6943E+00     793.6590
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE       56.37 TCPU       56.35
+
+ *******************************************************************************
+
+ TRIPLET OF MODES:     7    8    9  (FREQs:   1639.07 CM-1,   3798.22 CM-1,   3898.95 CM-1)
+
+ STEPS:   0.24392   0.16024   0.15815 BOHR
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   7,   8,   9)      =     -6.2868E-03     -11.7001
+ ETA(   7,   7,   8,   9) =      1.0587E-02       5.3400
+ ETA(   7,   8,   8,   9) =     -1.6117E-02      -5.3404
+ ETA(   7,   8,   9,   9) =     -3.7854E-01    -123.7959
+ INFORMATION **** SCANPES **** WRITING VIBPOT.DAT
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SCANPES     TELAPSE       56.37 TCPU       56.35
+
+
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ V                                                                             V
+ V               VIBRATIONAL SELF-CONSISTENT FIELD METHOD (VSCF)               V
+ V                       M. Rérat, M. Ferrabone, A. Erba                       V
+ V                                                                             V
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+
+
+ CONVERGENCE THRESHOLD: 0.001000
+ MIXING OF: 0.250
+
+ LIST OF CONFIGURATIONS FOR WHICH VIBRATIONAL ENERGY IS COMPUTED:
+
+ CONFIGURATIONS WITH UP TO  2 QUANTA ON   3 MODES
+
+ CONFIGURATIONS WITH   0 QUANTA:
+
+    N,   NT
+
+     1     1     ( 0,  0,  0) 
+
+ CONFIGURATIONS WITH   1 QUANTA:
+
+    N,   NT
+
+     2     1     ( 1,  0,  0) 
+     3     2     ( 0,  1,  0) 
+     4     3     ( 0,  0,  1) 
+
+ CONFIGURATIONS WITH   2 QUANTA:
+
+    N,   NT
+
+     5     1     ( 2,  0,  0) 
+     6     2     ( 1,  1,  0) 
+     7     3     ( 0,  2,  0) 
+     8     4     ( 1,  0,  1) 
+     9     5     ( 0,  1,  1) 
+    10     6     ( 0,  0,  2) 
+
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ V                                                                             V
+ V                           VSCF FUNDAMENTAL STATE                            V
+ V                                                                             V
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+ CONFIGURATION NUMBER:      1
+
+
+ (  0,  0,  0)
+
+ CYC:   0 ENERGY:   4722.7021649 CM-1 DELTA:    4722.7021649 CM-1
+ CYC:   1 ENERGY:   4631.4836395 CM-1 DELTA:     -91.2185254 CM-1
+ CYC:   2 ENERGY:   4629.4052614 CM-1 DELTA:      -2.0783782 CM-1
+ CYC:   3 ENERGY:   4629.2721061 CM-1 DELTA:      -0.1331552 CM-1
+ CYC:   4 ENERGY:   4629.2553137 CM-1 DELTA:      -0.0167924 CM-1
+ CYC:   5 ENERGY:   4629.2525174 CM-1 DELTA:      -0.0027963 CM-1
+ CYC:   6 ENERGY:   4629.2519278 CM-1 DELTA:      -0.0005896 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   6 ENERGY:   4629.2519278 CM-1
+
+
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ V                                                                             V
+ V                             VSCF EXCITED STATES                             V
+ V                            NUMBER OF QUANTA:   1                            V
+ V                                                                             V
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+ CONFIGURATION NUMBER:      2
+
+
+ (  1,  0,  0)
+
+ CYC:   0 ENERGY:   6272.6347366 CM-1 DELTA:    6272.6347366 CM-1
+ CYC:   1 ENERGY:   6203.7628480 CM-1 DELTA:     -68.8718886 CM-1
+ CYC:   2 ENERGY:   6201.9352985 CM-1 DELTA:      -1.8275495 CM-1
+ CYC:   3 ENERGY:   6201.8253814 CM-1 DELTA:      -0.1099171 CM-1
+ CYC:   4 ENERGY:   6201.8110191 CM-1 DELTA:      -0.0143623 CM-1
+ CYC:   5 ENERGY:   6201.8088565 CM-1 DELTA:      -0.0021626 CM-1
+ CYC:   6 ENERGY:   6201.8085122 CM-1 DELTA:      -0.0003443 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   6 ENERGY:   6201.8085122 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    1572.5565844 CM-1
+
+
+ CONFIGURATION NUMBER:      3
+
+
+ (  0,  1,  0)
+
+ CYC:   0 ENERGY:   8677.9317024 CM-1 DELTA:    8677.9317024 CM-1
+ CYC:   1 ENERGY:   8345.7655688 CM-1 DELTA:    -332.1661336 CM-1
+ CYC:   2 ENERGY:   8338.6058471 CM-1 DELTA:      -7.1597217 CM-1
+ CYC:   3 ENERGY:   8338.1701694 CM-1 DELTA:      -0.4356777 CM-1
+ CYC:   4 ENERGY:   8338.1252516 CM-1 DELTA:      -0.0449178 CM-1
+ CYC:   5 ENERGY:   8338.1190730 CM-1 DELTA:      -0.0061786 CM-1
+ CYC:   6 ENERGY:   8338.1179984 CM-1 DELTA:      -0.0010746 CM-1
+ CYC:   7 ENERGY:   8338.1177538 CM-1 DELTA:      -0.0002446 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   7 ENERGY:   8338.1177538 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    3708.8658260 CM-1
+
+
+ CONFIGURATION NUMBER:      4
+
+
+ (  0,  0,  1)
+
+ CYC:   0 ENERGY:   8772.1629020 CM-1 DELTA:    8772.1629020 CM-1
+ CYC:   1 ENERGY:   8420.9653657 CM-1 DELTA:    -351.1975363 CM-1
+ CYC:   2 ENERGY:   8399.1764940 CM-1 DELTA:     -21.7888717 CM-1
+ CYC:   3 ENERGY:   8397.5388765 CM-1 DELTA:      -1.6376176 CM-1
+ CYC:   4 ENERGY:   8397.2137133 CM-1 DELTA:      -0.3251631 CM-1
+ CYC:   5 ENERGY:   8397.1449092 CM-1 DELTA:      -0.0688041 CM-1
+ CYC:   6 ENERGY:   8397.1288500 CM-1 DELTA:      -0.0160592 CM-1
+ CYC:   7 ENERGY:   8397.1244925 CM-1 DELTA:      -0.0043575 CM-1
+ CYC:   8 ENERGY:   8397.1230962 CM-1 DELTA:      -0.0013963 CM-1
+ CYC:   9 ENERGY:   8397.1225847 CM-1 DELTA:      -0.0005116 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   9 ENERGY:   8397.1225847 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    3767.8706569 CM-1
+
+
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+ V                                                                             V
+ V                             VSCF EXCITED STATES                             V
+ V                            NUMBER OF QUANTA:   2                            V
+ V                                                                             V
+ VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+
+ CONFIGURATION NUMBER:      5
+
+
+ (  2,  0,  0)
+
+ CYC:   0 ENERGY:   7816.9229977 CM-1 DELTA:    7816.9229977 CM-1
+ CYC:   1 ENERGY:   7752.9707690 CM-1 DELTA:     -63.9522287 CM-1
+ CYC:   2 ENERGY:   7751.1437850 CM-1 DELTA:      -1.8269841 CM-1
+ CYC:   3 ENERGY:   7751.0883453 CM-1 DELTA:      -0.0554397 CM-1
+ CYC:   4 ENERGY:   7751.0826792 CM-1 DELTA:      -0.0056661 CM-1
+ CYC:   5 ENERGY:   7751.0824497 CM-1 DELTA:      -0.0002295 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   5 ENERGY:   7751.0824497 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    3121.8305219 CM-1
+
+
+ CONFIGURATION NUMBER:      6
+
+
+ (  1,  1,  0)
+
+ CYC:   0 ENERGY:  10152.0747303 CM-1 DELTA:   10152.0747303 CM-1
+ CYC:   1 ENERGY:   9866.2973886 CM-1 DELTA:    -285.7773417 CM-1
+ CYC:   2 ENERGY:   9858.1525090 CM-1 DELTA:      -8.1448796 CM-1
+ CYC:   3 ENERGY:   9857.6437192 CM-1 DELTA:      -0.5087898 CM-1
+ CYC:   4 ENERGY:   9857.5808741 CM-1 DELTA:      -0.0628450 CM-1
+ CYC:   5 ENERGY:   9857.5704418 CM-1 DELTA:      -0.0104323 CM-1
+ CYC:   6 ENERGY:   9857.5682458 CM-1 DELTA:      -0.0021961 CM-1
+ CYC:   7 ENERGY:   9857.5676619 CM-1 DELTA:      -0.0005839 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   7 ENERGY:   9857.5676619 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    5228.3157341 CM-1
+
+
+ CONFIGURATION NUMBER:      7
+
+
+ (  0,  2,  0)
+
+ CYC:   0 ENERGY:  12728.8813100 CM-1 DELTA:   12728.8813100 CM-1
+ CYC:   1 ENERGY:  12019.5674561 CM-1 DELTA:    -709.3138539 CM-1
+ CYC:   2 ENERGY:  12006.4550702 CM-1 DELTA:     -13.1123858 CM-1
+ CYC:   3 ENERGY:  12005.7113246 CM-1 DELTA:      -0.7437457 CM-1
+ CYC:   4 ENERGY:  12005.6546196 CM-1 DELTA:      -0.0567050 CM-1
+ CYC:   5 ENERGY:  12005.6505818 CM-1 DELTA:      -0.0040378 CM-1
+ CYC:   6 ENERGY:  12005.6507541 CM-1 DELTA:       0.0001723 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   6 ENERGY:  12005.6507541 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    7376.3988263 CM-1
+
+
+ CONFIGURATION NUMBER:      8
+
+
+ (  1,  0,  1)
+
+ CYC:   0 ENERGY:  10230.9110788 CM-1 DELTA:   10230.9110788 CM-1
+ CYC:   1 ENERGY:   9926.1917047 CM-1 DELTA:    -304.7193741 CM-1
+ CYC:   2 ENERGY:   9905.3442849 CM-1 DELTA:     -20.8474198 CM-1
+ CYC:   3 ENERGY:   9903.4650595 CM-1 DELTA:      -1.8792254 CM-1
+ CYC:   4 ENERGY:   9903.0784880 CM-1 DELTA:      -0.3865714 CM-1
+ CYC:   5 ENERGY:   9902.9943317 CM-1 DELTA:      -0.0841564 CM-1
+ CYC:   6 ENERGY:   9902.9744364 CM-1 DELTA:      -0.0198952 CM-1
+ CYC:   7 ENERGY:   9902.9690891 CM-1 DELTA:      -0.0053473 CM-1
+ CYC:   8 ENERGY:   9902.9674098 CM-1 DELTA:      -0.0016793 CM-1
+ CYC:   9 ENERGY:   9902.9668024 CM-1 DELTA:      -0.0006074 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   9 ENERGY:   9902.9668024 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    5273.7148746 CM-1
+
+
+ CONFIGURATION NUMBER:      9
+
+
+ (  0,  1,  1)
+
+ CYC:   0 ENERGY:  12925.8060894 CM-1 DELTA:   12925.8060894 CM-1
+ CYC:   1 ENERGY:  12195.2532500 CM-1 DELTA:    -730.5528394 CM-1
+ CYC:   2 ENERGY:  12155.6648816 CM-1 DELTA:     -39.5883684 CM-1
+ CYC:   3 ENERGY:  12153.4224585 CM-1 DELTA:      -2.2424230 CM-1
+ CYC:   4 ENERGY:  12153.0897113 CM-1 DELTA:      -0.3327472 CM-1
+ CYC:   5 ENERGY:  12153.0472156 CM-1 DELTA:      -0.0424957 CM-1
+ CYC:   6 ENERGY:  12153.0464254 CM-1 DELTA:      -0.0007902 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:   6 ENERGY:  12153.0464254 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    7523.7944976 CM-1
+
+
+ CONFIGURATION NUMBER:     10
+
+
+ (  0,  0,  2)
+
+ CYC:   0 ENERGY:  12918.5452013 CM-1 DELTA:   12918.5452013 CM-1
+ CYC:   1 ENERGY:  12177.5728041 CM-1 DELTA:    -740.9723972 CM-1
+ CYC:   2 ENERGY:  12109.6706028 CM-1 DELTA:     -67.9022014 CM-1
+ CYC:   3 ENERGY:  12104.6585180 CM-1 DELTA:      -5.0120847 CM-1
+ CYC:   4 ENERGY:  12103.6627016 CM-1 DELTA:      -0.9958164 CM-1
+ CYC:   5 ENERGY:  12103.5024729 CM-1 DELTA:      -0.1602287 CM-1
+ CYC:   6 ENERGY:  12103.4945514 CM-1 DELTA:      -0.0079215 CM-1
+ CYC:   7 ENERGY:  12103.5056170 CM-1 DELTA:       0.0110656 CM-1
+ CYC:   8 ENERGY:  12103.5140531 CM-1 DELTA:       0.0084361 CM-1
+ CYC:   9 ENERGY:  12103.5187144 CM-1 DELTA:       0.0046613 CM-1
+ CYC:  10 ENERGY:  12103.5210486 CM-1 DELTA:       0.0023342 CM-1
+ CYC:  11 ENERGY:  12103.5221717 CM-1 DELTA:       0.0011231 CM-1
+ CYC:  12 ENERGY:  12103.5227024 CM-1 DELTA:       0.0005307 CM-1
+
+ CONVERGENCE ACHIEVED AT CYCLE:  12 ENERGY:  12103.5227024 CM-1
+ FUNDAMENTAL TRANSITION ENERGY:    7474.2707746 CM-1
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT VSCF        TELAPSE       56.38 TCPU       56.35
+
+ *******************************************************************************
+ *******************************************************************************
+ *                                                                             *
+ *                 VIBRATIONAL CONFIGURATION INTERACTION (VCI)                 *
+ *               A. Erba, Ph. Carbonnière, M. Ferrabone, M. Rérat              *
+ *                                                                             *
+ *******************************************************************************
+ *******************************************************************************
+
+ LIST OF CONFIGURATIONS CONSIDERED:
+
+ CONFIGURATIONS WITH UP TO  5 QUANTA ON   3 MODES
+
+ CONFIGURATIONS WITH   0 QUANTA:
+
+    N,   NT
+
+     1     1     ( 0,  0,  0) 
+
+ CONFIGURATIONS WITH   1 QUANTA:
+
+    N,   NT
+
+     2     1     ( 1,  0,  0) 
+     3     2     ( 0,  1,  0) 
+     4     3     ( 0,  0,  1) 
+
+ CONFIGURATIONS WITH   2 QUANTA:
+
+    N,   NT
+
+     5     1     ( 2,  0,  0) 
+     6     2     ( 1,  1,  0) 
+     7     3     ( 0,  2,  0) 
+     8     4     ( 1,  0,  1) 
+     9     5     ( 0,  1,  1) 
+    10     6     ( 0,  0,  2) 
+
+ CONFIGURATIONS WITH   3 QUANTA:
+
+    N,   NT
+
+    11     1     ( 3,  0,  0) 
+    12     2     ( 2,  1,  0) 
+    13     3     ( 1,  2,  0) 
+    14     4     ( 0,  3,  0) 
+    15     5     ( 2,  0,  1) 
+    16     6     ( 1,  1,  1) 
+    17     7     ( 0,  2,  1) 
+    18     8     ( 1,  0,  2) 
+    19     9     ( 0,  1,  2) 
+    20    10     ( 0,  0,  3) 
+
+ CONFIGURATIONS WITH   4 QUANTA:
+
+    N,   NT
+
+    21     1     ( 4,  0,  0) 
+    22     2     ( 3,  1,  0) 
+    23     3     ( 2,  2,  0) 
+    24     4     ( 1,  3,  0) 
+    25     5     ( 0,  4,  0) 
+    26     6     ( 3,  0,  1) 
+    27     7     ( 2,  1,  1) 
+    28     8     ( 1,  2,  1) 
+    29     9     ( 0,  3,  1) 
+    30    10     ( 2,  0,  2) 
+    31    11     ( 1,  1,  2) 
+    32    12     ( 0,  2,  2) 
+    33    13     ( 1,  0,  3) 
+    34    14     ( 0,  1,  3) 
+    35    15     ( 0,  0,  4) 
+
+ CONFIGURATIONS WITH   5 QUANTA:
+
+    N,   NT
+
+    36     1     ( 5,  0,  0) 
+    37     2     ( 4,  1,  0) 
+    38     3     ( 3,  2,  0) 
+    39     4     ( 2,  3,  0) 
+    40     5     ( 1,  4,  0) 
+    41     6     ( 0,  5,  0) 
+    42     7     ( 4,  0,  1) 
+    43     8     ( 3,  1,  1) 
+    44     9     ( 2,  2,  1) 
+    45    10     ( 1,  3,  1) 
+    46    11     ( 0,  4,  1) 
+    47    12     ( 3,  0,  2) 
+    48    13     ( 2,  1,  2) 
+    49    14     ( 1,  2,  2) 
+    50    15     ( 0,  3,  2) 
+    51    16     ( 2,  0,  3) 
+    52    17     ( 1,  1,  3) 
+    53    18     ( 0,  2,  3) 
+    54    19     ( 1,  0,  4) 
+    55    20     ( 0,  1,  4) 
+    56    21     ( 0,  0,  5) 
+
+ VCI PERFORMED ON THE VSCF FUNDAMENTAL BASIS (VCI-VSCF)
+
+ REFERENCE VSCF STATE:
+
+ MODE:   1  LEVELS:
+
+         0        1        2        3        4        5        6        7        8        9
+
+    0.9999   0.0039  -0.0146  -0.0065   0.0009   0.0003   0.0000  -0.0000  -0.0000  -0.0000
+   -0.0046   0.9988  -0.0380  -0.0268  -0.0110   0.0031   0.0007   0.0000  -0.0001  -0.0000
+    0.0138   0.0347   0.9932  -0.1028  -0.0368  -0.0136   0.0068   0.0009   0.0000  -0.0001
+    0.0078   0.0279   0.0926   0.9766  -0.1867  -0.0408  -0.0142   0.0113   0.0010   0.0002
+    0.0009   0.0175   0.0475   0.1629   0.9423  -0.2853  -0.0350  -0.0146   0.0155   0.0008
+    0.0004   0.0033   0.0313   0.0743   0.2393   0.8860  -0.3875  -0.0228  -0.0187   0.0158
+    0.0002   0.0013   0.0083   0.0504   0.1090   0.3126   0.8188  -0.4649  -0.0110  -0.0329
+    0.0000   0.0006   0.0033   0.0170   0.0750   0.1469   0.3648   0.7714  -0.4941   0.0156
+    0.0000   0.0002   0.0016   0.0071   0.0301   0.1027   0.1758   0.3996   0.7750  -0.4442
+    0.0000   0.0001   0.0006   0.0034   0.0127   0.0445   0.1178   0.1682   0.3932   0.8950
+
+ MODE:   2  LEVELS:
+
+         0        1        2        3        4        5        6        7        8        9
+
+    0.9885  -0.1471   0.0210  -0.0213   0.0139  -0.0063   0.0001   0.0028  -0.0016   0.0008
+    0.1483   0.9372  -0.3021   0.0685  -0.0459   0.0343  -0.0010  -0.0178   0.0089  -0.0050
+    0.0157   0.3062   0.8196  -0.4481   0.1447  -0.0830   0.0046   0.0625  -0.0367   0.0199
+    0.0224   0.0588   0.4584   0.6282  -0.5501   0.2397  -0.0162  -0.1293   0.1008  -0.0637
+    0.0063   0.0483   0.1304   0.5709   0.3808  -0.5896   0.0478   0.3171  -0.1871   0.1558
+    0.0006   0.0206   0.0844   0.2216   0.6183   0.1317  -0.1197  -0.5600   0.3690  -0.2823
+    0.0009   0.0044   0.0454   0.1305   0.3133   0.6029   0.2393  -0.0648  -0.5078   0.4471
+    0.0003   0.0026   0.0140   0.0799   0.1791   0.3803  -0.3972   0.5771  -0.1596  -0.5482
+    0.0000   0.0013   0.0064   0.0314   0.1195   0.2165   0.6060   0.4448   0.6088   0.0459
+    0.0000   0.0002   0.0031   0.0111   0.0476   0.1204  -0.6331   0.1728   0.4041   0.6237
+
+ MODE:   3  LEVELS:
+
+         0        1        2        3        4        5        6        7        8        9
+
+    1.0000   0.0001  -0.0033  -0.0000   0.0024   0.0000   0.0001   0.0000   0.0000   0.0000
+   -0.0001   1.0000   0.0002   0.0040  -0.0000   0.0055   0.0000   0.0004   0.0000   0.0001
+    0.0033  -0.0002   0.9998   0.0002   0.0185   0.0000   0.0097   0.0000   0.0010   0.0000
+    0.0000  -0.0042  -0.0002   0.9991   0.0002   0.0394   0.0000   0.0155   0.0000   0.0021
+   -0.0025   0.0000  -0.0191  -0.0002   0.9974   0.0002   0.0659   0.0000   0.0234   0.0000
+    0.0000  -0.0053   0.0000  -0.0408  -0.0002   0.9938   0.0002   0.0974   0.0000   0.0333
+    0.0000   0.0000  -0.0085   0.0000  -0.0687  -0.0003   0.9872   0.0002   0.1435   0.0000
+   -0.0000   0.0002   0.0000  -0.0115   0.0000  -0.1024  -0.0003   0.9772   0.0002   0.1855
+    0.0000  -0.0000   0.0007   0.0000  -0.0136   0.0000  -0.1447  -0.0003   0.9894   0.0003
+   -0.0000   0.0001  -0.0000   0.0015   0.0000  -0.0144   0.0000  -0.1879  -0.0004   0.9821
+
+ VCI MATRIX IS MADE BLOCK-DIAGONAL ACCORDING TO IRREP-FACTORIZATION:
+
+ IRREP:  1  BLOCK SIZE (I.E. NUMBER OF CONFIGURATIONS):    34
+ IRREP:  2  BLOCK SIZE (I.E. NUMBER OF CONFIGURATIONS):     0
+ IRREP:  3  BLOCK SIZE (I.E. NUMBER OF CONFIGURATIONS):    22
+ IRREP:  4  BLOCK SIZE (I.E. NUMBER OF CONFIGURATIONS):     0
+
+ CONSTRUCTION OF VCI MATRIX FOR IRREP  1
+ CONFIGURATIONS WITH THIS SYMMETRY ARE:
+
+     1 ( 0,  0,  0) 
+     2 ( 1,  0,  0) 
+     3 ( 0,  1,  0) 
+     4 ( 2,  0,  0) 
+     5 ( 1,  1,  0) 
+     6 ( 0,  2,  0) 
+     7 ( 0,  0,  2) 
+     8 ( 3,  0,  0) 
+     9 ( 2,  1,  0) 
+    10 ( 1,  2,  0) 
+    11 ( 0,  3,  0) 
+    12 ( 1,  0,  2) 
+    13 ( 0,  1,  2) 
+    14 ( 4,  0,  0) 
+    15 ( 3,  1,  0) 
+    16 ( 2,  2,  0) 
+    17 ( 1,  3,  0) 
+    18 ( 0,  4,  0) 
+    19 ( 2,  0,  2) 
+    20 ( 1,  1,  2) 
+    21 ( 0,  2,  2) 
+    22 ( 0,  0,  4) 
+    23 ( 5,  0,  0) 
+    24 ( 4,  1,  0) 
+    25 ( 3,  2,  0) 
+    26 ( 2,  3,  0) 
+    27 ( 1,  4,  0) 
+    28 ( 0,  5,  0) 
+    29 ( 3,  0,  2) 
+    30 ( 2,  1,  2) 
+    31 ( 1,  2,  2) 
+    32 ( 0,  3,  2) 
+    33 ( 1,  0,  4) 
+    34 ( 0,  1,  4) 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT built-block TELAPSE       56.45 TCPU       56.42
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT diag-block  TELAPSE       56.45 TCPU       56.42
+
+ VCI ANHARMONIC VIBRATIONAL STATES
+
+
+ ZPE=   4613.02 CM-1
+
+ VCI STATE (     1)  ENE - ZPE:       0.00 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              1             13              9             12
+ COEFs:   0.999262E+00   0.348764E-01  -0.888418E-02  -0.681048E-02
+
+ VCI STATE (     2)  ENE - ZPE:    1566.84 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              2             20              5             15
+ COEFs:   0.998415E+00   0.364907E-01  -0.245872E-01  -0.170219E-01
+
+ VCI STATE (     3)  ENE - ZPE:    3101.63 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              4              3              9             30
+ COEFs:   0.990355E+00  -0.104389E+00  -0.530429E-01   0.380908E-01
+
+ VCI STATE (     4)  ENE - ZPE:    3664.14 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              3              4              7             21
+ COEFs:   0.987782E+00   0.103830E+00   0.100705E+00   0.429745E-01
+
+ VCI STATE (     5)  ENE - ZPE:    4613.16 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              8              5             15              9
+ COEFs:  -0.971692E+00   0.194579E+00   0.883219E-01   0.598145E-01
+
+ VCI STATE (     6)  ENE - ZPE:    5195.56 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              5              8             12             31
+ COEFs:   0.971163E+00   0.194806E+00   0.106233E+00   0.452682E-01
+
+ VCI STATE (     7)  ENE - ZPE:    6093.74 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             14              9             24             15
+ COEFs:   0.949181E+00  -0.259537E+00  -0.122362E+00  -0.881353E-01
+
+ VCI STATE (     8)  ENE - ZPE:    6732.73 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              9             14              6              8
+ COEFs:   0.942959E+00   0.262057E+00  -0.105914E+00   0.575195E-01
+
+ VCI STATE (     9)  ENE - ZPE:    7308.90 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              6              9             13             32
+ COEFs:   0.982458E+00   0.103476E+00   0.133110E+00   0.446192E-01
+
+ VCI STATE (    10)  ENE - ZPE:    7469.67 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              7             13             12              3
+ COEFs:   0.946256E+00   0.255477E+00  -0.102538E+00  -0.101520E+00
+
+ VCI STATE (    11)  ENE - ZPE:    7612.33 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             23             15             24             14
+ COEFs:   0.934615E+00  -0.313541E+00  -0.115819E+00  -0.735158E-01
+
+ VCI STATE (    12)  ENE - ZPE:    8249.25 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             15             23             10             29
+ COEFs:   0.900406E+00   0.312922E+00  -0.196603E+00   0.118132E+00
+
+ VCI STATE (    13)  ENE - ZPE:    8798.60 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             10             15             12             16
+ COEFs:  -0.960869E+00  -0.189534E+00  -0.754748E-01   0.446433E-01
+
+ VCI STATE (    14)  ENE - ZPE:    8991.55 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             12             20             19              5
+ COEFs:   0.937632E+00   0.230031E+00  -0.139527E+00  -0.104493E+00
+
+ VCI STATE (    15)  ENE - ZPE:    9756.85 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             24             16             23             14
+ COEFs:   0.923876E+00  -0.295758E+00   0.146020E+00   0.123571E+00
+
+ VCI STATE (    16)  ENE - ZPE:   10288.87 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             16             24             30             11
+ COEFs:  -0.930125E+00  -0.281090E+00  -0.145865E+00   0.756147E-01
+
+ VCI STATE (    17)  ENE - ZPE:   10476.43 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             19             30             12             29
+ COEFs:  -0.942259E+00  -0.207988E+00  -0.147450E+00   0.130872E+00
+
+ VCI STATE (    18)  ENE - ZPE:   10969.22 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             11             16             21             13
+ COEFs:  -0.985168E+00  -0.787944E-01  -0.117415E+00   0.606526E-01
+
+ VCI STATE (    19)  ENE - ZPE:   11263.99 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             13             21              7             22
+ COEFs:   0.870995E+00   0.324776E+00  -0.263275E+00   0.179823E+00
+
+ VCI STATE (    20)  ENE - ZPE:   11773.90 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             25             29             17             15
+ COEFs:  -0.934633E+00   0.233885E+00   0.138852E+00  -0.125684E+00
+
+ VCI STATE (    21)  ENE - ZPE:   12099.18 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             29             25             20             19
+ COEFs:   0.932719E+00   0.247794E+00  -0.186929E+00   0.113315E+00
+
+ VCI STATE (    22)  ENE - ZPE:   12381.95 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             17             25             31             20
+ COEFs:   0.975787E+00   0.145011E+00   0.111402E+00  -0.709213E-01
+
+ VCI STATE (    23)  ENE - ZPE:   12717.88 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             20             31             12             29
+ COEFs:  -0.863772E+00  -0.304694E+00   0.246821E+00  -0.184678E+00
+
+ VCI STATE (    24)  ENE - ZPE:   13815.43 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             26             30             16             25
+ COEFs:   0.964305E+00  -0.204606E+00   0.851049E-01   0.755357E-01
+
+ VCI STATE (    25)  ENE - ZPE:   14628.29 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             30             18             21             26
+ COEFs:   0.683776E+00   0.625904E+00  -0.225181E+00   0.196383E+00
+
+ VCI STATE (    26)  ENE - ZPE:   14641.60 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             18             30             19             26
+ COEFs:  -0.757824E+00   0.609660E+00  -0.141658E+00   0.113962E+00
+
+ VCI STATE (    27)  ENE - ZPE:   15041.13 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             21             32             22             13
+ COEFs:  -0.753219E+00  -0.330041E+00   0.477173E+00   0.159378E+00
+
+ VCI STATE (    28)  ENE - ZPE:   15288.97 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             22             34             21             13
+ COEFs:  -0.750274E+00  -0.427530E+00  -0.337949E+00   0.305576E+00
+
+ VCI STATE (    29)  ENE - ZPE:   15986.69 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             27             31             33             20
+ COEFs:   0.958095E+00  -0.232602E+00   0.104697E+00   0.764604E-01
+
+ VCI STATE (    30)  ENE - ZPE:   16834.52 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             31             33             27             20
+ COEFs:   0.692208E+00  -0.642180E+00   0.259638E+00  -0.101485E+00
+
+ VCI STATE (    31)  ENE - ZPE:   17939.15 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             33             31             20             34
+ COEFs:   0.723509E+00   0.583960E+00  -0.312929E+00   0.107967E+00
+
+ VCI STATE (    32)  ENE - ZPE:   18437.04 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             28             32             34             21
+ COEFs:  -0.954931E+00   0.248596E+00  -0.956909E-01  -0.940642E-01
+
+ VCI STATE (    33)  ENE - ZPE:   19579.18 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             32             28             34             22
+ COEFs:   0.775680E+00   0.287942E+00  -0.454816E+00   0.230982E+00
+
+ VCI STATE (    34)  ENE - ZPE:   21654.40 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             34             22             21             32
+ COEFs:   0.757278E+00  -0.326850E+00  -0.313010E+00   0.432809E+00
+
+ CONSTRUCTION OF VCI MATRIX FOR IRREP  3
+ CONFIGURATIONS WITH THIS SYMMETRY ARE:
+
+     1 ( 0,  0,  1) 
+     2 ( 1,  0,  1) 
+     3 ( 0,  1,  1) 
+     4 ( 2,  0,  1) 
+     5 ( 1,  1,  1) 
+     6 ( 0,  2,  1) 
+     7 ( 0,  0,  3) 
+     8 ( 3,  0,  1) 
+     9 ( 2,  1,  1) 
+    10 ( 1,  2,  1) 
+    11 ( 0,  3,  1) 
+    12 ( 1,  0,  3) 
+    13 ( 0,  1,  3) 
+    14 ( 4,  0,  1) 
+    15 ( 3,  1,  1) 
+    16 ( 2,  2,  1) 
+    17 ( 1,  3,  1) 
+    18 ( 0,  4,  1) 
+    19 ( 2,  0,  3) 
+    20 ( 1,  1,  3) 
+    21 ( 0,  2,  3) 
+    22 ( 0,  0,  5) 
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT built-block TELAPSE       56.47 TCPU       56.45
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT diag-block  TELAPSE       56.47 TCPU       56.45
+
+ VCI ANHARMONIC VIBRATIONAL STATES
+
+
+ VCI STATE (    35)  ENE - ZPE:    3744.11 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              1              3              2             13
+ COEFs:  -0.984854E+00  -0.145960E+00   0.598644E-01  -0.600098E-01
+
+ VCI STATE (    36)  ENE - ZPE:    5244.42 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              2              4              5              1
+ COEFs:   0.982180E+00  -0.807379E-01   0.129811E+00   0.614762E-01
+
+ VCI STATE (    37)  ENE - ZPE:    6774.43 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              4              2              3              8
+ COEFs:  -0.981204E+00  -0.877491E-01   0.628619E-01   0.925138E-01
+
+ VCI STATE (    38)  ENE - ZPE:    7384.07 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              3              6              1              7
+ COEFs:   0.952409E+00   0.179540E+00  -0.148721E+00   0.147567E+00
+
+ VCI STATE (    39)  ENE - ZPE:    8263.97 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              8              5              4             14
+ COEFs:   0.980451E+00  -0.127802E+00   0.103690E+00  -0.773710E-01
+
+ VCI STATE (    40)  ENE - ZPE:    8886.34 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              5             10             12              2
+ COEFs:  -0.947615E+00  -0.160152E+00  -0.158501E+00   0.137327E+00
+
+ VCI STATE (    41)  ENE - ZPE:    9701.48 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             14              9              8              4
+ COEFs:   0.970598E+00  -0.220793E+00   0.813967E-01  -0.262459E-01
+
+ VCI STATE (    42)  ENE - ZPE:   10370.53 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              9             14             16              4
+ COEFs:  -0.939230E+00  -0.201067E+00  -0.130299E+00   0.115879E+00
+
+ VCI STATE (    43)  ENE - ZPE:   11121.21 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              6             11              3             13
+ COEFs:   0.939462E+00   0.191218E+00  -0.162302E+00   0.145291E+00
+
+ VCI STATE (    44)  ENE - ZPE:   11337.76 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:              7             13              3             12
+ COEFs:   0.898778E+00   0.361910E+00  -0.171418E+00  -0.137504E+00
+
+ VCI STATE (    45)  ENE - ZPE:   11895.05 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             15             10              9              8
+ COEFs:   0.974395E+00  -0.180508E+00   0.773368E-01  -0.639196E-01
+
+ VCI STATE (    46)  ENE - ZPE:   12543.11 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             10             12             17             15
+ COEFs:  -0.929479E+00   0.177674E+00  -0.175018E+00  -0.160430E+00
+
+ VCI STATE (    47)  ENE - ZPE:   12789.59 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             12             20              5             19
+ COEFs:  -0.890065E+00  -0.340065E+00   0.185123E+00   0.133302E+00
+
+ VCI STATE (    48)  ENE - ZPE:   14026.67 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             16             19             12             11
+ COEFs:   0.900170E+00  -0.400084E+00  -0.986493E-01  -0.809953E-01
+
+ VCI STATE (    49)  ENE - ZPE:   14791.66 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             19             16             13              9
+ COEFs:   0.863166E+00   0.388740E+00  -0.185490E+00  -0.181620E+00
+
+ VCI STATE (    50)  ENE - ZPE:   14857.60 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             11             13             18              6
+ COEFs:   0.927606E+00  -0.224142E+00   0.198410E+00  -0.132874E+00
+
+ VCI STATE (    51)  ENE - ZPE:   15260.22 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             13             21              7              6
+ COEFs:   0.748837E+00   0.437798E+00  -0.315993E+00  -0.213889E+00
+
+ VCI STATE (    52)  ENE - ZPE:   16348.47 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             17             20             12             13
+ COEFs:  -0.924220E+00   0.322089E+00  -0.140645E+00   0.515237E-01
+
+ VCI STATE (    53)  ENE - ZPE:   17894.07 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             20             17             12             19
+ COEFs:  -0.854809E+00  -0.328341E+00   0.301667E+00   0.573702E-01
+
+ VCI STATE (    54)  ENE - ZPE:   18774.88 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             18             21             22             13
+ COEFs:   0.883336E+00  -0.355246E+00   0.226468E+00   0.150405E+00
+
+ VCI STATE (    55)  ENE - ZPE:   19947.86 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             22             18             21              6
+ COEFs:   0.795529E+00  -0.369801E+00  -0.439425E+00  -0.480855E-01
+
+ VCI STATE (    56)  ENE - ZPE:   21645.07 CM-1
+
+ MOST IMPORTANT CONFIGURATIONS:
+ CONFs:             21             22             13             18
+ COEFs:   0.677002E+00   0.533211E+00  -0.403172E+00   0.197485E+00
+
+ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
+
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE       56.51 TCPU       56.48
+ EEEEEEEEEE TERMINATION  DATE 07 09 2024 TIME 22:14:36.8
+NODE    0 CPU TIME =        56.484
+NODE    1 CPU TIME =        56.485
+NODE    2 CPU TIME =        56.484
+NODE    3 CPU TIME =        56.484
+NODE    4 CPU TIME =        56.486
+NODE    5 CPU TIME =        56.477
+NODE    6 CPU TIME =        56.487
+NODE    7 CPU TIME =        56.482
+NODE    8 CPU TIME =        56.481
+NODE    9 CPU TIME =        56.481
+    TOTAL CPU TIME =       564.831
+Sat 07 Sep 2024 10:14:36 PM CEST
+total 316996
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 dffit3.dat
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err1.pe05
+-rw-r--r-- 1 erba users      2400 Sep  7 22:13 diis_err1.pe06
+-rw-r--r-- 1 erba users     13920 Sep  7 22:13 diis_err1.pe07
+-rw-r--r-- 1 erba users     10400 Sep  7 22:13 diis_err1.pe08
+-rw-r--r-- 1 erba users    188440 Sep  7 22:14 diis_err1.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_err2.pe05
+-rw-r--r-- 1 erba users      2800 Sep  7 22:13 diis_err2.pe06
+-rw-r--r-- 1 erba users     16240 Sep  7 22:13 diis_err2.pe07
+-rw-r--r-- 1 erba users     13000 Sep  7 22:13 diis_err2.pe08
+-rw-r--r-- 1 erba users    161520 Sep  7 22:14 diis_err2.pe09
+-rw-r--r-- 1 erba users    114816 Sep  7 22:14 diis_Fg
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 diis_Sk.pe09
+-rw-r--r-- 1 erba users       216 Sep  7 22:13 fort.10.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.10.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.10.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.10.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.10.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.10.pe05
+-rw-r--r-- 1 erba users       400 Sep  7 22:13 fort.10.pe06
+-rw-r--r-- 1 erba users      2320 Sep  7 22:13 fort.10.pe07
+-rw-r--r-- 1 erba users      2600 Sep  7 22:13 fort.10.pe08
+-rw-r--r-- 1 erba users     26920 Sep  7 22:14 fort.10.pe09
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe00
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe01
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe02
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe03
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe04
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe05
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe06
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe07
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe08
+-rw-r--r-- 1 erba users     14352 Sep  7 22:14 fort.11.pe09
+-rw-r--r-- 1 erba users      8964 Sep  7 22:14 fort.12
+-rw-r--r-- 1 erba users     26920 Sep  7 22:13 fort.13
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.17.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.18.pe09
+-rw-r--r-- 1 erba users       312 Sep  7 22:13 fort.19.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.19.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.1.pe09
+-rw-r--r-- 1 erba users     40384 Sep  7 22:13 fort.20
+-rw-r--r-- 1 erba users       712 Sep  7 22:14 fort.21
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.28.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.29.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.38.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.3.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.40.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.61.pe08
+-rw-r--r-- 1 erba users      2544 Sep  7 22:13 fort.61.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.62.pe05
+-rw-r--r-- 1 erba users       416 Sep  7 22:13 fort.62.pe06
+-rw-r--r-- 1 erba users       672 Sep  7 22:13 fort.62.pe07
+-rw-r--r-- 1 erba users       480 Sep  7 22:13 fort.62.pe08
+-rw-r--r-- 1 erba users       768 Sep  7 22:13 fort.62.pe09
+-rw-r--r-- 1 erba users    212270 Sep  7 22:14 fort.65
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.82.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe05
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe06
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe07
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe08
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.83.pe09
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe00
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe01
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe02
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe03
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe04
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 fort.8.pe05
+-rw-r--r-- 1 erba users       400 Sep  7 22:13 fort.8.pe06
+-rw-r--r-- 1 erba users      2320 Sep  7 22:13 fort.8.pe07
+-rw-r--r-- 1 erba users      2600 Sep  7 22:13 fort.8.pe08
+-rw-r--r-- 1 erba users     26920 Sep  7 22:14 fort.8.pe09
+-rw-r--r-- 1 erba users     40384 Sep  7 22:13 fort.9
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe00
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe01
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe02
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe03
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe04
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe05
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe06
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe07
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe08
+-rw-r--r-- 1 erba users     19368 Sep  7 22:14 fort.95.pe09
+-rw-r--r-- 1 erba users   1291559 Sep  7 22:13 FREQINFO.DAT
+-rw-r--r-- 1 erba users      1722 Sep  7 22:13 HESSFREQ.DAT
+-rw-r--r-- 1 erba users      2304 Sep  7 22:13 INPUT
+-rw-r--r-- 1 erba users         0 Sep  7 22:13 MULLIKEN.DAT
+-rwxr-xr-x 1 erba users 321886240 Sep  7 22:13 Pcrystal-474986
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN7_1639.0730_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN7_1639.0730_DISP_0.9000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN7_1639.0730_DISP_1.8000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN8_3798.2185_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN8_3798.2185_DISP_0.9000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN8_3798.2185_DISP_1.8000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN9_3898.9462_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep  7 22:14 SCAN9_3898.9462_DISP_0.9000
+-rw-r--r-- 1 erba users      3317 Sep  7 22:14 SCANPES.DAT
+lrwxrwxrwx 1 erba users        78 Sep  7 22:13 SCFOUT.LOG -> /home/erba/Furfaro/Calcoli/Acqua/Calcfreq_acqua/H2O_VSCF_VCI/H2O_VSCF_VCI.out2
+-rw-r--r-- 1 erba users       625 Sep  7 22:14 VIBPOT.DAT
