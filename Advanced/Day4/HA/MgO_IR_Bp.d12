@@ -1,4 +1,4 @@
-TEST11 - MGO BULK
+MgO - PBE/pob-DVZVP-rev2 - harmonic freq + IR intensities (Berry-phase)
 CRYSTAL
 0 0 0
 225
@@ -7,15 +7,12 @@ CRYSTAL
  12 0.    0.    0.
   8 0.5   0.5   0.5
 FREQCALC
-NUMDERIV
-2
 INTENS
 END
 BASISSET
-POB-TZVP-REV2
+POB-DZVP-REV2
 DFT
-PBEXC
-XXLGRID
+PBE
 END
 SHRINK
 8 8
