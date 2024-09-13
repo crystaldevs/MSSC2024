@@ -1,15 +1,14 @@
 /home/erba/Mitoli/pub/bin/Linux-ifort_openmpi_i64_clut/std/Pcrystal
-/scratch/alessandro/tmp_p31682
+/scratch/alessandro/tmp_p32314
 script started on node80
-wasser
+H2O - PES (scheme 3)
 MOLECULE
 15
 2
 8      0.000000000000E+00  0.000000000000E+00  1.175717600266E-01
 1      0.000000000000E+00  7.603952673740E-01 -4.710508800133E-01
 FREQCALC
-NUMDERIV
-2
+RESTART
 ANHAPES
 3
 7 8 9
@@ -80,22 +79,16 @@ END
 END
 DFT
 B3LYP
-XXLGRID
 END
-SHRINK
-2 2
-TOLINTEG
-10 10 10 10 20
 TOLDEE
 10
 MAXCYCLE
 100
 END
-
 ************************************************
 ANOTHER DROLLERY FILLED RUN OF THE CRYSTAL CODE!
 ************************************************
-Sat 07 Sep 2024 09:47:35 PM CEST
+Fri 13 Sep 2024 11:19:47 AM CEST
  PROCESS            0  OF            1  WORKING
 
          
@@ -141,8 +134,8 @@ Sat 07 Sep 2024 09:47:35 PM CEST
  *(18) UNIVERSITY OF VERMONT - BURLINGTON (USA)                                *
  *                                                                             *
  *******************************************************************************
- EEEEEEEEEE STARTING  DATE 07 09 2024 TIME 21:47:35.2
- wasser                                                                          
+ EEEEEEEEEE STARTING  DATE 13 09 2024 TIME 11:19:47.8
+ H2O - PES (scheme 3)                                                            
 
  MOLECULAR CALCULATION
  POINT  GROUP  N. 15                  :  MM2    OR  C2V  
@@ -177,7 +170,7 @@ Sat 07 Sep 2024 09:47:35 PM CEST
 
                        FREQUENCY CALCULATION
 
- INFORMATION **** INPFREQ **** NUMERICAL DERIVATIVE OF GRADIENT OPTION           2
+ INFORMATION **** INPFREQ **** FREQUENCY CALCULATION RESTART(DATA FROM FREQINFO.DAT)
  INFORMATION **** INPFREQ **** SCAN OF PES ALONG NORMAL MODES
  INFORMATION **** INPFREQ **** NEW DEFAULT - IMPOSING ECKART CONDITIONS TO THE HESSIAN
 
@@ -279,16 +272,14 @@ Sat 07 Sep 2024 09:47:35 PM CEST
  USE KEYWORD NODIIS TO TURN IT OFF
  *******************************************************************************
 
- WARNING **** SHRINK **** MOLECULAR CASE - SHRINKING NOT USED
- INFORMATION **** TOLINTEG **** COULOMB AND EXCHANGE SERIES TOLERANCES MODIFIED
  INFORMATION **** TOLDEE **** SCF TOL ON TOTAL ENERGY SET TO          10
  INFORMATION **** MAXCYCLE **** MAX NUMBER OF SCF CYCLES SET TO         100
  *******************************************************************************
- N. OF ATOMS PER CELL         3  COULOMB OVERLAP TOL         (T1) 10**  -10
- NUMBER OF SHELLS            22  COULOMB PENETRATION TOL     (T2) 10**  -10
- NUMBER OF AO                58  EXCHANGE OVERLAP TOL        (T3) 10**  -10
- N. OF ELECTRONS PER CELL    10  EXCHANGE PSEUDO OVP (F(G))  (T4) 10**  -10
- CORE ELECTRONS PER CELL      2  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**  -20
+ N. OF ATOMS PER CELL         3  COULOMB OVERLAP TOL         (T1) 10**   -6
+ NUMBER OF SHELLS            22  COULOMB PENETRATION TOL     (T2) 10**   -6
+ NUMBER OF AO                58  EXCHANGE OVERLAP TOL        (T3) 10**   -6
+ N. OF ELECTRONS PER CELL    10  EXCHANGE PSEUDO OVP (F(G))  (T4) 10**   -6
+ CORE ELECTRONS PER CELL      2  EXCHANGE PSEUDO OVP (P(G))  (T5) 10**  -12
  N. OF SYMMETRY OPERATORS     4  POLE ORDER IN MONO ZONE                  4
  *******************************************************************************
  TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
@@ -310,12 +301,12 @@ Sat 07 Sep 2024 09:47:35 PM CEST
  DISK SPACE FOR EIGENVECTORS (FTN 10)        3364 REALS
 
  SYMMETRY ADAPTION OF THE BLOCH FUNCTIONS ENABLED
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.09 TCPU        0.09
 
  MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
  MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
 
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.09 TCPU        0.09
 
  NEIGHBORS OF THE NON-EQUIVALENT ATOMS
 
@@ -328,8 +319,8 @@ Sat 07 Sep 2024 09:47:35 PM CEST
 
 
  SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.09 TCPU        0.08
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.09 TCPU        0.09
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.09 TCPU        0.09
 
  *******************************************************************************
  *                                                                             *
@@ -391,11 +382,11 @@ Sat 07 Sep 2024 09:47:35 PM CEST
    7      2   H            DZ           2
  USE OF RESIDUAL SYMMETRY AFTER DISPLACEMENT
 
- NUMERICAL GRADIENT COMPUTED WITH A DOUBLE DISPLACEMENT (+-DX) FOR EACH
+ NUMERICAL GRADIENT COMPUTED WITH A SINGLE DISPLACEMENT (+DX) FOR EACH
  CARTESIAN COORDINATE WITH RESPECT TO THE EQUILIBRIUM CONFIGURATION
  DX=  0.003 ANGSTROM
  NUMBER OF IRREDUCIBLE ATOMS                     2
- NUMBER OF SCF+GRADIENT CALCULATIONS             7
+ NUMBER OF SCF+GRADIENT CALCULATIONS             4
 
   ATOM  SYMOP  ORDER
     1      4      2
@@ -410,225 +401,22 @@ Sat 07 Sep 2024 09:47:35 PM CEST
 
  CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
 
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.09 TCPU        0.09
 
  MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
  MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
 
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.09 TCPU        0.09
 
  SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.09 TCPU        0.08
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.09 TCPU        0.08
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.09 TCPU        0.09
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.09 TCPU        0.09
 
- DFT PARAMETERS
-
-     ATOM       ELECTRONS   NET CHARGE   R(ANGSTROM)
-   1   8  O       8.0000      0.0000     0.74000000
-   2   1  H       1.0000      0.0000     1.11000000
-
- SIZE OF GRID=      55307
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MAKE_GRID2  TELAPSE        0.11 TCPU        0.11
- BECKE WEIGHT FUNCTION
- RADSAFE =     2.00
- TOLERANCES - DENSITY:10**- 6; POTENTIAL:10**- 9; GRID WGT:10**-14
-
- RADIAL INTEGRATION  - INTERVALS (POINTS,UPPER LIMIT):            1( 99,  4.0*R)
-
- ANGULAR INTEGRATION - INTERVALS (ACCURACY LEVEL [N. POINTS] UPPER LIMIT):
-  1(  6[ 146]   0.2)  2( 11[ 302]   0.5)  3( 14[ 590]   0.9)  4( 18[1454]   3.5)
-  5( 14[ 590]9999.0)
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_CALC    TELAPSE        0.11 TCPU        0.11
-
- *******************************************************************************
- wasser                                                                          
- CRYSTAL - SCF - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
- *******************************************************************************
-
- CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
-
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SDIK        TELAPSE        0.11 TCPU        0.11
-
- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-         ATOMIC WAVEFUNCTION(S)
+         THE FIRST POINT IS RESTORED FROM THE FREQINFO.DAT
 
 
- NUCLEAR CHARGE  8.0  SYMMETRY SPECIES            S    P
- N. ELECTRONS    8.0  NUMBER OF PRIMITIVE GTOS   22    7
-                      NUMBER OF CONTRACTED GTOS   4    3
-                      NUMBER OF CLOSED SHELLS     2    0
-                      OPEN SHELL OCCUPATION       0    4
+ RESTART FROM  AN INCOMPLETE HESSIAN MATRIX
 
-  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
-   8.0    14    -7.480307855E+01  7.480320520E+01 -1.999998307E+00  2.4E-06
-
- NUCLEAR CHARGE  1.0  SYMMETRY SPECIES            S
- N. ELECTRONS    1.0  NUMBER OF PRIMITIVE GTOS    7
-                      NUMBER OF CONTRACTED GTOS   3
-                      NUMBER OF CLOSED SHELLS     0
-                      OPEN SHELL OCCUPATION       1
-
-  ZNUC  SCFIT    TOTAL HF ENERGY   KINETIC ENERGY   VIRIAL THEOREM ACCURACY
-   1.0     1    -4.998098113E-01  4.997871260E-01 -2.000045390E+00  1.0E-11
-
- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.12 TCPU        0.11
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        0.72 TCPU        0.72
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        0.72 TCPU        0.72
- NUMERICALLY INTEGRATED DENSITY      9.9999429189
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        0.89 TCPU        0.89
- CYC   0 ETOT(AU) -7.639307053152E+01 DETOT -7.64E+01 tst  0.00E+00 PX  1.00E+00
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        0.89 TCPU        0.89
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        0.89 TCPU        0.89
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -4.1875779E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG -1.5474420E-02 AU
- DIRECT ENERGY BAND GAP:  10.9739 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        0.89 TCPU        0.89
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        0.89 TCPU        0.89
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        1.47 TCPU        1.46
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        1.47 TCPU        1.46
- NUMERICALLY INTEGRATED DENSITY      9.9999939964
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        1.64 TCPU        1.63
- CYC   1 ETOT(AU) -7.635161132486E+01 DETOT  4.15E-02 tst  0.00E+00 PX  1.00E+00
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        1.64 TCPU        1.64
- DIIS TEST: 0.63637E+00 AT SCF   CYCLE   1 - MIX   30 %
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        1.64 TCPU        1.64
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -2.2999749E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  3.2272477E-02 AU
- DIRECT ENERGY BAND GAP:   7.1367 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        1.64 TCPU        1.64
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        1.64 TCPU        1.64
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        2.22 TCPU        2.21
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        2.22 TCPU        2.21
- NUMERICALLY INTEGRATED DENSITY      9.9999881221
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        2.39 TCPU        2.38
- CYC   2 ETOT(AU) -7.638151490880E+01 DETOT -2.99E-02 tst  9.76E-03 PX  4.92E-01
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        2.39 TCPU        2.38
- DIIS TEST: 0.37794E+00 AT SCF   CYCLE   2 - DIIS ACTIVE - HISTORY:     2 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        2.39 TCPU        2.39
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0732401E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.5190378E-02 AU
- DIRECT ENERGY BAND GAP:   9.0482 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        2.39 TCPU        2.39
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        2.39 TCPU        2.39
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        2.97 TCPU        2.96
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        2.97 TCPU        2.96
- NUMERICALLY INTEGRATED DENSITY      9.9999912980
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        3.14 TCPU        3.13
- CYC   3 ETOT(AU) -7.642269408612E+01 DETOT -4.12E-02 tst  2.02E-03 PX  2.43E-01
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        3.14 TCPU        3.13
- DIIS TEST: 0.73536E-03 AT SCF   CYCLE   3 - DIIS ACTIVE - HISTORY:     3 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        3.14 TCPU        3.13
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0573450E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6995947E-02 AU
- DIRECT ENERGY BAND GAP:   9.0541 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        3.14 TCPU        3.13
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        3.14 TCPU        3.14
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        3.72 TCPU        3.71
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        3.72 TCPU        3.71
- NUMERICALLY INTEGRATED DENSITY      9.9999911691
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        3.89 TCPU        3.88
- CYC   4 ETOT(AU) -7.642273712964E+01 DETOT -4.30E-05 tst  2.61E-06 PX  4.17E-03
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        3.89 TCPU        3.88
- DIIS TEST: 0.51400E-05 AT SCF   CYCLE   4 - DIIS ACTIVE - HISTORY:     4 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        3.89 TCPU        3.88
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0600787E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6892794E-02 AU
- DIRECT ENERGY BAND GAP:   9.0587 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        3.89 TCPU        3.88
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        3.89 TCPU        3.89
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        4.46 TCPU        4.46
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        4.46 TCPU        4.46
- NUMERICALLY INTEGRATED DENSITY      9.9999911646
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        4.63 TCPU        4.63
- CYC   5 ETOT(AU) -7.642273747478E+01 DETOT -3.45E-07 tst  3.25E-08 PX  6.62E-04
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        4.63 TCPU        4.63
- DIIS TEST: 0.40572E-07 AT SCF   CYCLE   5 - DIIS ACTIVE - HISTORY:     5 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        4.63 TCPU        4.63
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604253E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6878564E-02 AU
- DIRECT ENERGY BAND GAP:   9.0592 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        4.63 TCPU        4.63
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        4.64 TCPU        4.63
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        5.21 TCPU        5.21
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        5.21 TCPU        5.21
- NUMERICALLY INTEGRATED DENSITY      9.9999911650
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        5.38 TCPU        5.38
- CYC   6 ETOT(AU) -7.642273747944E+01 DETOT -4.66E-09 tst  4.86E-10 PX  1.10E-04
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        5.38 TCPU        5.38
- DIIS TEST: 0.43177E-10 AT SCF   CYCLE   6 - DIIS ACTIVE - HISTORY:     6 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        5.38 TCPU        5.38
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604105E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6879533E-02 AU
- DIRECT ENERGY BAND GAP:   9.0592 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        5.38 TCPU        5.38
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        5.38 TCPU        5.38
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        5.96 TCPU        5.95
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        5.96 TCPU        5.96
- NUMERICALLY INTEGRATED DENSITY      9.9999911649
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        6.13 TCPU        6.13
- CYC   7 ETOT(AU) -7.642273747944E+01 DETOT -6.96E-12 tst  8.61E-13 PX  5.06E-06
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIIS        TELAPSE        6.13 TCPU        6.13
- DIIS TEST: 0.68651E-11 AT SCF   CYCLE   7 - DIIS ACTIVE - HISTORY:     7 CYCLES
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT FDIK        TELAPSE        6.13 TCPU        6.13
- INSULATING STATE
- TOP OF VALENCE BANDS -    BAND      5; K    1; EIG -3.0604150E-01 AU
- BOTTOM OF VIRTUAL BANDS - BAND      6; K    1; EIG  2.6879346E-02 AU
- DIRECT ENERGY BAND GAP:   9.0592 eV
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT PDIG        TELAPSE        6.13 TCPU        6.13
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MOQGAD      TELAPSE        6.13 TCPU        6.13
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELLXN     TELAPSE        6.71 TCPU        6.70
-
- ::: DIPOLE MOMENT ALONG NON PERIODIC DIRECTIONS:
- ::: A.U.     (X)  0.00000E+00   (Y)  0.00000E+00   (Z)  7.54958E-01
- ::: DEBYE         0.00000E+00        0.00000E+00       -1.91891E+00
-
- ::: PSEUDO TOTAL   ENERGY                        -6.8900330114938E+01
- ::: VIRIAL COEFFICIENT                            1.0494505888611E+00
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MONMO3      TELAPSE        6.71 TCPU        6.70
- NUMERICALLY INTEGRATED DENSITY      9.9999911650
- EXCHANGE ENERGY: -0.712013507019E+01  CORRELATION ENERGY: -0.402272294316E+00
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFT      TELAPSE        6.88 TCPU        6.87
- CYC   8 ETOT(AU) -7.642273747944E+01 DETOT -7.67E-13 tst  7.44E-14 PX  5.06E-06
-
- == SCF ENDED - CONVERGENCE ON ENERGY      E(AU) -7.6422737479444E+01 CYCLES   8
-
-
- ENERGY EXPRESSION=HARTREE+FOCK EXCH*0.20000+(BECKE      EXCH)*0.80000+LYP        CORR
-
-
- TOTAL ENERGY(DFT)(AU)(  8) -7.6422737479444E+01 DE-7.7E-13 tester 7.4E-14
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT EDFT        TELAPSE        6.88 TCPU        6.87
-
- *******************************************************************************
- *                             FORCE CALCULATION                               *
- *******************************************************************************
-
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NUMDFG      TELAPSE        7.65 TCPU        7.64
- INFORMATION **** EXCPOG **** EXCH. BIPO BUFFER LENGTH (WORDS) =      150336
- INFORMATION **** GENPOG **** BIPO BUFFER LENGTH (WORDS) =       25300
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SHELXG      TELAPSE       10.84 TCPU       10.84
-
- CARTESIAN FORCES IN HARTREE/BOHR (ANALYTICAL)
-   ATOM                     X                   Y                   Z
-   1   8             0.000000000000E+00  0.000000000000E+00  4.416118103645E-06
-   2   1             0.000000000000E+00  2.344664358223E-06 -2.208059204145E-06
-   3   1             1.040834085586E-17 -2.344664358223E-06 -2.208059204145E-06
-
- RESULTANT FORCE     1.040834085586E-17  0.000000000000E+00 -3.046451979571E-13
-
- SYMMETRY ALLOWED FORCES (ANALYTICAL) (DIRECTION, FORCE)
-
-    1  5.4086181E-06    2  3.3158561E-06
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT TOTGRA      TELAPSE       10.86 TCPU       10.85
 
  HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
                    FORCE CONSTANT MATRIX - NUMERICAL ESTIMATE
@@ -639,26 +427,23 @@ Sat 07 Sep 2024 09:47:35 PM CEST
                  (DE IS EXPECTED TO BE POSITIVE FOR ALL DISPLACEMENTS)
 
    ATOM      MAX ABS(DGRAD)       TOTAL ENERGY (AU)  N.CYC      DE       SYM
-    CENTRAL POINT             -7.642273747944E+01     8     0.0000E+00     4
-    2 H  DX   3.5307E-06      -7.642273747690E+01     5     2.5486E-09     1
-    2 H  DX   3.5307E-06      -7.642273747690E+01     5     2.5487E-09     1
-    2 H  DY   2.0720E-03      -7.642273160736E+01     6     5.8721E-06     2
-    2 H  DY   2.0976E-03      -7.642273153105E+01     6     5.9484E-06     2
-    2 H  DZ   1.4846E-03      -7.642273409550E+01     6     3.3839E-06     2
-    2 H  DZ   1.4647E-03      -7.642273401139E+01     6     3.4681E-06     2
+    CENTRAL POINT             -7.642273671293E+01     0     0.0000E+00     4
+    2 H  DX                   RESTORED FROM A PREV. HESS. MATRIX
+    2 H  DY                   RESTORED FROM A PREV. HESS. MATRIX
+    2 H  DZ                   RESTORED FROM A PREV. HESS. MATRIX
 
  CAPPA:IS1  1;IS2  1;IS3  1; K PTS MONK NET   1; SYMMOPS:K SPACE   8;G SPACE   4
 
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE      104.56 TCPU      104.55
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.11 TCPU        0.10
 
  MATRIX SIZE: P(G)    3364, F(G)    1711, P(G) IRR    1177, F(G) IRR    1177
  MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS   1
 
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE      104.56 TCPU      104.55
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INPUT       TELAPSE        0.11 TCPU        0.10
 
  SYMMETRY ALLOWED INTERNAL DEGREE(S) OF FREEDOM:   2
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE      104.56 TCPU      104.55
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE      104.56 TCPU      104.55
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SYMM        TELAPSE        0.11 TCPU        0.10
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT INT_SCREEN  TELAPSE        0.11 TCPU        0.10
 
  +++ SYMMETRY ADAPTION OF VIBRATIONAL MODES +++
 
@@ -704,48 +489,48 @@ Sat 07 Sep 2024 09:47:35 PM CEST
 
     MODES         EIGV          FREQUENCIES     IRREP  IR   INTENS    RAMAN
              (HARTREE**2)   (CM**-1)     (THZ)             (KM/MOL)
-    1-   1   -0.3045E-19      0.0000    0.0000  (B1 )   A (     0.00)   A
-    2-   2   -0.3807E-20      0.0000    0.0000  (B1 )   A (     0.00)   A
-    3-   3    0.0000E+00      0.0000    0.0000  (B2 )   A (     0.00)   A
-    4-   4    0.4127E-38      0.0000    0.0000  (A2 )   I (     0.00)   A
-    5-   5    0.1716E-23      0.0000    0.0000  (B2 )   A (     0.00)   A
-    6-   6    0.1523E-19      0.0000    0.0000  (A1 )   A (     0.00)   A
-    7-   7    0.5577E-04   1639.0730   49.1382  (A1 )   A (     0.00)   A
-    8-   8    0.2995E-03   3798.2185  113.8677  (A1 )   A (     0.00)   A
-    9-   9    0.3156E-03   3898.9462  116.8875  (B1 )   A (     0.00)   A
+    1-   1   -0.3807E-20      0.0000    0.0000  (B1 )   A (     0.00)   A
+    2-   2   -0.1751E-38      0.0000    0.0000  (A2 )   I (     0.00)   A
+    3-   3    0.4628E-24      0.0000    0.0000  (B2 )   A (     0.00)   A
+    4-   4    0.1859E-23      0.0000    0.0000  (B2 )   A (     0.00)   A
+    5-   5    0.2665E-19      0.0000    0.0000  (A1 )   A (     0.00)   A
+    6-   6    0.3045E-19      0.0000    0.0000  (B1 )   A (     0.00)   A
+    7-   7    0.5575E-04   1638.7570   49.1287  (A1 )   A (     0.00)   A
+    8-   8    0.2985E-03   3791.9372  113.6794  (A1 )   A (     0.00)   A
+    9-   9    0.3149E-03   3894.5217  116.7548  (B1 )   A (     0.00)   A
 
  NORMAL MODES NORMALIZED TO CLASSICAL AMPLITUDES (IN BOHR)
 
  FREQ(CM**-1)      0.00      0.00      0.00      0.00      0.00      0.00
 
- AT.   1 O  X     0.0000    0.0000    0.0000    0.0000    0.2500    0.0000
-            Y     0.0493    0.2356    0.0000    0.0000    0.0000    0.0000
-            Z     0.0000    0.0000    0.0000    0.0000    0.0000    0.2356
- AT.   2 H  X     0.0000    0.0000    0.7044    0.7044    0.0000    0.0000
-            Y    -0.3912    0.2356    0.0000    0.0000    0.0000    0.0000
-            Z    -0.5690    0.0000    0.0000    0.0000    0.0000    0.2356
- AT.   3 H  X     0.0000    0.0000    0.7044   -0.7044    0.0000    0.0000
-            Y    -0.3912    0.2356    0.0000    0.0000    0.0000   -0.0000
-            Z     0.5690    0.0000    0.0000    0.0000    0.0000    0.2356
+ AT.   1 O  X     0.0000    0.0000    0.2500    0.0000    0.0000    0.0000
+            Y     0.2356    0.0000    0.0000    0.0000    0.0000    0.0493
+            Z     0.0000    0.0000    0.0000    0.0000    0.2356    0.0000
+ AT.   2 H  X     0.0000    0.7044    0.0000    0.7044    0.0000    0.0000
+            Y     0.2356    0.0000    0.0000    0.0000    0.0000   -0.3912
+            Z     0.0000    0.0000    0.0000    0.0000    0.2356   -0.5690
+ AT.   3 H  X     0.0000   -0.7044    0.0000    0.7044    0.0000    0.0000
+            Y     0.2356    0.0000    0.0000    0.0000   -0.0000   -0.3912
+            Z     0.0000    0.0000    0.0000    0.0000    0.2356    0.5690
 
- FREQ(CM**-1)   1639.07   3798.22   3898.95
+ FREQ(CM**-1)   1638.76   3791.94   3894.52
 
  AT.   1 O  X     0.0000    0.0000    0.0000
             Y     0.0000    0.0000   -0.0119
-            Z    -0.0185    0.0086    0.0000
+            Z    -0.0184    0.0087    0.0000
  AT.   2 H  X     0.0000    0.0000    0.0000
-            Y     0.1108    0.1021    0.0942
-            Z     0.1465   -0.0686   -0.0729
+            Y     0.1113    0.1020    0.0943
+            Z     0.1462   -0.0690   -0.0730
  AT.   3 H  X     0.0000    0.0000    0.0000
-            Y    -0.1108   -0.1021    0.0942
-            Z     0.1465   -0.0686    0.0729
+            Y    -0.1113   -0.1020    0.0943
+            Z     0.1462   -0.0690    0.0730
 
  *******************************************************************************
 
  VIBRATIONAL TEMPERATURES (K) [MODE NUMBER;IRREP]
 
  TO MODES
-  2358.3 [   7;A1 ]  5464.8 [   8;A1 ]  5609.7 [   9;B1 ]
+  2357.8 [   7;A1 ]  5455.7 [   8;A1 ]  5603.3 [   9;B1 ]
 
  *******************************************************************************
 
@@ -759,8 +544,8 @@ Sat 07 Sep 2024 09:47:35 PM CEST
   TS = TEMPERATURE * ENTROPY)
 
                           AU/CELL             EV/CELL                 KJ/MOL
- EL            :     -76.422737479444   -2079.568410030693     -200647.86897587
- E0            :       0.021269514362       0.578772910040          55.84310209
+ EL            :     -76.422736712925   -2079.568389172658     -200647.86696337
+ E0            :       0.021244405092       0.578089652069          55.77717771
 
  
  WARNING **** THERMOFRQ **** PV TERM COMPUTED ONLY FOR 3D SYSTEMS
@@ -780,22 +565,22 @@ Sat 07 Sep 2024 09:47:35 PM CEST
  THERMAL ENERGY           AU                  EV                      J/MOL
  Translational:        0.001416278906       0.038538908301        3718.43974020
  Rotational:           0.001416278906       0.038538908301        3718.43974020
- E0(Vibrational)       0.021269514362       0.578772910040       55843.10208806
- Vibr. corr.:          0.000002743543       0.000074655613           7.20317237
- Total:                0.024104815717       0.655925382255       63287.18474560
+ E0(Vibrational)       0.021244405092       0.578089652069       55777.17770917
+ Vibr. corr.:          0.000002747209       0.000074755345           7.21279504
+ Total:                0.024079710112       0.655242224017       63221.26998938
 
 
  ENTROPY                  AU/K                EV/K                    J/(MOL*K)
  Translational:        0.000055151864       0.001500758505         144.80119733
  Rotational:           0.000015406118       0.000419221774          40.44875611
- Vibrational:          0.000000010365       0.000000282045           0.02721325
- Total:                0.000070568346       0.001920262324         185.27716681
+ Vibrational:          0.000000010379       0.000000282428           0.02725019
+ Total:                0.000070568360       0.001920262707         185.27720374
 
  HEAT CAPACITY            mAU/K               mEV/K                   J/(MOL*K)
  Translational:        0.004750222725       0.129260131817          12.47170800
  Rotational:           0.004750222725       0.129260131817          12.47170800
- Vibrational:          0.000072821326       0.001981569031           0.19119237
- Total:                0.009573266777       0.260501832665          25.13460838
+ Vibrational:          0.000072904837       0.001983841484           0.19141162
+ Total:                0.009573350288       0.260504105117          25.13482764
 
 
  *******************************************************************************
@@ -806,21 +591,21 @@ Sat 07 Sep 2024 09:47:35 PM CEST
  AT (T =  298.15 K, P =   0.10132500E+00 MPA):
 
                           AU/CELL             EV/CELL                 KJ/MOL
- ET            :       0.002835301355       0.077152472216           7.44408266
+ ET            :       0.002835305020       0.077152571948           7.44409228
  PV            :       0.000944185937       0.025692605534           2.47895983
- TS            :       0.021039952416       0.572526211904          55.24038728
- ET+PV-TS      :      -0.017260465124      -0.469681134155         -45.31734480
- EL+E0+ET+PV-TS:     -76.418728430206   -2079.459318254809     -200637.34321858
+ TS            :       0.021039956610       0.572526326047          55.24039830
+ ET+PV-TS      :      -0.017260465654      -0.469681148565         -45.31734619
+ EL+E0+ET+PV-TS:     -76.418752773486   -2079.459980669154     -200637.40713185
 
  OTHER THERMODYNAMIC FUNCTIONS:
 
                       mHARTREE/(CELL*K)     mEV/(CELL*K)              J/(MOL*K)
- ENTROPY       :       0.070568346188       1.920262324013         185.27716681
- HEAT CAPACITY :       0.009573266777       0.260501832665          25.13460838
+ ENTROPY       :       0.070568360256       1.920262706848         185.27720374
+ HEAT CAPACITY :       0.009573350288       0.260504105117          25.13482764
 
  *******************************************************************************
- REDUCED MASS OF MODE (AMU)           7   1.08314950243305     
- REDUCED MASS OF MODE (AMU)           8   1.04472589657670     
+ REDUCED MASS OF MODE (AMU)           7   1.08277649025055     
+ REDUCED MASS OF MODE (AMU)           8   1.04507314849178     
  REDUCED MASS OF MODE (AMU)           9   1.08186924995098     
 
  SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
@@ -844,165 +629,164 @@ Sat 07 Sep 2024 09:47:35 PM CEST
 
  *******************************************************************************
 
- MODE:     7 (FREQ:   1639.07 CM-1)
+ MODE:     7 (FREQ:   1638.76 CM-1)
 
- STEP:   0.24392 BOHR
-
-      STEP        ENE         HARM. ENE   N. CYC   DE
-  (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
-
- C   -0.900   0.317719E-02   0.302461E-02      8 -0.2E-12
-      0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
- C    0.900   0.286286E-02   0.302461E-02      8  0.2E-12
-
- POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
-
- ETA(   7,   7,   7)      =     -6.3119E-02    -275.7927
- ETA(   7,   7,   7,   7) =     -3.8130E-02     -45.1546
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE      146.54 TCPU      146.53
-
- *******************************************************************************
-
- MODE:     8 (FREQ:   3798.22 CM-1)
-
- STEP:   0.16024 BOHR
+ STEP:   0.24395 BOHR
 
       STEP        ENE         HARM. ENE   N. CYC   DE
   (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
 
- C   -0.900   0.810688E-02   0.700891E-02      8  0.1E-12
+ C   -0.900   0.317910E-02   0.302402E-02      8 -0.9E-12
       0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
- C    0.900   0.609885E-02   0.700891E-02      8  0.2E-12
+ C    0.900   0.286451E-02   0.302402E-02      8 -0.4E-12
 
  POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
 
- ETA(   8,   8,   8)      =     -1.4720E+00   -1823.2735
- ETA(   8,   8,   8,   8) =      3.4723E+00     765.7626
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE      188.44 TCPU      188.43
+ ETA(   7,   7,   7)      =     -6.4524E-02    -282.0128
+ ETA(   7,   7,   7,   7) =     -2.6693E-02     -31.6222
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE       34.01 TCPU       34.00
 
  *******************************************************************************
 
- MODE:     9 (FREQ:   3898.95 CM-1)
+ MODE:     8 (FREQ:   3791.94 CM-1)
 
- STEP:   0.15815 BOHR
+ STEP:   0.16037 BOHR
 
       STEP        ENE         HARM. ENE   N. CYC   DE
   (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
 
- C   -0.900   0.728912E-02   0.719479E-02      8 -0.1E-11
+ C   -0.900   0.812115E-02   0.699732E-02      8  0.3E-13
       0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
- C    0.900   0.728912E-02   0.719479E-02      8 -0.3E-12
+ C    0.900   0.610793E-02   0.699732E-02      8  0.6E-13
 
  POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
 
- ETA(   9,   9,   9)      =     -2.1813E-06      -0.0026
- ETA(   9,   9,   9,   9) =      3.7049E+00     775.3746
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE      230.35 TCPU      230.33
+ ETA(   8,   8,   8)      =     -1.4726E+00   -1828.5348
+ ETA(   8,   8,   8,   8) =      3.8494E+00     851.7236
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE       68.00 TCPU       67.99
 
  *******************************************************************************
 
- COUPLE OF MODES:     7    8  (FREQs:   1639.07 CM-1,   3798.22 CM-1)
+ MODE:     9 (FREQ:   3894.52 CM-1)
 
- STEPS:   0.24392   0.16024 BOHR
+ STEP:   0.15824 BOHR
 
+      STEP        ENE         HARM. ENE   N. CYC   DE
+  (CL. AMPL.)   (A.U.)         (A.U.)            (A.U.)
 
- C    0.900   0.900  -7.641329E+01  -7.641971E+01      8  0.0E+00
- C   -0.900  -0.900  -7.641231E+01  -7.641064E+01      8  0.2E-12
+ C   -0.900   0.729682E-02   0.718662E-02      8 -0.1E-12
+      0.000  -0.764227E+02  -0.764227E+02                         CENTRAL POINT
+ C    0.900   0.729682E-02   0.718662E-02      8 -0.6E-12
 
  POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
 
- ETA(   7,   7,   8)      =      1.1030E-01     316.5938
- ETA(   7,   8,   8)      =      3.9364E-02      74.2225
- ETA(   7,   7,   7,   8) =      2.0119E-01     156.5132
- ETA(   7,   8,   8,   8) =     -2.0116E-01     -67.5308
- ETA(   7,   7,   8,   8) =     -5.9322E-01    -303.1590
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      256.52 TCPU      256.51
+ ETA(   9,   9,   9)      =     -2.4400E-06      -0.0029
+ ETA(   9,   9,   9,   9) =      3.9645E+00     831.5987
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT DIAG PES    TELAPSE      101.94 TCPU      101.93
 
  *******************************************************************************
 
- COUPLE OF MODES:     7    9  (FREQs:   1639.07 CM-1,   3898.95 CM-1)
+ COUPLE OF MODES:     7    8  (FREQs:   1638.76 CM-1,   3791.94 CM-1)
 
- STEPS:   0.24392   0.15815 BOHR
+ STEPS:   0.24395   0.16037 BOHR
 
 
- C    0.900   0.900  -7.641242E+01  -7.641971E+01      8 -0.8E-12
- C   -0.900  -0.900  -7.641298E+01  -7.641064E+01      8 -0.6E-12
+ C    0.900   0.900  -7.641324E+01  -7.641971E+01      8 -0.7E-13
+ C   -0.900  -0.900  -7.641222E+01  -7.641064E+01      8 -0.4E-13
 
  POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
 
- ETA(   7,   7,   9)      =     -4.0375E-08      -0.0001
- ETA(   7,   9,   9)      =      1.5036E-01     276.1904
- ETA(   7,   7,   7,   9) =      2.5739E-07       0.0002
- ETA(   7,   9,   9,   9) =      9.1891E-05       0.0297
- ETA(   7,   7,   9,   9) =     -7.3265E-01    -364.7386
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      282.59 TCPU      282.58
+ ETA(   7,   7,   8)      =      1.0950E-01     314.6170
+ ETA(   7,   8,   8)      =      3.3110E-02      62.5411
+ ETA(   7,   7,   7,   8) =      3.3970E-01     264.5584
+ ETA(   7,   8,   8,   8) =      1.2652E-01      42.5821
+ ETA(   7,   7,   8,   8) =     -6.9847E-01    -357.6028
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      122.86 TCPU      122.85
 
  *******************************************************************************
 
- COUPLE OF MODES:     8    9  (FREQs:   3798.22 CM-1,   3898.95 CM-1)
+ COUPLE OF MODES:     7    9  (FREQs:   1638.76 CM-1,   3894.52 CM-1)
 
- STEPS:   0.16024   0.15815 BOHR
+ STEPS:   0.24395   0.15824 BOHR
 
 
- C    0.900   0.900  -7.641186E+01  -7.641573E+01      9  0.6E-13
- C   -0.900  -0.900  -7.640364E+01  -7.639470E+01      8 -0.3E-12
+ C    0.900   0.900  -7.641242E+01  -7.641971E+01      8 -0.7E-12
+ C   -0.900  -0.900  -7.641296E+01  -7.641064E+01      8 -0.7E-12
 
  POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
 
- ETA(   8,   8,   9)      =     -7.6841E-08      -0.0001
- ETA(   8,   9,   9)      =     -1.5148E+00   -1827.7930
- ETA(   8,   8,   8,   9) =      4.9165E-06       0.0011
- ETA(   8,   9,   9,   9) =     -2.5725E-04      -0.0545
- ETA(   8,   8,   9,   9) =      3.6943E+00     793.6567
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      310.18 TCPU      310.16
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SCANPES     TELAPSE      310.18 TCPU      310.16
- TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE      310.18 TCPU      310.16
- EEEEEEEEEE TERMINATION  DATE 07 09 2024 TIME 21:52:45.4
-NODE    0 CPU TIME =       310.161
-    TOTAL CPU TIME =       310.161
-Sat 07 Sep 2024 09:52:45 PM CEST
-total 295236
--rw-r--r-- 1 erba users         0 Sep  7 21:47 dffit3.dat
--rw-r--r-- 1 erba users    188440 Sep  7 21:52 diis_err1.pe0
--rw-r--r-- 1 erba users    161520 Sep  7 21:52 diis_err2.pe0
--rw-r--r-- 1 erba users    114816 Sep  7 21:52 diis_Fg
--rw-r--r-- 1 erba users         0 Sep  7 21:47 diis_Sk.pe0
--rw-r--r-- 1 erba users     26920 Sep  7 21:52 fort.10.pe0
--rw-r--r-- 1 erba users     14352 Sep  7 21:52 fort.11.pe0
--rw-r--r-- 1 erba users      8964 Sep  7 21:52 fort.12
--rw-r--r-- 1 erba users     26920 Sep  7 21:47 fort.13
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.18.pe0
--rw-r--r-- 1 erba users       312 Sep  7 21:49 fort.19.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.1.pe0
--rw-r--r-- 1 erba users     40384 Sep  7 21:47 fort.20
--rw-r--r-- 1 erba users       712 Sep  7 21:52 fort.21
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.28
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.28.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.29
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.29.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.38.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.3.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.40.pe0
--rw-r--r-- 1 erba users      2544 Sep  7 21:49 fort.61.pe0
--rw-r--r-- 1 erba users      2336 Sep  7 21:49 fort.62.pe0
--rw-r--r-- 1 erba users    205100 Sep  7 21:52 fort.65
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.82.pe0
--rw-r--r-- 1 erba users         0 Sep  7 21:47 fort.83.pe0
--rw-r--r-- 1 erba users     26920 Sep  7 21:52 fort.8.pe0
--rw-r--r-- 1 erba users     40384 Sep  7 21:47 fort.9
--rw-r--r-- 1 erba users     19368 Sep  7 21:52 fort.95.pe0
--rw-r--r-- 1 erba users   1291559 Sep  7 21:49 FREQINFO.DAT
--rw-r--r-- 1 erba users      1722 Sep  7 21:49 HESSFREQ.DAT
--rw-r--r-- 1 erba users      2258 Sep  7 21:47 INPUT
--rw-r--r-- 1 erba users         0 Sep  7 21:47 MULLIKEN.DAT
--rwxr-xr-x 1 erba users 300056536 Sep  7 21:47 Pcrystal-474980
--rw-r--r-- 1 erba users       700 Sep  7 21:49 SCAN7_1639.0730_DISP_-0.9000
--rw-r--r-- 1 erba users       700 Sep  7 21:52 SCAN7_1639.0730_DISP_0.9000
--rw-r--r-- 1 erba users       700 Sep  7 21:52 SCAN7_1639.0730_DISP_1.8000
--rw-r--r-- 1 erba users       700 Sep  7 21:50 SCAN8_3798.2185_DISP_-0.9000
--rw-r--r-- 1 erba users       700 Sep  7 21:52 SCAN8_3798.2185_DISP_0.9000
--rw-r--r-- 1 erba users       700 Sep  7 21:52 SCAN8_3798.2185_DISP_1.8000
--rw-r--r-- 1 erba users       700 Sep  7 21:51 SCAN9_3898.9462_DISP_-0.9000
--rw-r--r-- 1 erba users       700 Sep  7 21:51 SCAN9_3898.9462_DISP_0.9000
--rw-r--r-- 1 erba users      2169 Sep  7 21:52 SCANPES.DAT
-lrwxrwxrwx 1 erba users        71 Sep  7 21:47 SCFOUT.LOG -> /home/erba/Furfaro/Calcoli/Acqua/Calcfreq_acqua/anharm_H2O/H2O_PES.out2
+ ETA(   7,   7,   9)      =     -4.9953E-08      -0.0001
+ ETA(   7,   9,   9)      =      1.4390E-01     264.6470
+ ETA(   7,   7,   7,   9) =     -1.7608E-07      -0.0001
+ ETA(   7,   9,   9,   9) =      9.2526E-05       0.0299
+ ETA(   7,   7,   9,   9) =     -7.0973E-01    -353.7972
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      143.76 TCPU      143.75
+
+ *******************************************************************************
+
+ COUPLE OF MODES:     8    9  (FREQs:   3791.94 CM-1,   3894.52 CM-1)
+
+ STEPS:   0.16037   0.15824 BOHR
+
+
+ C    0.900   0.900  -7.641186E+01  -7.641574E+01      9 -0.4E-12
+ C   -0.900  -0.900  -7.640360E+01  -7.639475E+01      8 -0.1E-11
+
+ POTENTIAL DERIVATIVES             (A.U.)         (CM-1)
+
+ ETA(   8,   8,   9)      =      1.7934E-07       0.0002
+ ETA(   8,   9,   9)      =     -1.5149E+00   -1831.5112
+ ETA(   8,   8,   8,   9) =      1.7665E-06       0.0004
+ ETA(   8,   9,   9,   9) =     -2.5955E-04      -0.0552
+ ETA(   8,   8,   9,   9) =      3.8063E+00     820.0053
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT MIX PES     TELAPSE      166.00 TCPU      165.99
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT SCANPES     TELAPSE      166.00 TCPU      165.99
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE      166.00 TCPU      165.99
+ EEEEEEEEEE TERMINATION  DATE 13 09 2024 TIME 11:22:33.8
+NODE    0 CPU TIME =       165.993
+    TOTAL CPU TIME =       165.993
+Fri 13 Sep 2024 11:22:33 AM CEST
+total 294512
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 dffit3.dat
+-rw-r--r-- 1 erba users    161520 Sep 13 11:22 diis_err1.pe0
+-rw-r--r-- 1 erba users    188440 Sep 13 11:22 diis_err2.pe0
+-rw-r--r-- 1 erba users    114816 Sep 13 11:22 diis_Fg
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 diis_Sk.pe0
+-rw-r--r-- 1 erba users     26920 Sep 13 11:22 fort.10.pe0
+-rw-r--r-- 1 erba users     14352 Sep 13 11:22 fort.11.pe0
+-rw-r--r-- 1 erba users      8964 Sep 13 11:22 fort.12
+-rw-r--r-- 1 erba users     26920 Sep 13 11:19 fort.13
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.18.pe0
+-rw-r--r-- 1 erba users       312 Sep 13 11:19 fort.19.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.1.pe0
+-rw-r--r-- 1 erba users     40384 Sep 13 11:19 fort.20
+-rw-r--r-- 1 erba users       712 Sep 13 11:22 fort.21
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.28
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.28.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.29
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.29.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.38.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.3.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.40.pe0
+-rw-r--r-- 1 erba users      2544 Sep 13 11:19 fort.61.pe0
+-rw-r--r-- 1 erba users      2336 Sep 13 11:19 fort.62.pe0
+-rw-r--r-- 1 erba users    145026 Sep 13 11:22 fort.65
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.82.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.83.pe0
+-rw-r--r-- 1 erba users     26920 Sep 13 11:22 fort.8.pe0
+-rw-r--r-- 1 erba users         0 Sep 13 11:19 fort.9
+-rw-r--r-- 1 erba users     19368 Sep 13 11:22 fort.95.pe0
+-rw-r--r-- 1 erba users    662959 Sep 13 11:19 FREQINFO.DAT
+-rw-r--r-- 1 erba users      1722 Sep 13 11:19 HESSFREQ.DAT
+-rw-r--r-- 1 erba users      2225 Sep 13 11:19 INPUT
+-rwxr-xr-x 1 erba users 300056536 Sep 13 11:19 Pcrystal-475166
+-rw-r--r-- 1 erba users       700 Sep 13 11:20 SCAN7_1638.7570_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep 13 11:22 SCAN7_1638.7570_DISP_0.9000
+-rw-r--r-- 1 erba users       700 Sep 13 11:22 SCAN7_1638.7570_DISP_1.8000
+-rw-r--r-- 1 erba users       700 Sep 13 11:20 SCAN8_3791.9372_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep 13 11:22 SCAN8_3791.9372_DISP_0.9000
+-rw-r--r-- 1 erba users       700 Sep 13 11:22 SCAN8_3791.9372_DISP_1.8000
+-rw-r--r-- 1 erba users       700 Sep 13 11:21 SCAN9_3894.5217_DISP_-0.9000
+-rw-r--r-- 1 erba users       700 Sep 13 11:21 SCAN9_3894.5217_DISP_0.9000
+-rw-r--r-- 1 erba users      2169 Sep 13 11:22 SCANPES.DAT
+lrwxrwxrwx 1 erba users        58 Sep 13 11:19 SCFOUT.LOG -> /home/erba/Mitoli/MSSC2024/ANHARM/PES/H2O_PES_scheme3.out2
