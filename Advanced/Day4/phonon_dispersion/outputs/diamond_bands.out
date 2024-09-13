@@ -1,6 +1,25 @@
 Pcrystal executable in: /home/erba/Ambrogio/SVN_PUB_1335/bin/Linux_ifort_openmpi_i64_clut_new/mkl/Pcrystal
 Master system: Linux node80 4.19.0-8-amd64 #1 SMP Debian 4.19.98-1 (2020-01-26) x86_64 GNU/Linux
 ================================================================================
+Module loading
+================================================================================
+module load compiler/2021.4.0
+Loading compiler version 2021.4.0
+Loading tbb version 2021.6.0
+Loading compiler-rt version 2022.1.0
+Loading debugger version 2021.6.0
+Loading dpl version 2021.7.0
+Loading oclfpga version 2022.1.0
+
+Loading compiler/2021.4.0
+  Loading requirement: tbb/latest compiler-rt/latest debugger/latest dpl/latest
+    oclfpga/latest
+
+module load mkl/2021.4.0
+Loading mkl version 2021.4.0
+
+module load openmpi/4.1.1-i21.4
+================================================================================
 Starting Pcrystal SLURM job
 ================================================================================
 Time: Mon 09 Sep 2024 05:37:33 PM CEST
@@ -81,6 +100,7 @@ END
 Time: Mon 09 Sep 2024 05:37:34 PM CEST
 Starting Pcrystal job in /scratch/tmp_p20229_erba on each node...
 ================================================================================
+[node80:20362] MCW rank 0 bound to socket 0[core 0[hwt 0]]: [B/././././././././.][./././././././././.]
  PROCESS            0  OF            1  WORKING
  Default number of threads is:            1
 
@@ -4318,6 +4338,42 @@ NODE    0 CPU TIME =         0.504
 ================================================================================
 Time: Mon 09 Sep 2024 05:37:35 PM CEST
 Job terminated
+================================================================================
+Contents of temporary directory in master node node80:
+total 294428
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 dffit3.dat
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 diis_err1.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 diis_err2.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 diis_Fg
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 diis_Sk.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.10.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.11.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.12
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.18.pe0
+-rw-r--r-- 1 erba users     89784 Sep  9 17:37 fort.19.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.1.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.20
+-rw-r--r-- 1 erba users     17745 Sep  9 17:37 fort.25
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.28
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.28.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.29
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.29.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.38.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.3.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.40.pe0
+-rw-r--r-- 1 erba users    660784 Sep  9 17:37 fort.61.pe0
+-rw-r--r-- 1 erba users    880448 Sep  9 17:37 fort.62.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.82.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.83.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.8.pe0
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.9
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 fort.95.pe0
+-rw-r--r-- 1 erba users   2543492 Sep  9 17:37 FREQINFO.DAT
+-rw-r--r-- 1 erba users       872 Sep  9 17:37 INPUT
+-rwxr-xr-x 1 erba users 297262576 Sep  9 17:37 Pcrystal-475029
+-rw-r--r-- 1 erba users     22596 Sep  9 17:37 PHONBANDS.DAT
+-rw-r--r-- 1 erba users         0 Sep  9 17:37 PHONONS.DAT
+-rw-r--r-- 1 erba users      2320 Sep  9 17:37 SCFOUT.LOG
 ================================================================================
 Copying output file back on run directory...
 ================================================================================
