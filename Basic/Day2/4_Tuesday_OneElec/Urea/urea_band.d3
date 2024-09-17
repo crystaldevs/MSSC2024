@@ -1,0 +1,14 @@
+NEWK
+6 0 6
+1 0
+BAND
+UREA Path: Gamma-M-X-R-A-Z-Gamma
+6 2 120 9 34 1  0
+0 0 0   1 1 0   G M
+1 1 0   0 1 0   M X
+0 1 0   0 1 1   X R
+0 1 1   1 1 1   R A
+1 1 1   0 0 1   A Z
+0 0 1   0 0 0   Z G
+END                
+END              

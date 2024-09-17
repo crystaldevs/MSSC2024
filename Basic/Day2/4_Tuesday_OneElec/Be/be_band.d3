@@ -1,0 +1,10 @@
+BAND
+BE  HCP Path: Gamma-K-M-Gamma-A-H-L-A (Slater pg 262)
+5 6 120 1 9 1 0
+0 0 0   0 3 0   G M
+0 3 0   0 3 3   M L
+0 3 3  -2 4 3   L H
+-2 4 3 -2 4 0   H K
+-2 4 0  0 0 0   K G
+END
+
