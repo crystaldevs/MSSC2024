@@ -1,0 +1,27 @@
+NEWK
+6 6
+1 0
+ECHG
+0
+65
+COORDINA
+-4. -4. 0.0
+ 4. -4. 0.0
+ 4.  4. 0.0
+MARGINS
+1.5 1.5 1.5 1.5
+END
+PATO
+0 0
+ECHG
+0
+65
+COORDINA
+-4. -4. 0.0
+ 4. -4. 0.0
+ 4.  4. 0.0
+MARGINS
+1.5 1.5 1.5 1.5
+END
+END
+

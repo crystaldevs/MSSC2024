@@ -1,0 +1,171 @@
+
+         
+ *******************************************************************************
+ *                                                                             *
+ *                               CRYSTAL23                                     *
+ *                      public : 1.0.1 - October 2022                          *
+ *                       HTTP://WWW.CRYSTAL.UNITO.IT                           *
+ *                                                                             *
+ *                              MAIN AUTHORS                                   *
+ *                                                                             *
+ *  R. DOVESI(1,11), V.R. SAUNDERS(2), C. ROETTI(1,11), R. ORLANDO(1,11),      *
+ *  C.M. ZICOVICH-WILSON(1,3), F. PASCALE(4), B. CIVALLERI(1,11),              *
+ *  K. DOLL(5), N.M. HARRISON(6), I.J. BUSH(7), Ph. D'ARCO(8),                 *
+ *  M. LLUNELL(9), M. CAUSA'(10), Y. NOEL(8), L. MASCHIO(1,11), A. ERBA(1,11)  *
+ *  M. RE'RAT(14), S. CASASSA(1,11), B.G. SEARLE(2), J.K. DESMARAIS(1)         *
+ *                                                                             *
+ *        CONTRIBUTIONS TO THE CODE HAVE ALSO BEEN GIVEN BY                    *
+ *                                                                             *
+ *  M. FERRABONE(1,11), M. DE LA PIERRE(1,11), M. FERRERO(1,11),               *
+ *  J. BAIMA(1,11), E. ALBANESE(1,11), M.F. PEINTINGER(12), R. BAST(13),       *
+ *  B. KIRTMAN(15), V. LACIVITA(1,11), R. DEMICHELIS(1,16)                     *
+ *  G. BRANDEBURG(17), S. SALUSTRO(1,11), G. SANSONE(1,11)                     *
+ *  M.T. RUGGIERO(18), L.E. DAGA(1), L. DONA'(1), A. COSSARD(1)                *
+ *                                                                             *
+ * (1) THEORETICAL CHEMISTRY GROUP - UNIVERSITA' DI TORINO - TORINO (ITALY)    *
+ * (2) SCIENTIFIC COMPUTING DEPARTMENT - STFC DARESBURY (UK)                   *
+ * (3) UNIVERSIDAD AUTONOMA DEL ESTADO DE MORELOS - CUERNAVACA (MEXICO)        *
+ * (4) UNIVERSITE' DE LORRAINE - NANCY (FRANCE)                                *
+ * (5) UNIVERSITAET STUTTGART- STUTTGART (GERMANY)                             *
+ * (6) IMPERIAL COLLEGE - LONDON (UK)                                          *
+ * (7) SCIENTIFIC COMPUTING DEPARTMENT - STFC RAL (UK)                         *
+ * (8) UPMC - SORBONNE UNIVERSITES - PARIS (FRANCE)                            *
+ * (9) UNIVERSIDAD DE BARCELONA - BARCELONA (SPAIN)                            *
+ *(10) UNIVERSITA' DI NAPOLI "FEDERICO II" - NAPOLI (ITALY)                    *
+ *(11) NIS - NANOSTRUCTURED INTERFACES AND SURFACES - TORINO (ITALY)           *
+ *(12) MPI FUER CHEMISCHE ENERGIEKONVERSION - MUELHEIM AN DER RUHR (GERMANY)   *
+ *(13) UNIVERSITY OF TROMSO - TROMSO (NORWAY)                                  *
+ *(14) UNIVERSITE' DE PAU ET DES PAYS DE L'ADOUR - PAU (FRANCE)                *
+ *(15) UNIVERSITY OF CALIFORNIA SANTA BARBARA - SANTA BARBARA (USA)            *
+ *(16) CURTIN UNIVERSITY - PERTH (AUSTRALIA)                                   *
+ *(17) UNIVERSITY COLLEGE LONDON - LONDON (UK)                                 *
+ *(18) UNIVERSITY OF VERMONT - BURLINGTON (USA)                                *
+ *                                                                             *
+ *******************************************************************************
+ EEEEEEEEEE STARTING  DATE 17 09 2024 TIME 14:03:24.5
+ INFORMATION **** SET_MPP **** PCRYSTAL CALCULATION
+
+ *******************************************************************************
+ UREA BULK BASE 6-21 + POLARIZATION                                              
+ CRYSTAL - PROPERTIES - TYPE OF CALCULATION :  RESTRICTED CLOSED SHELL
+ *******************************************************************************
+ HARTREE-FOCK HAMILTONIAN
+
+ DIRECT LATTICE VECTOR COMPONENTS (ANGSTROM)
+         5.56500    0.00000    0.00000
+         0.00000    5.56500    0.00000
+         0.00000    0.00000    4.68400
+
+ LATTICE PARAMETERS  (ANGSTROM AND DEGREES) - PRIMITIVE CELL
+       A          B          C         ALPHA      BETA     GAMMA        VOLUME
+    5.56500    5.56500    4.68400     90.0000   90.0000   90.0000     145.05985
+ *******************************************************************************
+ N. OF ATOMS PER CELL        16 COULOMB OVERLAP TOL          (T1) 10**   -6
+ NUMBER OF SHELLS            56 COULOMB PENETRATION TOL      (T2) 10**   -6
+ NUMBER OF AO               152 EXCHANGE OVERLAP TOL         (T3) 10**   -6
+ N. OF ELECTRONS PER CELL    64 EXCHANGE PSEUDO OVP (F(G))   (T4) 10**   -6
+ CORE ELECTRONS PER CELL     16 EXCHANGE PSEUDO OVP (P(G))   (T5) 10**  -12
+ N. OF SYMMETRY OPERATORS     8 POLE ORDER IN MONO ZONE                   4
+ *******************************************************************************
+   ATOM N.AT.  SHELL    X(A)      Y(A)      Z(A)      EXAD       N.ELECT.
+ *******************************************************************************
+    1    6 C     4     0.000    -2.783     1.527   8.000E-01       4.804
+    2    8 O     4     0.000    -2.783     2.788   8.000E-01       8.780
+    3    7 N     4     0.812    -1.971     0.827   8.000E-01       7.749
+    4    7 N     4    -0.812    -3.594     0.827   8.000E-01       7.749
+    5    1 H     3     0.802    -1.981    -0.178   1.100E+00       0.729
+    6    1 H     3     1.433    -1.350     1.324   1.100E+00       0.730
+    7    1 H     3    -0.802    -3.584    -0.178   1.100E+00       0.729
+    8    1 H     3    -1.433    -4.215     1.324   1.100E+00       0.730
+    9    6 C     4    -2.783     0.000    -1.527   8.000E-01       4.804
+   10    8 O     4    -2.783     0.000    -2.788   8.000E-01       8.780
+   11    7 N     4    -1.971    -0.812    -0.827   8.000E-01       7.749
+   12    7 N     4    -3.594     0.812    -0.827   8.000E-01       7.749
+   13    1 H     3    -1.981    -0.802     0.178   1.100E+00       0.729
+   14    1 H     3    -1.350    -1.433    -1.324   1.100E+00       0.730
+   15    1 H     3    -3.584     0.802     0.178   1.100E+00       0.729
+   16    1 H     3    -4.215     1.433    -1.324   1.100E+00       0.730
+ *******************************************************************************
+ DE(K)                   0.000E+00  ENERGY LEVEL SHIFTING        0.00000
+ TOTAL ENERGY -4.4768124599867E+02  CONVERGENCE ON ENER       -6.052E-08
+ KIN. ENERGY   4.4702075288008E+02  VIR. COEFF.           9.99261773E-01
+ N. OF SCF CYCLES                9  FERMI ENERGY              -0.384E+00
+ WEIGHT OF F(I) IN F(I+1)      30
+ SHRINK. FACT.(MONKH.)     2  2  2  SHRINKING FACTOR(GILAT NET)        2
+ NUMBER OF K POINTS IN THE IBZ   6  CELL VOLUME (A.U.)        978.912403
+ *******************************************************************************
+
+ GCALCO - MAX INDICES DIRECT LATTICE VECTOR    14    14    16
+ NO.OF VECTORS CREATED 6999 STARS  525 RMAX   117.81283 BOHR
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT gordsh1     TELAPSE        0.05 TCPU        0.05
+
+ MATRIX SIZE: P(G)  108364, F(G)   18098, P(G) IRR   10907, F(G) IRR    4245
+ MAX G-VECTOR INDEX FOR 1- AND 2-ELECTRON INTEGRALS 113
+
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   6; SYMMOPS:K SPACE  16;G SPACE   8
+
+
+ CAPPA:IS1  2;IS2  2;IS3  2; K PTS MONK NET   6; SYMMOPS:K SPACE  16;G SPACE   8
+
+ *******************************************************************************
+ RESTART WITH NEW K POINTS NET
+ *******************************************************************************
+ POINTS IN THE IBZ                   6 POINTS(GILAT NET)                 6
+ SHRINK FACTORS(MONK.)         2  2  2 SHRINK FACTOR(GILAT)              2
+ *******************************************************************************
+ *** K POINTS COORDINATES (OBLIQUE COORDINATES IN UNITS OF IS =  2)
+   1-R(  0  0  0)   2-R(  1  0  0)   3-R(  1  1  0)   4-R(  0  0  1)
+   5-R(  1  0  1)   6-R(  1  1  1)
+
+ FERMI ENERGY AND DENSITY MATRIX CALCULATION ON COMPUTED EIGENVECTORS
+ DENSITY MATRIX AT SCF CYCLE (  9+1)
+
+ INSULATING STATE
+ TOP OF VALENCE BANDS -    BAND     32; K    1; EIG -3.8441182E-01 AU
+ BOTTOM OF VIRTUAL BANDS - BAND     33; K    1; EIG  2.0747671E-01 AU
+ DIRECT ENERGY BAND GAP:  16.1061 eV
+
+ CORE DENSITY MATRIX CALCULATION
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT NEWK        TELAPSE        0.07 TCPU        0.07
+
+ *******************************************************************************
+ PRINTING OF CRYSTALLINE ORBITALS 
+ *******************************************************************************
+
+ Settings: 
+ Write fractional coordinates :            1
+ Use localized orbitals       :            0
+ 
+ K-Point            1  of            6
+ File opened : Urea COs_00001_K000_real.molden
+ File closed: Urea COs_00001_K000_real.molden
+ 
+ K-Point            2  of            6
+ File opened : Urea COs_00002_K100_real.molden
+ File closed: Urea COs_00002_K100_real.molden
+ 
+ K-Point            3  of            6
+ File opened : Urea COs_00003_K110_real.molden
+ File closed: Urea COs_00003_K110_real.molden
+ 
+ K-Point            4  of            6
+ File opened : Urea COs_00004_K001_real.molden
+ File closed: Urea COs_00004_K001_real.molden
+ 
+ K-Point            5  of            6
+ File opened : Urea COs_00005_K101_real.molden
+ File closed: Urea COs_00005_K101_real.molden
+ 
+ K-Point            6  of            6
+ File opened : Urea COs_00006_K111_real.molden
+ File closed: Urea COs_00006_K111_real.molden
+
+ *******************************************************************************
+ FINISHED ORBITAL PRINTING 
+ *******************************************************************************
+
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT ORBITALS    TELAPSE        0.22 TCPU        0.22
+ ENDPROP   
+ TTTTTTTTTTTTTTTTTTTTTTTTTTTTTT END         TELAPSE        0.22 TCPU        0.22
+ EEEEEEEEEE TERMINATION  DATE 17 09 2024 TIME 14:03:24.7
