@@ -1,4 +1,4 @@
-# MSSC 2024 - Modelling Solid State Chemistry
+# MSSC 2024 - Ab Initio Modelling in Solid State Chemistry
 
 <div align="center">
   <img src="https://www.imperial.ac.uk/media/images/non-standard-dimensions/logo.png" width="25%">
